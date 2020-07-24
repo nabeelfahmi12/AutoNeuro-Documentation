@@ -1,21 +1,17 @@
-<<<<<<< HEAD
-# Sample_Auto
-=======
+[![Python](https://img.shields.io/pypi/pyversions/tensorflow.svg?style=plastic)](https://badge.fury.io/py/tensorflow)
+[![PyPI](https://badge.fury.io/py/tensorflow.svg)](https://badge.fury.io/py/tensorflow)
+
 <div align="center">
   <img src="https://2s7gjr373w3x22jf92z99mgm5w-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/Qeexo_auto_ML.png">
 </div>
 <h1> AutoNeuro</h1>
 
-[![Python](https://img.shields.io/pypi/pyversions/tensorflow.svg?style=plastic)](https://badge.fury.io/py/tensorflow)
-[![PyPI](https://badge.fury.io/py/tensorflow.svg)](https://badge.fury.io/py/tensorflow)
-
 **`Documentation`** |
 ------------------- |
 [![Documentation](https://img.shields.io/badge/api-reference-blue.svg)](https://jhansi-27.github.io/Sample_Auto/) |
 
-AutoNeuro is an automated machine learning app, which allows users to build production ready ML models with ease and efficiency.
-The user will only give dataset in recognizable formats and select the type of problem, and the result will be the best performing hyper tuned machine learning model.
-The descriptive and graphical analysis of the data are also displayed. The user will also get privileges to choose the deployment option. 
+AutoNeuro is an automated machine learning application built using python 3.7. It allows users to build production ready ML models with ease and efficiency.
+The project was started in 2020 as an internship project. See the About us[About us](https://jhansi-27.github.io/AutoNeuro/)  page for a list of core contributors.
 
 ## Install
 
