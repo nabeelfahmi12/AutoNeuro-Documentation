@@ -229,7 +229,7 @@ An F-test is any statistical test in which the test statistic has an F-distribut
          
 
 Technical solution design
-![Technical solution design](img/TSD-2.jpg)
+![Technical solution design](img/TSD-2.png)
  
 **Exceptions Scenarios Module Wise**
 
@@ -324,7 +324,7 @@ Outlier detection
 Data Scaling/ Normalisation
 Feature Selection: https://scikit-learn.org/stable/auto_examples/index.html#feature-selection
 
-![](img/TSD-3.jpg)
+![](img/TSD-3.png)
 
 
 

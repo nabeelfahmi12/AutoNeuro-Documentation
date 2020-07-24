@@ -7,17 +7,16 @@ nav:
     - Home: index.html
     - About AutoNeuro:
         - Getting Started:
-            - Introduction & Features : GettingStarted/GettingStarted.md
-            - Installation : GettingStarted/How to use.md
+            - Introduction & Features : GettingStarted\GettingStarted.md
+            - Installation : GettingStarted\How to use.md
         - User's Guide:
-            - User's Guide : User's Guide/UsersGuide.md
-            - Uploading Data : User's Guide/Uploading Data.md
-            - Data Visualization : User's Guide/Data Visualization.md
-            - Model Training : User's Guide/ModelTraining.md
-            - Predictions : User's Guide/Predictions.md
-            - Cloud deployment : User's Guide/Clouddeployment.md
-            - Logging Help : User's Guide/LoggingHelp.md
-            - Troubleshooting : User's Guide/Troubleshooting.md
+            - Uploading Data : User's Guide\Uploading Data.md
+            - Data Visualization : User's Guide\Data Visualization.md
+            - Model Training : User's Guide\ModelTraining.md
+            - Predictions : User's Guide\Predictions.md
+            - Cloud deployment : User's Guide\Clouddeployment.md
+            - Logging Help : User's Guide\LoggingHelp.md
+            - Troubleshooting : User's Guide\Troubleshooting.md
 
 
         - For Devlelopers :
