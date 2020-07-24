@@ -51,21 +51,6 @@ To learn more about making a contribution to AutoNeuro, please see our [Contribu
 
 
 
-See the [AutoNeuro install guide](https://www.tensorflow.org/install) for the
-[pip package](https://www.tensorflow.org/install/pip), to
-[enable GPU support](https://www.tensorflow.org/install/gpu), use a
-[Docker container](https://www.tensorflow.org/install/docker), and
-[build from source](https://www.tensorflow.org/install/source).
-
-To install the current release, which includes support for
-[CUDA-enabled GPU cards](https://www.tensorflow.org/install/gpu) *(Ubuntu and
-Windows)*:
-
-
-
-For more examples, see the
-[AutoNeuro tutorials](https://www.tensorflow.org/tutorials/).
-
 ## Help and Support
 ### Documentation
 *   
@@ -74,7 +59,7 @@ For more examples, see the
 ### Communication
 *
 *
-### Citation
+## Citation
 ## License
 
 [AutoNeuro License 2.0](LICENSE)
