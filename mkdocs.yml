@@ -1,0 +1,98 @@
+site_name: AutoNeuro
+repo_url: https://github.com/nabeelfahmi12/AutoNeuro-Documentation.git
+site_url: https://Autoneuro.io/
+site_description: 'Documentation for AutoNeuro, the automated Machine Learning Application.'
+
+nav:
+    - Home: index.html
+    - GettingStarted:
+        - GettingStarted:
+            - GettingStarted: GettingStarted.md
+            - Introduction to AutoNeuro for engineers: Introduction to engineers.md
+            - Introduction to AutoNeuro for researchers: Introduction to researchers.md
+            - Developers guide: DevelopersGuide.md
+            - API Reference: API Reference.md
+            - How to use?: How to use.md
+            - Extending & Contributing: Extending&Contributions.md
+            - Code Examples: code.md
+        - User's Guide:
+            - User's Guide : docs\User's Guide\UsersGuide.md
+            - Uploading Data : docs\User's Guide\Uploading Data.md
+            - Data Visualization : docs\User's Guide\Data Visualization.md
+            - Model Training : docs\User's Guide/ModelTraining.md
+            - Predictions : docs\User's Guide\Predictions.md
+            - Cloud deployment : docs\User's Guide\Clouddeployment.md
+            - Logging Help : docs\User's Guide\LoggingHelp.md
+            - Troubleshooting : docs\User's Guide\Troubleshooting.md
+        - For Devlelopers :
+            - For Devlelopers : For Devlelopers\ForDevelopers.md
+            - Methods for data upload : For Devlelopers\Methodsfordataupload.md
+            - Methods for preprocessing : For Devlelopers\Methodsforpreprocessing.md
+            - Methods for visualization : For Devlelopers\Methodsforvisualization.md
+            - Methods for Model building : For Devlelopers\MethodsforModelbuilding.md
+            - Methods for prediction : For Devlelopers\Methodsforprediction.md
+            - Methods for deployment : For Devlelopers\Methodsfordeployment.md
+        - Contributing to autoneuro:
+            - Contributing to autoneuro : Contributing to autoneuro/Contributingtoautoneuro.md
+    - Pypi :
+       - Pypi : "https://pypi.org/project/vowelcheck/"
+    - Hardware Requirements :
+      - Hardware Requirements :  "https://www.facebook.com/futureindatascience/"
+    - About us :
+      - About us : "https://ineuron.ai/"
+
+
+theme:
+    name: material
+    palette:
+        primary: Red
+        accent: Black
+
+    logo: img/Ineuro.svg
+    favicon: img/Ineuro.svg
+    features:
+      - tabs
+
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Jhansi-27/Sample_Auto
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/futureindatascience/
+    - icon: fontawesome/brands/docker
+      link: https://ineuron.ai/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/Sudhans74624324
+    - icon: fontawesome/brands/linkedin
+      link: https://in.linkedin.com/organization-guest/company/ineuron-ai?challengeId=AQFdwh3-bGfX8wAAAXNrEKXH8FOn6l02HB35tFPQfdN1oUTmlkLCxriBdfiPEGtJHIy2rIBPzNQNmdvZOxTJpauHtJ-8qXepiA&submissionId=7ab9fab9-6e64-2316-15c9-b83be915c825
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/ineuron_ai/?hl=en
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - codehilite:
+      guess_lang: true
+  - toc:
+      permalink: true
+  - pymdownx.magiclink:
+        repo_url_shorthand: true
+        user: Nabeel
+        repo: mkdocs-material
+
+
+
+google_analytics:
+  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+  - auto
+
+plugins:
+  - search:
+      prebuild_index: false
+
+extra_css :
+  - css/styles.css
