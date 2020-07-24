@@ -188,6 +188,7 @@ Method Name    |get_data_profile  |
 
 <h2>Stats based EDA:</h2>
 
+
 **MVP**: Minimum Viable Product
 Building a minimum viable product is an opportunity to quickly test an idea and see if it works. It doesn't need to be the best solution, it should just be a usable solution. If it is, then we can move on to the development stage and make it work well.
  
@@ -243,7 +244,7 @@ A common assumption in many time series techniques is that the data are stationa
 
 
 
-<h2>4    Graph-Based EDA**</h2>
+<h2>4    Graph-Based EDA</h2>
 
 Create the following graphs:
 MVP:
@@ -320,7 +321,7 @@ Feature Selection: https://scikit-learn.org/stable/auto_examples/index.html#feat
 
 Class Name |DataPreprocessor| |
 ----|-------|--------|    
-Method Name    |impute_missing_values ||
+|Method Name    |impute_missing_values ||
 | |Method Description  |This method will be used to read data from a csv file or a flat file. 
 | |Input parameter  names| self,file_name, header,names, use_cols, separator. Input Parameter Description file_name: name of the file to be read. header: Row number(s) to be used as column names. names : array-like, optional. List of column names to use. If file contains no header row, then you should explicitly pass ``header=None``. Use_cols:  To load a subset of columns. Separator: Delimiter to use.
 | |output| A pandas Dataframe
@@ -393,12 +394,14 @@ Regularization modules if necessary
 
 Class Name |ModelTuner    | |
 ----|---|---|  
-Method Name    |get_tuned_knn_model| |    
-      | |Method Description  |This method will be used to get the hypertuned KNN Model
+|Method Name    |get_tuned_knn_model||    
+| |Method Description  |This method will be used to get the hypertuned KNN Model
 | |Input parameter  names  |self,data
 | |Input Parameter Description |Data: the training data Hyperparameters to tune   
 | |ouptput|    A hyper parameter tuned model object
 | |On Exception    |Write the exception in the log file. Raise an exception with the appropriate error message
+
+
 
 Exceptions |Scenarios| Module Wise|
 -----|-----|----|
