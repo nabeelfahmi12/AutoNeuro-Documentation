@@ -152,8 +152,7 @@ User gives Wrong Data Source|  Give proper error message| Ask the user to re-ent
 User gives corrupted data |    Give proper error message  
 
 
-**Data Profiling**
-
+<h2>**Data Profiling</h2>
 **Data profiling** is the process of reviewing source data, understanding structure, content and interrelationships, and identifying potential for data projects.   
 
 
@@ -187,7 +186,7 @@ Method Name    |get_data_profile  |
 | | |i)    Size occupied in RAM
 | |On Exception    |Write the exception in the log file. Raise an exception with the appropriate error message
 
-**Stats based EDA:**
+<h2>Stats based EDA:</h2>
 
 **MVP**: Minimum Viable Product
 Building a minimum viable product is an opportunity to quickly test an idea and see if it works. It doesn't need to be the best solution, it should just be a usable solution. If it is, then we can move on to the development stage and make it work well.
@@ -234,7 +233,6 @@ Not all values are numbers |   Handle Internally  |Convert categorical to numeri
 
 
 
-
 **Phase 2:**
 
 **Seasonality:**
@@ -245,7 +243,7 @@ A common assumption in many time series techniques is that the data are stationa
 
 
 
-**4    Graph-Based EDA**
+<h2>4    Graph-Based EDA**</h2>
 
 Create the following graphs:
 MVP:
@@ -262,13 +260,13 @@ Area Charts
 KDE Plots
 Stacked charts
 Scatterplot
-Phase 2:
+
+**Phase 2:**
 Word maps
 PACF
 ACF
 Add Custom controls sliders etc
 
-Note: We are going to use plotly for all the graphs.(https://plotly.com/python/)
 
 Graphical EDA:
 ![](img/graph_eda.png)
@@ -297,12 +295,12 @@ A time series can have components like trend, seasonality, cyclic and residual. 
 
 More about sliders: https://plotly.com/python/sliders/
 
-**5    Library Based Utils**
+<h2>5    Library Based Utils</h2>
 
 Technical solution design
 Exceptions Scenarios Module Wise
 
-**6    Data Transformers( Pre-processing steps)**
+<h2>6    Data Transformers( Pre-processing steps)</h2>
 **MVP:**
 Null value handling
 Categorical to numerical
@@ -335,7 +333,7 @@ Step|  Exception| Mitigation|
 Wrong parameters passed to the methods |   Handle Internally  |Code should never give a wrong input
 
 
-**7    ML Model Selection:**
+<h2>7    ML Model Selection:</h2>
 Model selection is the process of selecting one final machine learning model from among a collection of candidate machine learning models for a training dataset.
 Model selection is a process that can be applied both across different types of models (e.g. logistic regression, SVM, KNN, etc.) and across models of the same type configured with different model hyperparameters (e.g. different kernels in an SVM).
 MVP:
@@ -348,7 +346,7 @@ Technical solution design
 Step   Exception  Mitigation
 Wrong parameters passed to the methods     Handle Internally  Code should never give a wrong input
 
-**8    Model Tuning and Optimization**
+<h2>8    Model Tuning and Optimization**</h2>
 Note: The data should have been divided into train and validation set before this.
 Methods for hyper tuning all kinds of models.
 **Regression:**
