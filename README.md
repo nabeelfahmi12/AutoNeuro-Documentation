@@ -11,7 +11,7 @@
 [![Documentation](https://img.shields.io/badge/api-reference-blue.svg)](https://jhansi-27.github.io/Sample_Auto/) |
 
 AutoNeuro is an automated machine learning application built using python 3.7. It allows users to build production ready ML models with ease and efficiency.
-The project was started in 2020 as an internship project. See the About us[About us](https://jhansi-27.github.io/AutoNeuro/)  page for a list of core contributors.
+The project was started in 2020 as an internship project. See the [About us](https://jhansi-27.github.io/AutoNeuro/)  page for a list of core contributors.
 
 ## Install
 
