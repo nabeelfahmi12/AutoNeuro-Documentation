@@ -46,12 +46,16 @@ theme:
     name: material
     palette:
         primary: Red
-        accent: Black
+        accent: green
 
     logo: img/Ineuro.svg
     favicon: img/Ineuro.svg
     features:
       - tabs
+    font:
+      text: "https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap"
+      code: "https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap"
+    css : css\new.css
 
 
 extra:
@@ -94,5 +98,4 @@ plugins:
   - search:
       prebuild_index: false
 
-extra_css :
-  - css/styles.css
+

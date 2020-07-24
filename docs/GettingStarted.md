@@ -1,4 +1,8 @@
-# Getting Started
+---
+css: overrides/new.css
+---
+
+<h1>Getting Started</h1>
 
 Are you an engineer or data scientist? Do you ship real-world machine learning solutions?
 Check out our [Introduction to AutoNeuro for engineers](Introduction to engineers.md)
