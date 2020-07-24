@@ -24,12 +24,11 @@ If you already have a working installation of numpy and Pandas, the easiest way 
 ```
 pip install AutoNeuro
 ```
-or
-```
-conda
-```
+or ``` conda ```
 
-```conda install -c conda-forge AutoNeuro```
+```
+conda install -c conda-forge AutoNeuro
+```
 The documentation includes more detailed [installation instructions](https://jhansi-27.github.io/AutoNeuro/api/)
 
 ## Change log
