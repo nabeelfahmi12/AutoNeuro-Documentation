@@ -2,10 +2,11 @@
 
 **Data Ingestion:** 
 
-**Data ingestion** is the transportation of data from assorted sources to a storage medium where it can be accessed, used, and analyzed by an organization. The destination is typically a data warehouse, data mart, database, or a document store.
+**Data ingestion** is the transportation of data from assorted sources to a storage medium where it can be accessed, used, and analyzed by an organization.
 
-![Technical solution design](/img/image004.jpg)
+![tsd](img/image003.png)
 
+The destination is typically a data warehouse, data mart, database, or a document store. 
 
 Data Connector Utils | File Conversion Utils |
 ------------ | ------------- | 
@@ -86,7 +87,7 @@ Data Connector Utils | File Conversion Utils |
 [Other Databases (ODBC)]()|
 
 
-Phase 2:
+**Phase 2:**
 
 Data Connector Utils | File Conversion Utils |
 ------------ | ------------- | 
@@ -152,8 +153,12 @@ User gives Wrong Data Source|  Give proper error message| Ask the user to re-ent
 User gives corrupted data |    Give proper error message  
 
 
-<h2>**Data Profiling</h2>
+
+<h2>Data Profiling</h2>
+
 **Data profiling** is the process of reviewing source data, understanding structure, content and interrelationships, and identifying potential for data projects.   
+
+![Data Profiling](img/data_profiling.png)
 
 
 After reading the data, automatically the following details should be shown:
@@ -201,7 +206,8 @@ Correlation:
 Correlation is a statistical technique that can show whether and how strongly pairs of variables are related
 
 **Phase1:**
-![](img/Tests_flow_chart.jpg)
+
+![Flow chart](img/stats_flowchart.jpg)
 
 **Anova test:**
 An ANOVA test is a way to find out if survey or experiment results are significant. In other words, they help you to figure out if you need to reject the null hypothesis or accept the alternate hypothesis. Basically, you're testing groups to see if there's a difference between them.
@@ -223,7 +229,7 @@ An F-test is any statistical test in which the test statistic has an F-distribut
          
 
 Technical solution design
-![](img/tsd-2.jpg)
+![Technical solution design](img/TSD-2.jpg)
  
 **Exceptions Scenarios Module Wise**
 
@@ -245,6 +251,8 @@ A common assumption in many time series techniques is that the data are stationa
 
 
 <h2>4    Graph-Based EDA</h2>
+
+
 
 Create the following graphs:
 MVP:
@@ -270,9 +278,9 @@ Add Custom controls sliders etc
 
 
 Graphical EDA:
-![](img/graph_eda.png)
 
-![](img/tsd-3.png)
+
+![](img/TSD-3.png)
 
 Class Name |DataVisualization ||
 ------|---------|----| 
@@ -296,12 +304,13 @@ A time series can have components like trend, seasonality, cyclic and residual. 
 
 More about sliders: https://plotly.com/python/sliders/
 
-<h2>5    Library Based Utils</h2>
+<h2>5.   Library Based Utils</h2>
 
 Technical solution design
 Exceptions Scenarios Module Wise
 
-<h2>6    Data Transformers( Pre-processing steps)</h2>
+<h2>6.    Data Transformers( Pre-processing steps)</h2>
+
 **MVP:**
 Null value handling
 Categorical to numerical
@@ -315,7 +324,7 @@ Outlier detection
 Data Scaling/ Normalisation
 Feature Selection: https://scikit-learn.org/stable/auto_examples/index.html#feature-selection
 
-![](img/tsd-4.jpg)
+![](img/TSD-3.jpg)
 
 
 
@@ -340,6 +349,8 @@ Model selection is a process that can be applied both across different types of 
 MVP:
 3 Models—KNN, RandomForest, XGBoost
 
+![Technical solution design](img/TSD-5.png)
+
 **Phase1:**
 Model Selection criteria
 Technical solution design
@@ -347,7 +358,8 @@ Technical solution design
 Step   Exception  Mitigation
 Wrong parameters passed to the methods     Handle Internally  Code should never give a wrong input
 
-<h2>8    Model Tuning and Optimization**</h2>
+<h2>8.   Model Tuning and Optimization**</h2>
+
 Note: The data should have been divided into train and validation set before this.
 Methods for hyper tuning all kinds of models.
 **Regression:**
@@ -392,6 +404,10 @@ NLP
 Deep Learning
 Regularization modules if necessary
 
+![Technical solution design](img/TSD-6.png)
+
+![Technical solution design](img/TSD-7.png)
+
 Class Name |ModelTuner    | |
 ----|---|---|  
 |Method Name    |get_tuned_knn_model||    
@@ -409,7 +425,7 @@ Step   |Exception |Mitigation
 | | |
       
 
-**9    Testing Modules**
+<h2>9.  Testing Modules</h2>
 
 Divide the training data itself into  train and test sets
 Use test data to have tests run on the three best models
@@ -430,12 +446,14 @@ BIC
 
 Note: Save the best model after validation is completed.
 
+![Technical solution design](img/TSD-9.png)
+
 Step   |Exception |Mitigation|
 --------|------|----------|
 Number of Parameters do not match  |Handle internally |Check the test data creation and verify the  columns
 Only once class present in test data   |Handle Internally| |
 
-**10   Prediction Pipeline**
+<h2>10.   Prediction Pipeline</h2>
  
 
 Use the existing data read modules
@@ -444,8 +462,12 @@ Load the model into memory
 Do predictions
 Store  prediction results(show sample predictions)
 
+![Technical solution design](img/prediction_pipeline.png)
+
 **Phase 2:**
 UI for predictions
+
+![Technical solution design](img/TSD-9.png)
    
 
 
@@ -455,7 +477,7 @@ Columns don’t match in training and Prediction data    |Show error message    
 
 
 
-**11      Deployment Strategy**
+<h2>11      Deployment Strategy</h2>
 
 Take the cloud name as input
 Prepare the metadata files based on cloud
@@ -465,6 +487,8 @@ Prepare a script file to push changes
 Docker instance
 Push of the docker instance to cloud
 
+![Technical solution design](img/deploment-strategy.png)
+
 
 Step   |Exception |Mitigation|
 -------|-------|-------|
@@ -473,7 +497,9 @@ Docker instance not working    |Show error message    |Fix the error
 Cloud push failed  |Show the error    |Make corrections to the metadata files
 Cloud app not starting    | |Ask the user for cloud logs for debugging
 
-**12   Monitoring**
+<h2>12.  Monitoring</h2>
+
+![Technical solution design](img/Monitoring.png)
 
 Phase 2
 No. Of predictions for individual classes
@@ -484,7 +510,8 @@ Time spent in training
 Failures
 
 
-**13   Logging**
+<h2>13   Logging</h2>
+
 Separate Folder for logs
 Logging of every step
 Entry to the methods
@@ -494,6 +521,8 @@ Model comparisons
 Training start and end
 Prediction start and end
 Achieve asynchronous logging
+
+![Technical solution design](img/Logging.png)
 
 **Phase 2:**
 Options for Logging in DB
@@ -523,7 +552,7 @@ ouptput|   A log file with messages
         str(self.date) + "/" + str(self.current_time) + "\t\t" + log_message +"\n")
 
 
-**13.3 Exceptions Scenarios Module Wise**
+<h2>13.3 Exceptions Scenarios Module Wise</h2>
 
 \
 \
