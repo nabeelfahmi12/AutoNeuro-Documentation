@@ -5,35 +5,32 @@ site_description: 'Documentation for AutoNeuro, the automated Machine Learning A
 
 nav:
     - Home: index.html
-    - GettingStarted:
-        - GettingStarted:
-            - GettingStarted: GettingStarted.md
-            - Introduction to AutoNeuro for engineers: Introduction to engineers.md
-            - Introduction to AutoNeuro for researchers: Introduction to researchers.md
-            - Developers guide: DevelopersGuide.md
-            - API Reference: API Reference.md
-            - How to use?: How to use.md
-            - Extending & Contributing: Extending&Contributions.md
-            - Code Examples: code.md
+    - About AutoNeuro:
+        - Getting Started:
+            - Introduction & Features : GettingStarted/GettingStarted.md
+            - Installation : GettingStarted/How to use.md
         - User's Guide:
-            - User's Guide : docs\User's Guide\UsersGuide.md
-            - Uploading Data : docs\User's Guide\Uploading Data.md
-            - Data Visualization : docs\User's Guide\Data Visualization.md
-            - Model Training : docs\User's Guide/ModelTraining.md
-            - Predictions : docs\User's Guide\Predictions.md
-            - Cloud deployment : docs\User's Guide\Clouddeployment.md
-            - Logging Help : docs\User's Guide\LoggingHelp.md
-            - Troubleshooting : docs\User's Guide\Troubleshooting.md
+            - User's Guide : User's Guide/UsersGuide.md
+            - Uploading Data : User's Guide/Uploading Data.md
+            - Data Visualization : User's Guide/Data Visualization.md
+            - Model Training : User's Guide/ModelTraining.md
+            - Predictions : User's Guide/Predictions.md
+            - Cloud deployment : User's Guide/Clouddeployment.md
+            - Logging Help : User's Guide/LoggingHelp.md
+            - Troubleshooting : User's Guide/Troubleshooting.md
+
+
         - For Devlelopers :
-            - For Devlelopers : For Devlelopers\ForDevelopers.md
-            - Methods for data upload : For Devlelopers\Methodsfordataupload.md
-            - Methods for preprocessing : For Devlelopers\Methodsforpreprocessing.md
-            - Methods for visualization : For Devlelopers\Methodsforvisualization.md
-            - Methods for Model building : For Devlelopers\MethodsforModelbuilding.md
-            - Methods for prediction : For Devlelopers\Methodsforprediction.md
-            - Methods for deployment : For Devlelopers\Methodsfordeployment.md
+            - For Devlelopers : ForDevelopers\API Reference.md
+            - Methods for data upload : ForDevelopers\Methodsfordataupload.md
+            - Methods for preprocessing : ForDevelopers\Methodsforpreprocessing.md
+            - Methods for visualization : ForDevelopers\Methodsforvisualization.md
+            - Methods for Model building : ForDevelopers\MethodsforModelbuilding.md
+            - Methods for prediction : ForDevelopers\Methodsforprediction.md
+            - Methods for deployment : ForDevelopers\Methodsfordeployment.md
+        - Application workflow : Applicationworkflow.md
         - Contributing to autoneuro:
-            - Contributing to autoneuro : Contributing to autoneuro/Contributingtoautoneuro.md
+            - Contributing to autoneuro : Contributingtoautoneuro\Contributingtoautoneuro.md
     - Pypi :
        - Pypi : "https://pypi.org/project/vowelcheck/"
     - Hardware Requirements :
@@ -46,16 +43,17 @@ theme:
     name: material
     palette:
         primary: Red
-        accent: green
+        accent: black
 
     logo: img/Ineuro.svg
     favicon: img/Ineuro.svg
     features:
       - tabs
     font:
-      text: "https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap"
-      code: "https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap"
-    css : css\new.css
+       text: "https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap"
+       code: "https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap"
+    css : css/new.css
+
 
 
 extra:
@@ -87,6 +85,9 @@ markdown_extensions:
         repo_url_shorthand: true
         user: Nabeel
         repo: mkdocs-material
+  - pymdownx.superfences
+  - pymdownx.tabbed
+
 
 
 
@@ -97,5 +98,4 @@ google_analytics:
 plugins:
   - search:
       prebuild_index: false
-
 
