@@ -21,8 +21,13 @@ AutoNeuro requires:
 ## User Installation
 If you already have a working installation of numpy and Pandas, the easiest way to install autoNeuro is using ```Pip```
 
-```pip install AutoNeuro```
-or ```conda```
+```
+pip install AutoNeuro
+```
+or
+```
+conda
+```
 
 ```conda install -c conda-forge AutoNeuro```
 The documentation includes more detailed [installation instructions](https://jhansi-27.github.io/AutoNeuro/api/)
