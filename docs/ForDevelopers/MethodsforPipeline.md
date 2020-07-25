@@ -1,21 +1,23 @@
-<h2>9.  Testing Modules</h2>
+## Model selection
 
-Divide the training data itself into  train and test sets
-Use test data to have tests run on the three best models
+1. Divide the training data itself into  train and test sets
+2. Use test data to have tests run on the three best models
 Give the test report
-a) R2 Score
-b) Adjusted R2 score
-c) MSE
-d) Accuracy
-e) Precision
-f) Recall
-g) F Beta
-h) Cluster Purity
-i) Silhouette score 
+##R2 score
+* a) R2 Score
 
-**Phase 2**
-AIC
-BIC
+* b) Adjusted R2 score
+
+* c) MSE
+
+* d) Accuracy
+
+* e) Precision
+* f) Recall
+* g) F Beta
+* h) Cluster Purity
+* i) Silhouette score 
+
 
 Note: Save the best model after validation is completed.
 
