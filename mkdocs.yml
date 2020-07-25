@@ -22,14 +22,16 @@ nav:
             - Workflow: ForDevelopers\Applicationworkflow.md
             - Data upload : ForDevelopers\Methodsfordataupload.md
             - Data profiling : ForDevelopers\Methodsfordataprofiler.md
-            - Data Visualization(Statistical Analysis) : ForDevelopers\MethodsforstatbasedEDA.md
-            - Data Visualization(Graphical Analysis): ForDevelopers\MethodsforgraphbasedEDA.md
+            - Data Visualization :
+                - Data Visualization(Statistical Analysis) : ForDevelopers\MethodsforstatbasedEDA.md
+                - Data Visualization(Graphical Analysis): ForDevelopers\MethodsforgraphbasedEDA.md
             - Data preprocessing : ForDevelopers\Methodsforpreprocessing.md
             - Model building : ForDevelopers\MethodsforModelbuilding.md
             - Model Testing & Selection : ForDevelopers\Methodsforprediction.md
             - Deployment : ForDevelopers\Methodsfordeployment.md
             - Logging : ForDevelopers\Methodsforlogging.md
-            - List of APIs : APIs.md
+            - List of APIs : ForDevelopers\APIs.md
+
             
         - Contributing to autoneuro:
             - Help us to improve : Contributingtoautoneuro\Contributingtoautoneuro.md
@@ -55,7 +57,6 @@ theme:
     font:
        text: "https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap"
        code: "https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap"
-    css : css/new.css
 
 
 
@@ -90,6 +91,13 @@ markdown_extensions:
         repo: mkdocs-material
   - pymdownx.superfences
   - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
 
 
 
@@ -102,3 +110,5 @@ plugins:
   - search:
       prebuild_index: false
 
+extra_css:
+  - css/new.css
