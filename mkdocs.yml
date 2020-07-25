@@ -18,18 +18,22 @@ nav:
             - Logging Help : User's Guide\LoggingHelp.md
             - Troubleshooting : User's Guide\Troubleshooting.md
 
-
         - For Devlelopers :
-            - For Devlelopers : ForDevelopers\API Reference.md
-            - Methods for data upload : ForDevelopers\Methodsfordataupload.md
-            - Methods for preprocessing : ForDevelopers\Methodsforpreprocessing.md
-            - Methods for visualization : ForDevelopers\Methodsforvisualization.md
-            - Methods for Model building : ForDevelopers\MethodsforModelbuilding.md
-            - Methods for prediction : ForDevelopers\Methodsforprediction.md
-            - Methods for deployment : ForDevelopers\Methodsfordeployment.md
-        - Application workflow : Applicationworkflow.md
+            - Workflow: ForDevelopers\Applicationworkflow.md
+            - Data upload : ForDevelopers\Methodsfordataupload.md
+            - Data profiling : ForDevelopers\Methodsfordataprofiler.md
+            - Data Visualization(Statistical Analysis) : ForDevelopers\MethodsforstatbasedEDA.md
+            - Data Visualization(Graphical Analysis): ForDevelopers\MethodsforgraphbasedEDA.md
+            - Data preprocessing : ForDevelopers\Methodsforpreprocessing.md
+            - Model building : ForDevelopers\MethodsforModelbuilding.md
+            - Model Testing & Selection : ForDevelopers\Methodsforprediction.md
+            - Deployment : ForDevelopers\Methodsfordeployment.md
+            - Logging : ForDevelopers\Methodsforlogging.md
+            - List of APIs : APIs.md
+            
         - Contributing to autoneuro:
-            - Contributing to autoneuro : Contributingtoautoneuro\Contributingtoautoneuro.md
+            - Help us to improve : Contributingtoautoneuro\Contributingtoautoneuro.md
+            
     - Pypi :
        - Pypi : "https://pypi.org/project/vowelcheck/"
     - Hardware Requirements :
