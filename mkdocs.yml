@@ -31,8 +31,13 @@ nav:
             - Deployment : ForDevelopers\Methodsfordeployment.md
             - Logging : ForDevelopers\Methodsforlogging.md
             - List of APIs : 
-                - Data Upload : ForDevelopers\API_upload.md
-                - Data Preprocess : ForDevelopers\API_preprocess.md
+                - Data Upload : ForDevelopers\Api\API_upload.md
+                - Data Preprocess : ForDevelopers\Api\API_preprocess.md
+                - Data Visualization : ForDevelopers\Api\visualization.md
+                - Regression : ForDevelopers\Api\Regression.md
+                - Classification : ForDevelopers\Api\classification.md
+                - Data Logger : ForDevelopers\Api\logger.md
+                - Data File : ForDevelopers\Api\file_methods.md
             
         - Contributing to autoneuro:
             - Help us improve : Contributingtoautoneuro\Contributingtoautoneuro.md
@@ -111,5 +116,3 @@ plugins:
   - search:
       prebuild_index: false
 
-extra_css:
-  - css/new.css
