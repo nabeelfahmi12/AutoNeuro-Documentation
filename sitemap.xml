@@ -80,7 +80,31 @@
      <lastmod>2020-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://Autoneuro.io/ForDevelopers/APIs/</loc>
+     <loc>https://Autoneuro.io/ForDevelopers/Api/API_upload/</loc>
+     <lastmod>2020-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://Autoneuro.io/ForDevelopers/Api/API_preprocess/</loc>
+     <lastmod>2020-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://Autoneuro.io/ForDevelopers/Api/visualization/</loc>
+     <lastmod>2020-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://Autoneuro.io/ForDevelopers/Api/Regression/</loc>
+     <lastmod>2020-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://Autoneuro.io/ForDevelopers/Api/classification/</loc>
+     <lastmod>2020-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://Autoneuro.io/ForDevelopers/Api/logger/</loc>
+     <lastmod>2020-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://Autoneuro.io/ForDevelopers/Api/file_methods/</loc>
      <lastmod>2020-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
