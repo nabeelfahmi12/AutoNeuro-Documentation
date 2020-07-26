@@ -1,11 +1,16 @@
+Once the pandas dataframe is given, using data visualization methods we will get corresponding data in the form of graph.
+
 
 ![](../img/TSD-3.png)
 
 ## Correlation Heatmaps
 
+![Sample heatmap](../img/heatmap.png)
+
 
 ## Check for balance/imbalance
 
+![](../img/balanced.jpg)
 
 
 
@@ -19,8 +24,8 @@ Method Name    |read_data_from_csv    |
 | |    output |A pandas Dataframe
 | |On Exception|   Write the exception in the log file. Raise an exception with the appropriate error message
 
-## Exceptions Scenarios Module Wise
 
+## Exceptions Scenarios Module Wise
 
 Step   |Exception|    Mitigation|
 |------|------|---------|
