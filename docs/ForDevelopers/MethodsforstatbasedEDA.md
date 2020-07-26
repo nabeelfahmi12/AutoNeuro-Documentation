@@ -32,7 +32,6 @@ The weight of evidence tells the predictive power of an independent variable in 
 An F-test is any statistical test in which the test statistic has an F-distribution under the null hypothesis. It is most often used when comparing statistical models that have been fitted to a data set, in order to identify the model that best fits the population from which the data were sampled.
          
 
-
  
 ## Exceptions Scenarios 
 
