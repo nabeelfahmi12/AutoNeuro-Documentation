@@ -44,12 +44,12 @@ Class Name |DataPreprocessor| |
 | |Input Parameter Description	|file_name: name of the file to be read. 
 | | |header: Row number(s) to be used as column names
 | | |names : array-like, optional
-    | | |List of column names to use. If file contains no header row, then you should explicitly pass ``header=None``.
+   | | |List of column names to use. If file contains no header row, then you should explicitly pass ``header=None``.
 | | |Use_cols:  To load a subset of columns
 | | |Separator: Delimiter to use
-
-| |output| A pandas Dataframe
+| |Output| A pandas Dataframe
 | |On Exception|   Write the exception in the log file. Raise an exception with the appropriate error message
+
 
 ## Exceptions Scenarios Module Wise
 
