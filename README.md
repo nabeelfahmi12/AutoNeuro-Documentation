@@ -5,7 +5,7 @@
 </div>
 
 AutoNeuro is an automated machine learning application built using python 3.7. It allows users to build production ready ML models with ease and efficiency.
-The project was started in 2020 as an internship project. See the [About us](https://jhansi-27.github.io/AutoNeuro/) page for a list of core contributors.
+The project was started in 2020 as an internship project. See the [About us](https://nabeelfahmi12.github.io/AutoNeuro-Documentation/GettingStarted/GettingStarted/) page for a list of core contributors.
 
 [![Python](https://img.shields.io/pypi/pyversions/tensorflow.svg?style=plastic)](https://badge.fury.io/py/tensorflow)
 [![PyPI](https://badge.fury.io/py/tensorflow.svg)](https://badge.fury.io/py/tensorflow)
@@ -34,16 +34,16 @@ The documentation includes more detailed [installation instructions](https://nab
 See the [change log]() for a history of notable changes to AutoNeuro.
 
 ## Development
-We welcome new contributors of all experience levels. The [Development Guide]() has detaled information about contributing code, documentation, tests, and more. 
+We welcome new contributors of all experience levels. The [Development Guide](https://nabeelfahmi12.github.io/AutoNeuro-Documentation/ForDevelopers/MethodsforModelbuilding/) has detaled information about contributing code, documentation, tests, and more. 
 We have included some basic information in README.
 
 ### Important links
-* Official source code repo:  https://jhansi-27.github.io/AutoNeuro/
+* Official source code repo: https://github.com/nabeelfahmi12/AutoNeuro-Documentation
 * Download releases: 
 
 ### Source code
 You can check the latest sources with the command:
-https://github.com/Jhansi-27/AutoNeuro.git
+https://github.com/nabeelfahmi12/AutoNeuro-Documentation.git
 
 ### Contributing
 
@@ -52,7 +52,7 @@ https://github.com/Jhansi-27/AutoNeuro.git
 [code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to
 uphold this code.**
 
-**We use [GitHub issues]( https://jhansi-27.github.io/AutoNeuro/) for
+**We use [GitHub issues](  https://github.com/nabeelfahmi12/AutoNeuro-Documentation) for
 tracking requests and bugs, please see
 [AutoNeuro Discuss](https://groups.google.com/a/tensorflow.org/forum/#!forum/discuss)
 for general questions and discussion.**
@@ -71,6 +71,7 @@ open-source software development:
 
 
 ## Help and Support
+https://nabeelfahmi12.github.io/AutoNeuro-Documentation/Contributingtoautoneuro/Contributingtoautoneuro/
 ### Documentation
 *   
 *   
