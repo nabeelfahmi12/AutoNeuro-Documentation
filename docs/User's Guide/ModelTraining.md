@@ -18,3 +18,6 @@
 - After selecting problem type, if you want to drop any unwanted columns then you can select that from the “Drop Unwanted Columns”. After dropping, the final step is to select the Target Column (dependent column which you want to predict) and click “Submit”.
 
 ![Select target column](../img/img7.png)
+
+
+![Select target column](../img/img9.png)
