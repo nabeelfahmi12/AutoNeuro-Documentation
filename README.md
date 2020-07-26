@@ -29,8 +29,7 @@ or ``` conda ```
 ```
 conda install -c conda-forge AutoNeuro
 ```
-The documentation includes more detailed [installation instructions](https://jhansi-27.github.io/AutoNeuro/api/)
-
+The documentation includes more detailed [installation instructions](https://nabeelfahmi12.github.io/AutoNeuro-Documentation/GettingStarted/How%20to%20use/)
 ## Change log
 See the [change log]() for a history of notable changes to AutoNeuro.
 
