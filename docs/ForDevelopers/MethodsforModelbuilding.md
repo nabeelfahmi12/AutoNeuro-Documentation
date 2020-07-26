@@ -7,6 +7,8 @@ It is a process that can be applied both across different types of models (e.g. 
 ![Technical solution design](../img/TSD-5.png)
 
 
+## Exception Scenarios
+
 |Step  |Exception |Mitigation|
 --------|----------|----|
 Wrong parameters passed to the methods|Handle Internally|Code should never give a wrong input|
@@ -20,13 +22,12 @@ Methods for hyper tuning all kinds of models.
 
 ## Regression:
 
-###Linear Regression
-
+### Linear Regression
 [Linear Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html) is a linear approach to modeling the relationship between a scalar response (or dependent variable) and one or more explanatory variables (or independent variables).
 KNN Regression Model
 
 
-### Polinomial Regression
+### Polynomial Regression
 [Polynomial Regression](https://orange3-educational.readthedocs.io/en/latest/widgets/polynomial-regression.html) is a form of regression analysis in which the relationship between the independent variable x and the dependent variable y is modelled as an nth degree polynomial in x
 
 
@@ -117,14 +118,15 @@ F1 Score combines Recall and Precision to one performance metric. F1 Score is th
 
 ### K-Means
 [k-means clustering](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) is a method of vector quantization, originally from signal processing, that aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean, serving as a prototype of the cluster.
+
 ### Hierarchial
 [Hierarchical clustering](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiYycr8wurqAhWKb30KHZljBVMQFjAHegQIERAG&url=https%3A%2F%2Fwww.displayr.com%2Fwhat-is-hierarchical-clustering%2F%23%3A~%3Atext%3DHierarchical%2520clustering%252C%2520also%2520known%2520as%2Cbroadly%2520similar%2520to%2520each%2520other.&usg=AOvVaw1kFR6cJki3xeeNC13EERxk), also known as hierarchical cluster analysis, is an algorithm that groups similar objects into groups called clusters. The endpoint is a set of clusters, where each cluster is distinct from each other cluster, and the objects within each cluster are broadly similar to each other.
+
 ### DBSCAN
 K-Means clustering may cluster loosely related observations together. Every observation becomes a part of some cluster eventually, even if the observations are scattered far away in the vector space. Since clusters depend on the mean value of cluster elements, each data point plays a role in forming the clusters. A slight change in data points might affect the clustering outcome. This problem is greatly reduced in [DBSCAN](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html) due to the way clusters are formed. This is usually not a big problem unless we come across some odd shape data.
 
 
 What’s nice about DBSCAN is that you don’t have to specify the number of clusters to use it. All you need is a function to calculate the distance between values and some guidance for what amount of distance is considered “close”. DBSCAN also produces more reasonable results than k-means across a variety of different distributions
-
 
 
 ![Technical solution design](../img/TSD-6.png)
