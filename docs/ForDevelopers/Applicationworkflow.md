@@ -2,7 +2,6 @@
 ![Application Workflow](../img/auto.png)
 
 
-
 ## Exception Scenarios 
 
 Step	|Exception|	Mitigation|
