@@ -41,7 +41,7 @@ We welcome new contributors of all experience levels. The [Development Guide](ht
 We have included some basic information in README.
 
 ### Important links
-* Official source code repo: https://github.com/nabeelfahmi12/AutoNeuro-Documentation
+* Official source code repo: https://github.com/viratsagar/Autoneuro
 * Download releases: 
 * Issue Tracker:
 
@@ -65,14 +65,22 @@ complies with our guidelines: https://nabeelfahmi12.github.io/AutoNeuro-Document
 
 ## Help and Support
 https://nabeelfahmi12.github.io/AutoNeuro-Documentation/Contributingtoautoneuro/Contributingtoautoneuro/
-### Documentation
-*   
-*   
-*
-### Communication
-*
-*
-## Citation
-## License
 
+### Documentation
+* HTML documentation (stable release): https://scikit-learn.org
+* HTML documentation (development version): https://scikit-learn.org/dev/
+* FAQ: https://scikit-learn.org/stable/faq.html
+
+### Communication
+* Mailing list: https://mail.python.org/mailman/listinfo/scikit-learn
+* IRC channel: #scikit-learn at webchat.freenode.net
+* Gitter: https://gitter.im/scikit-learn/scikit-learn
+* Twitter: https://twitter.com/scikit_learn
+* Stack Overflow: https://stackoverflow.com/questions/tagged/scikit-learn
+* Website: https://scikit-learn.org
+
+## Citation
+If you use scikit-learn in a scientific publication, we would appreciate citations: 
+
+## License
 [AutoNeuro License 2.0](LICENSE)
