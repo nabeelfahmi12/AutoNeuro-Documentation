@@ -38,13 +38,9 @@ ouptput|   A log file with messages
 
 <h2>13.3 Exceptions Scenarios Module Wise</h2>
 
-\
-\
-\
-\
-\
-\
-\
-\
-\
-
+Step	|Exception	|Mitigation|
+-------|---------|------|
+Wrong Cloud credentials|	Show error message	|The user enters the correct data|
+Docker instance not working	|Show error message	|Fix the error
+Cloud push failed|	Show the error	|Make corrections to the metadata files
+Cloud app not starting	|	|Ask the user for cloud logs for debugging| 
