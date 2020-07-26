@@ -1,14 +1,13 @@
-<h1> AutoNeuro</h1>
+[![Python](https://img.shields.io/pypi/pyversions/tensorflow.svg?style=plastic)](https://badge.fury.io/py/tensorflow) [![PyPI](https://badge.fury.io/py/tensorflow.svg)](https://badge.fury.io/py/tensorflow)
 
-<div align="center">
-  <img src="https://2s7gjr373w3x22jf92z99mgm5w-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/Qeexo_auto_ML.png">
-</div>
+<h1> <center>AutoNeuro</center></h1>
 
 AutoNeuro is an automated machine learning application built using python 3.7. It allows users to build production ready ML models with ease and efficiency.
 The project was started in 2020 as an internship project. See the [About us](https://nabeelfahmi12.github.io/AutoNeuro-Documentation/GettingStarted/GettingStarted/) page for a list of core contributors.
 
-[![Python](https://img.shields.io/pypi/pyversions/tensorflow.svg?style=plastic)](https://badge.fury.io/py/tensorflow)
-[![PyPI](https://badge.fury.io/py/tensorflow.svg)](https://badge.fury.io/py/tensorflow)
+website: https://nabeelfahmi12.github.io/AutoNeuro-Documentation/
+
+
 ## Installation
 
 ### Dependencies
