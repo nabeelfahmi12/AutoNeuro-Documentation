@@ -1,5 +1,5 @@
 
-<h2> Deployment Strategy</h2>
+## Deployment Strategy
 
 Take the cloud name as input
 Prepare the metadata files based on cloud
