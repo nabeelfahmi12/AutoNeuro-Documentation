@@ -1,7 +1,7 @@
 #  Testing Modules
 
 
-    _It Divide the training data itself into  train and test sets Use test data to have tests run on the three best models Give the test report_:
+ It Divide the training data itself into  train and test sets Use test data to have tests run on the three best models Give the test report_:
     
     
      - R2 Score
