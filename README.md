@@ -2,6 +2,10 @@
 
 <h1> <center>AutoNeuro</center></h1>
 
+<div align="center">
+  <img src="https://2s7gjr373w3x22jf92z99mgm5w-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/Qeexo_auto_ML.png">
+</div>
+
 AutoNeuro is an automated machine learning application built using python 3.7. It allows users to build production ready ML models with ease and efficiency.
 The project was started in 2020 as an internship project. See the [About us](https://nabeelfahmi12.github.io/AutoNeuro-Documentation/GettingStarted/GettingStarted/) page for more information.
 
@@ -48,8 +52,7 @@ git clone https://github.com/nabeelfahmi12/AutoNeuro-Documentaion.git
 ```
 ### Contributing
 To learn more about making a contribution to scikit-learn, please see our
-[Contributing guide](https://nabeelfahmi12.github.io/AutoNeuroDocumentation/Contributingtoautoneuro/Contributingtoautoneuro/).
-mg.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
+[Contributing guide](https://nabeelfahmi12.github.io/AutoNeuroDocumentation/Contributingtoautoneuro/Contributingtoautoneuro/)
 
 ### Testing
 After installation, you can launch the test suite from outside the source directory (you will need to have pytest >= 5.0.1 installed):
