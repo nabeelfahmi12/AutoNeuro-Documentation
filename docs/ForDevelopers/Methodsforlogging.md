@@ -36,7 +36,7 @@ ouptput|   A log file with messages
         str(self.date) + "/" + str(self.current_time) + "\t\t" + log_message +"\n")
 
 
-<h2>13.3 Exceptions Scenarios Module Wise</h2>
+## Exceptions Scenarios Module Wise
 
 Step	|Exception	|Mitigation|
 -------|---------|------|
