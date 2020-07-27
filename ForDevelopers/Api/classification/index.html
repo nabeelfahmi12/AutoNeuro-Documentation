@@ -766,9 +766,388 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#by-subclassing-the-model-class-in-that-case-you-should-define-your-layers-in-init-and-you-should-implement-the-models-forward-pass-in-classifier" class="md-nav__link">
-    By subclassing the Model class: in that case, you should define your layers in init and you should implement the model's forward pass in classifier.
+  <a href="#random_forest_classifier" class="md-nav__link">
+    Random_forest_classifier
   </a>
+  
+    <nav class="md-nav" aria-label="Random_forest_classifier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fitting-the-model-randomforestclassifier" class="md-nav__link">
+    Fitting the Model ( RandomForestClassifier)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-name-get_tuned_xgboost_classifier" class="md-nav__link">
+    Method Name: get_tuned_xgboost_classifier
+  </a>
+  
+    <nav class="md-nav" aria-label="Method Name: get_tuned_xgboost_classifier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#booster-parameters" class="md-nav__link">
+    Booster Parameters
+  </a>
+  
+    <nav class="md-nav" aria-label="Booster Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fitting-the-model-x_train-y_train-xgboost_classifier" class="md-nav__link">
+    Fitting the Model  [x_train, y_train( xgboost_classifier)]
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-name-get_tuned_knn_classifier" class="md-nav__link">
+    Method Name: get_tuned_knn_classifier
+  </a>
+  
+    <nav class="md-nav" aria-label="Method Name: get_tuned_knn_classifier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#patameters" class="md-nav__link">
+    Patameters
+  </a>
+  
+    <nav class="md-nav" aria-label="Patameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-name-get_best_model" class="md-nav__link">
+    Method Name: get_best_model
+  </a>
+  
+    <nav class="md-nav" aria-label="Method Name: get_best_model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-best-model-for-random-forest" class="md-nav__link">
+    create best model for Random Forest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-best-model-for-xgboost" class="md-nav__link">
+    create best model for XGBoost
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-name-generate_model_report" class="md-nav__link">
+    Method Name: generate_model_report
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-name-get_tuned_random_forest_classifier" class="md-nav__link">
+    Method Name: get_tuned_random_forest_classifier
+  </a>
+  
+    <nav class="md-nav" aria-label="Method Name: get_tuned_random_forest_classifier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    Example
+  </a>
+  
+    <nav class="md-nav" aria-label="Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fitting-the-model-randomforestclassifier_1" class="md-nav__link">
+    Fitting the Model ( RandomForestClassifier)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-name-get_tuned_xgboost_classifier_1" class="md-nav__link">
+    Method Name: get_tuned_xgboost_classifier
+  </a>
+  
+    <nav class="md-nav" aria-label="Method Name: get_tuned_xgboost_classifier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#booster-parameters_1" class="md-nav__link">
+    Booster Parameters
+  </a>
+  
+    <nav class="md-nav" aria-label="Booster Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fitting-the-model-x_train-y_train-xgboost_classifier_1" class="md-nav__link">
+    Fitting the Model  [x_train, y_train( xgboost_classifier)]
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-name-get_tuned_knn_classifier_1" class="md-nav__link">
+    Method Name: get_tuned_knn_classifier
+  </a>
+  
+    <nav class="md-nav" aria-label="Method Name: get_tuned_knn_classifier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#patameters_1" class="md-nav__link">
+    Patameters
+  </a>
+  
+    <nav class="md-nav" aria-label="Patameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_2" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-name-get_best_model_1" class="md-nav__link">
+    Method Name: get_best_model
+  </a>
+  
+    <nav class="md-nav" aria-label="Method Name: get_best_model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-best-model-for-random-forest_1" class="md-nav__link">
+    create best model for Random Forest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-best-model-for-xgboost_1" class="md-nav__link">
+    create best model for XGBoost
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-name-generate_model_report_1" class="md-nav__link">
+    Method Name: generate_model_report
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-classificationmodeltuner" class="md-nav__link">
+    class ClassificationModelTuner():
+  </a>
+  
+    <nav class="md-nav" aria-label="class ClassificationModelTuner():">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_3" class="md-nav__link">
+    Example
+  </a>
+  
+    <nav class="md-nav" aria-label="Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fitting-the-model-randomforestclassifier_2" class="md-nav__link">
+    Fitting the Model ( RandomForestClassifier)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-name-get_tuned_xgboost_classifier_2" class="md-nav__link">
+    Method Name: get_tuned_xgboost_classifier
+  </a>
+  
+    <nav class="md-nav" aria-label="Method Name: get_tuned_xgboost_classifier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#booster-parameters_2" class="md-nav__link">
+    Booster Parameters
+  </a>
+  
+    <nav class="md-nav" aria-label="Booster Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fitting-the-model-x_train-y_train-xgboost_classifier_2" class="md-nav__link">
+    Fitting the Model  [x_train, y_train( xgboost_classifier)]
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-name-get_tuned_knn_classifier_2" class="md-nav__link">
+    Method Name: get_tuned_knn_classifier
+  </a>
+  
+    <nav class="md-nav" aria-label="Method Name: get_tuned_knn_classifier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#patameters_2" class="md-nav__link">
+    Patameters
+  </a>
+  
+    <nav class="md-nav" aria-label="Patameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_4" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-name-get_best_model_2" class="md-nav__link">
+    Method Name: get_best_model
+  </a>
+  
+    <nav class="md-nav" aria-label="Method Name: get_best_model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-best-model-for-random-forest_2" class="md-nav__link">
+    create best model for Random Forest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-best-model-for-xgboost_2" class="md-nav__link">
+    create best model for XGBoost
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-name-generate_model_report_2" class="md-nav__link">
+    Method Name: generate_model_report
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -799,6 +1178,18 @@
   <li class="md-nav__item">
     <a href="../file_methods/" title="Data File" class="md-nav__link">
       Data File
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../API_predict/" title="Predict" class="md-nav__link">
+      Predict
     </a>
   </li>
 
@@ -1012,9 +1403,388 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#by-subclassing-the-model-class-in-that-case-you-should-define-your-layers-in-init-and-you-should-implement-the-models-forward-pass-in-classifier" class="md-nav__link">
-    By subclassing the Model class: in that case, you should define your layers in init and you should implement the model's forward pass in classifier.
+  <a href="#random_forest_classifier" class="md-nav__link">
+    Random_forest_classifier
   </a>
+  
+    <nav class="md-nav" aria-label="Random_forest_classifier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fitting-the-model-randomforestclassifier" class="md-nav__link">
+    Fitting the Model ( RandomForestClassifier)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-name-get_tuned_xgboost_classifier" class="md-nav__link">
+    Method Name: get_tuned_xgboost_classifier
+  </a>
+  
+    <nav class="md-nav" aria-label="Method Name: get_tuned_xgboost_classifier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#booster-parameters" class="md-nav__link">
+    Booster Parameters
+  </a>
+  
+    <nav class="md-nav" aria-label="Booster Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fitting-the-model-x_train-y_train-xgboost_classifier" class="md-nav__link">
+    Fitting the Model  [x_train, y_train( xgboost_classifier)]
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-name-get_tuned_knn_classifier" class="md-nav__link">
+    Method Name: get_tuned_knn_classifier
+  </a>
+  
+    <nav class="md-nav" aria-label="Method Name: get_tuned_knn_classifier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#patameters" class="md-nav__link">
+    Patameters
+  </a>
+  
+    <nav class="md-nav" aria-label="Patameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-name-get_best_model" class="md-nav__link">
+    Method Name: get_best_model
+  </a>
+  
+    <nav class="md-nav" aria-label="Method Name: get_best_model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-best-model-for-random-forest" class="md-nav__link">
+    create best model for Random Forest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-best-model-for-xgboost" class="md-nav__link">
+    create best model for XGBoost
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-name-generate_model_report" class="md-nav__link">
+    Method Name: generate_model_report
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-name-get_tuned_random_forest_classifier" class="md-nav__link">
+    Method Name: get_tuned_random_forest_classifier
+  </a>
+  
+    <nav class="md-nav" aria-label="Method Name: get_tuned_random_forest_classifier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    Example
+  </a>
+  
+    <nav class="md-nav" aria-label="Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fitting-the-model-randomforestclassifier_1" class="md-nav__link">
+    Fitting the Model ( RandomForestClassifier)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-name-get_tuned_xgboost_classifier_1" class="md-nav__link">
+    Method Name: get_tuned_xgboost_classifier
+  </a>
+  
+    <nav class="md-nav" aria-label="Method Name: get_tuned_xgboost_classifier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#booster-parameters_1" class="md-nav__link">
+    Booster Parameters
+  </a>
+  
+    <nav class="md-nav" aria-label="Booster Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fitting-the-model-x_train-y_train-xgboost_classifier_1" class="md-nav__link">
+    Fitting the Model  [x_train, y_train( xgboost_classifier)]
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-name-get_tuned_knn_classifier_1" class="md-nav__link">
+    Method Name: get_tuned_knn_classifier
+  </a>
+  
+    <nav class="md-nav" aria-label="Method Name: get_tuned_knn_classifier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#patameters_1" class="md-nav__link">
+    Patameters
+  </a>
+  
+    <nav class="md-nav" aria-label="Patameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_2" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-name-get_best_model_1" class="md-nav__link">
+    Method Name: get_best_model
+  </a>
+  
+    <nav class="md-nav" aria-label="Method Name: get_best_model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-best-model-for-random-forest_1" class="md-nav__link">
+    create best model for Random Forest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-best-model-for-xgboost_1" class="md-nav__link">
+    create best model for XGBoost
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-name-generate_model_report_1" class="md-nav__link">
+    Method Name: generate_model_report
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-classificationmodeltuner" class="md-nav__link">
+    class ClassificationModelTuner():
+  </a>
+  
+    <nav class="md-nav" aria-label="class ClassificationModelTuner():">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_3" class="md-nav__link">
+    Example
+  </a>
+  
+    <nav class="md-nav" aria-label="Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fitting-the-model-randomforestclassifier_2" class="md-nav__link">
+    Fitting the Model ( RandomForestClassifier)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-name-get_tuned_xgboost_classifier_2" class="md-nav__link">
+    Method Name: get_tuned_xgboost_classifier
+  </a>
+  
+    <nav class="md-nav" aria-label="Method Name: get_tuned_xgboost_classifier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#booster-parameters_2" class="md-nav__link">
+    Booster Parameters
+  </a>
+  
+    <nav class="md-nav" aria-label="Booster Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fitting-the-model-x_train-y_train-xgboost_classifier_2" class="md-nav__link">
+    Fitting the Model  [x_train, y_train( xgboost_classifier)]
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-name-get_tuned_knn_classifier_2" class="md-nav__link">
+    Method Name: get_tuned_knn_classifier
+  </a>
+  
+    <nav class="md-nav" aria-label="Method Name: get_tuned_knn_classifier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#patameters_2" class="md-nav__link">
+    Patameters
+  </a>
+  
+    <nav class="md-nav" aria-label="Patameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_4" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-name-get_best_model_2" class="md-nav__link">
+    Method Name: get_best_model
+  </a>
+  
+    <nav class="md-nav" aria-label="Method Name: get_best_model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-best-model-for-random-forest_2" class="md-nav__link">
+    create best model for Random Forest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-best-model-for-xgboost_2" class="md-nav__link">
+    create best model for XGBoost
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-name-generate_model_report_2" class="md-nav__link">
+    Method Name: generate_model_report
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1039,11 +1809,7 @@
                 
                 
                 <h1 id="classification-model">Classification Model<a class="headerlink" href="#classification-model" title="Permanent link">&para;</a></h1>
-<h4 id="by-subclassing-the-model-class-in-that-case-you-should-define-your-layers-in-init-and-you-should-implement-the-models-forward-pass-in-classifier">By subclassing the Model class: in that case, you should define your layers in <strong>init</strong> and you should implement the model's forward pass in classifier.<a class="headerlink" href="#by-subclassing-the-model-class-in-that-case-you-should-define-your-layers-in-init-and-you-should-implement-the-models-forward-pass-in-classifier" title="Permanent link">&para;</a></h4>
-<h1 id="classification-model_1">Classification Model<a class="headerlink" href="#classification-model_1" title="Permanent link">&para;</a></h1>
-<h4 id="by-subclassing-the-model-class-in-that-case-you-should-define-your-layers-in-init-and-you-should-implement-the-models-forward-pass-in-classifier_1">By subclassing the Model class: in that case, you should define your layers in <strong>init</strong> and you should implement the model's forward pass in classifier.<a class="headerlink" href="#by-subclassing-the-model-class-in-that-case-you-should-define-your-layers-in-init-and-you-should-implement-the-models-forward-pass-in-classifier_1" title="Permanent link">&para;</a></h4>
-<h1 id="classification-model_2">Classification Model<a class="headerlink" href="#classification-model_2" title="Permanent link">&para;</a></h1>
-<h4 id="by-subclassing-the-model-class-in-that-case-you-should-define-your-layers-in-init-and-you-should-implement-the-models-forward-pass-in-classifier_2">By subclassing the Model class: in that case, you should define your layers in <strong>init</strong> and you should implement the model's forward pass in classifier.<a class="headerlink" href="#by-subclassing-the-model-class-in-that-case-you-should-define-your-layers-in-init-and-you-should-implement-the-models-forward-pass-in-classifier_2" title="Permanent link">&para;</a></h4>
+<p><b> By subclassing the Model class: in that case, you should define your layers in <strong>init</strong> and you should implement the model's forward pass in classifier.</b></p>
 <div class="highlight"><pre><span></span><code><span class="c1">## class ClassificationModelTuner():</span>
 
 <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -1052,15 +1818,14 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">file_operation</span> <span class="o">=</span> <span class="n">FileOperation</span><span class="p">()</span>
 </code></pre></div>
 
-<h3 id="method-name-get_tuned_random_forest_classifier">Method Name: get_tuned_random_forest_classifier<a class="headerlink" href="#method-name-get_tuned_random_forest_classifier" title="Permanent link">&para;</a></h3>
+<h2 id="random_forest_classifier">Random_forest_classifier<a class="headerlink" href="#random_forest_classifier" title="Permanent link">&para;</a></h2>
+<p><b> Description: This method will be used to build RandomForestClassifier model</p>
+<p>Input Description: It takes x_train and y_train data for training the model.</p>
+<p>Output:  It return Optimized RandomForestClassifier model.</p>
+<p>A random forest is a meta estimator that fits a number of decision tree classifiers on various sub-samples of the dataset and uses averaging to improve the predictive accuracy and control over-fitting. The sub-sample size is controlled with the max_samples parameter if bootstrap=True (default), otherwise the whole dataset is used to build each tree. </b></p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_tuned_random_forest_classifier</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">):</span>
 </code></pre></div>
 
-<p>Description: This method will be used to build RandomForestClassifier model</p>
-<p>Input Description: It takes x_train and y_train data for training the model.</p>
-<p>Output:  It return Optimized RandomForestClassifier model.</p>
-<p>A random forest is a meta estimator that fits a number of decision tree classifiers on various sub-samples of the dataset and uses averaging to improve the predictive accuracy and control over-fitting. The sub-sample size is controlled with the max_samples parameter if bootstrap=True (default), otherwise the whole dataset is used to build each tree.</p>
-<h4 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="bp">self</span><span class="o">.</span><span class="n">rf_parameters</span> <span class="o">=</span> <span class="p">{</span>
                 <span class="s1">&#39;max_depth&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="kc">None</span><span class="p">],</span>
                 <span class="s1">&#39;n_estimators&#39;</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">50</span><span class="p">),</span>
@@ -1122,7 +1887,7 @@ Description: This method will be used to build XGBoost Classifier model</p>
                                          <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></div>
 
-<h5 id="example_1">Example<a class="headerlink" href="#example_1" title="Permanent link">&para;</a></h5>
+<h5 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code> <span class="n">knn_parameters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;n_neighbors&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">250</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">350</span><span class="p">],</span>
                               <span class="s1">&#39;weights&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;uniform&#39;</span><span class="p">,</span> <span class="s1">&#39;distance&#39;</span><span class="p">],</span>
                               <span class="s1">&#39;algorithm&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;ball_tree&#39;</span><span class="p">,</span> <span class="s1">&#39;kd_tree&#39;</span><span class="p">],</span>
@@ -1163,7 +1928,7 @@ Description: This method will be used to build XGBoost Classifier model</p>
         <span class="bp">self</span><span class="o">.</span><span class="n">logger_object</span> <span class="o">=</span> <span class="n">AppLogger</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">file_operation</span> <span class="o">=</span> <span class="n">FileOperation</span><span class="p">()</span>
 </code></pre></div></p>
-<h3 id="method-name-get_tuned_random_forest_classifier_1">Method Name: get_tuned_random_forest_classifier<a class="headerlink" href="#method-name-get_tuned_random_forest_classifier_1" title="Permanent link">&para;</a></h3>
+<h3 id="method-name-get_tuned_random_forest_classifier">Method Name: get_tuned_random_forest_classifier<a class="headerlink" href="#method-name-get_tuned_random_forest_classifier" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_tuned_random_forest_classifier</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">):</span>
 </code></pre></div>
 
@@ -1171,7 +1936,7 @@ Description: This method will be used to build XGBoost Classifier model</p>
 <p>Input Description: It takes x_train and y_train data for training the model.</p>
 <p>Output:  It return Optimized RandomForestClassifier model.</p>
 <p>A random forest is a meta estimator that fits a number of decision tree classifiers on various sub-samples of the dataset and uses averaging to improve the predictive accuracy and control over-fitting. The sub-sample size is controlled with the max_samples parameter if bootstrap=True (default), otherwise the whole dataset is used to build each tree.</p>
-<h4 id="example_2">Example<a class="headerlink" href="#example_2" title="Permanent link">&para;</a></h4>
+<h4 id="example_1">Example<a class="headerlink" href="#example_1" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="bp">self</span><span class="o">.</span><span class="n">rf_parameters</span> <span class="o">=</span> <span class="p">{</span>
                 <span class="s1">&#39;max_depth&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="kc">None</span><span class="p">],</span>
                 <span class="s1">&#39;n_estimators&#39;</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">50</span><span class="p">),</span>
@@ -1233,7 +1998,7 @@ Description: This method will be used to build XGBoost Classifier model</p>
                                          <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></div>
 
-<h5 id="example_3">Example<a class="headerlink" href="#example_3" title="Permanent link">&para;</a></h5>
+<h5 id="example_2">Example<a class="headerlink" href="#example_2" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code> <span class="n">knn_parameters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;n_neighbors&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">250</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">350</span><span class="p">],</span>
                               <span class="s1">&#39;weights&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;uniform&#39;</span><span class="p">,</span> <span class="s1">&#39;distance&#39;</span><span class="p">],</span>
                               <span class="s1">&#39;algorithm&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;ball_tree&#39;</span><span class="p">,</span> <span class="s1">&#39;kd_tree&#39;</span><span class="p">],</span>
@@ -1282,7 +2047,7 @@ Description: This method will be used to build RandomForestClassifier model</p>
 <p>Input Description: It takes x_train and y_train data for training the model.</p>
 <p>Output:  It return Optimized RandomForestClassifier model.</p>
 <p>A random forest is a meta estimator that fits a number of decision tree classifiers on various sub-samples of the dataset and uses averaging to improve the predictive accuracy and control over-fitting. The sub-sample size is controlled with the max_samples parameter if bootstrap=True (default), otherwise the whole dataset is used to build each tree.</p>
-<h4 id="example_4">Example<a class="headerlink" href="#example_4" title="Permanent link">&para;</a></h4>
+<h4 id="example_3">Example<a class="headerlink" href="#example_3" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="bp">self</span><span class="o">.</span><span class="n">rf_parameters</span> <span class="o">=</span> <span class="p">{</span>
                 <span class="s1">&#39;max_depth&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="kc">None</span><span class="p">],</span>
                 <span class="s1">&#39;n_estimators&#39;</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">50</span><span class="p">),</span>
@@ -1344,7 +2109,7 @@ Description: This method will be used to build XGBoost Classifier model</p>
                                          <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></div>
 
-<h5 id="example_5">Example<a class="headerlink" href="#example_5" title="Permanent link">&para;</a></h5>
+<h5 id="example_4">Example<a class="headerlink" href="#example_4" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code> <span class="n">knn_parameters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;n_neighbors&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">250</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">350</span><span class="p">],</span>
                               <span class="s1">&#39;weights&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;uniform&#39;</span><span class="p">,</span> <span class="s1">&#39;distance&#39;</span><span class="p">],</span>
                               <span class="s1">&#39;algorithm&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;ball_tree&#39;</span><span class="p">,</span> <span class="s1">&#39;kd_tree&#39;</span><span class="p">],</span>
