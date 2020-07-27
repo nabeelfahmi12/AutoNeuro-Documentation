@@ -38,6 +38,7 @@ nav:
                 - Classification : ForDevelopers\Api\classification.md
                 - Data Logger : ForDevelopers\Api\logger.md
                 - Data File : ForDevelopers\Api\file_methods.md
+                - Predict : ForDevelopers\Api\API_predict.md
             
         - Contributing to autoneuro:
             - Help us improve : Contributingtoautoneuro\Contributingtoautoneuro.md
