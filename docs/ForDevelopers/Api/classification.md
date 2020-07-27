@@ -1,14 +1,7 @@
-# Classification Model
-
-#### By subclassing the Model class: in that case, you should define your layers in __init__ and you should implement the model's forward pass in classifier.
 
 # Classification Model
 
-#### By subclassing the Model class: in that case, you should define your layers in __init__ and you should implement the model's forward pass in classifier.
-
-# Classification Model
-
-#### By subclassing the Model class: in that case, you should define your layers in __init__ and you should implement the model's forward pass in classifier.
+<b> By subclassing the Model class: in that case, you should define your layers in __init__ and you should implement the model's forward pass in classifier.</b>
 
 ```python
 ## class ClassificationModelTuner():
@@ -19,21 +12,22 @@ def __init__(self):
         self.file_operation = FileOperation()
 ```
 
-### Method Name: get_tuned_random_forest_classifier
+## Random_forest_classifier
 
-```python
-def get_tuned_random_forest_classifier(self, x_train, y_train):
-```
-
-Description: This method will be used to build RandomForestClassifier model
+<b> Description: This method will be used to build RandomForestClassifier model
 
 Input Description: It takes x_train and y_train data for training the model.
 
 Output:  It return Optimized RandomForestClassifier model.
 
-A random forest is a meta estimator that fits a number of decision tree classifiers on various sub-samples of the dataset and uses averaging to improve the predictive accuracy and control over-fitting. The sub-sample size is controlled with the max_samples parameter if bootstrap=True (default), otherwise the whole dataset is used to build each tree.
+A random forest is a meta estimator that fits a number of decision tree classifiers on various sub-samples of the dataset and uses averaging to improve the predictive accuracy and control over-fitting. The sub-sample size is controlled with the max_samples parameter if bootstrap=True (default), otherwise the whole dataset is used to build each tree. </b>
 
-#### Example
+```python
+def get_tuned_random_forest_classifier(self, x_train, y_train):
+```
+
+
+
 ```python
 self.rf_parameters = {
                 'max_depth': [5, 10, 15, 20, 25, None],
