@@ -1,6 +1,7 @@
 site_name: AutoNeuro
 repo_url: https://github.com/nabeelfahmi12/AutoNeuro-Documentation.git
 site_url: https://Autoneuro.io/
+edit_uri: ""
 site_description: 'Documentation for AutoNeuro, the automated Machine Learning Application.'
 
 nav:
@@ -46,8 +47,6 @@ nav:
             
     - Pypi :
        - Pypi : "https://pypi.org/project/vowelcheck/"
-    - Hardware Requirements :
-      - Hardware Requirements :  "https://www.facebook.com/futureindatascience/"
     - About us :
       - About us : "https://ineuron.ai/"
 
