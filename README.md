@@ -83,4 +83,4 @@ https://nabeelfahmi12.github.io/AutoNeuro-Documentation/Contributingtoautoneuro/
 If you use scikit-learn in a scientific publication, we would appreciate citations: 
 
 ## License
-[AutoNeuro License 2.0](LICENSE)
+[AutoNeuro License](https://nabeelfahmi12.github.io/AutoNeuroDocumentation/License)
