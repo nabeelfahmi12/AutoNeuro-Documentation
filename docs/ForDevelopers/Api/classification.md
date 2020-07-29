@@ -3,14 +3,15 @@
 
 <b> By subclassing the Model class: in that case, you should define your layers in __init__ and you should implement the model's forward pass in classifier.</b>
 
-```python
+<script src="https://gist.github.com/nabeelfahmi12/9793ef83fafe54c7fa724b398cee1a47.js"></script>
+
 ## class ClassificationModelTuner():
 
 def __init__(self):
         self.file_object = open('logs/classificationModelsLogs.txt', 'a+')
         self.logger_object = AppLogger()
         self.file_operation = FileOperation()
-```
+
 
 ## Random_forest_classifier
 
@@ -22,34 +23,21 @@ Output:  It return Optimized RandomForestClassifier model.
 
 A random forest is a meta estimator that fits a number of decision tree classifiers on various sub-samples of the dataset and uses averaging to improve the predictive accuracy and control over-fitting. The sub-sample size is controlled with the max_samples parameter if bootstrap=True (default), otherwise the whole dataset is used to build each tree. </b>
 
-```python
-def get_tuned_random_forest_classifier(self, x_train, y_train):
-```
+<script src="https://gist.github.com/nabeelfahmi12/03a22721b583fa4f483376672dcb144e.js"></script>
 
 
 
-```python
-self.rf_parameters = {
-                'max_depth': [5, 10, 15, 20, 25, None],
-                'n_estimators': range(10, 500, 50),
-                'criterion': ['gini', 'entropy'],
-                'bootstrap': [True, False],
-                'min_samples_split': range(2, 10, 1),
-                'max_features': ['auto', 'log2'],
-                'min_samples_leaf': range(1, 10),
-                
-```
+<script src="https://gist.github.com/nabeelfahmi12/e16df4febc5c9b474f24a0aa73e00bf5.js"></script>
+
 ##### Fitting the Model ( RandomForestClassifier)
-```python
-self.model = RandomForestClassifier(n_jobs=-1)
-            self.model.fit(x_train, y_train)
-```
+
+<script src="https://gist.github.com/nabeelfahmi12/7f194a0dc068c2bb6d08d46fb6e3a89b.js"></script>
 
 
 ###  Method Name: get_tuned_xgboost_classifier
-```python
-def get_tuned_xgboost_classifier(self, x_train, y_train):
-```
+
+<script src="https://gist.github.com/nabeelfahmi12/40e76d3f06a8423ccc268b497320b02d.js"></script>
+
 Description: This method will be used to build XGBoost Classifier model
 
 Input Description: It takes x_train and y_train data for training the model.
@@ -58,15 +46,7 @@ Output:  It return Optimized XGBoost model.
 
 ####  Booster Parameters
 
-```python
-self.xg_parameters = {"n_estimators": [10, 50, 100, 200],
-                                  "learning_rate": [0.05, 0.10, 0.15, 0.20, 0.25, 0.30],
-                                  "max_depth": [3, 4, 5, 6, 8, 10, 12, 15, 20],
-                                  "min_child_weight": [1, 3, 5, 7],
-                                  "gamma": [0.0, 0.1, 0.2, 0.3, 0.4, 0.5],
-                                  "colsample_bytree": [0.3, 0.4, 0.5, 0.7]
-                                  }
-```
+<script src="https://gist.github.com/nabeelfahmi12/e771d96c037b4466c75505795172a943.js"></script>
 
 ##### Fitting the Model  [x_train, y_train( xgboost_classifier)]
 
@@ -76,9 +56,8 @@ self.xgboost_model.fit(x_train, y_train)
 ```
 
 ### Method Name: get_tuned_knn_classifier
-```python
-def get_tuned_knn_classifier(self, x_train, y_train):
-```
+
+<script src="https://gist.github.com/nabeelfahmi12/a516c8d028fd28b85ed9b274c693ad8a.js"></script>
 
 Description: This method will be used to build KNearestNeighbour Classifier model
 
@@ -97,27 +76,11 @@ Booster Parameters: Guide the individual booster (tree/regression) at each step
 
 Learning Task Parameters: Guide the optimization performed
 
-```python
-rmdsearch = RandomizedSearchCV(KNeighborsClassifier(), knn_parameters, n_iter=10, cv=10, random_state=22,
-                                           n_jobs=-1)
-            rmdsearch.fit(x_train, y_train)
-            hyperparameters = rmdsearch.best_params_
-            n_neighbors, weights, algorithm, leaf_size = hyperparameters['n_neighbors'], hyperparameters['weights'], \
-                                                         hyperparameters['algorithm'], hyperparameters['leaf_size']
-            model = KNeighborsClassifier(n_neighbors=n_neighbors,
-                                         weights=weights,
-                                         algorithm=algorithm,
-                                         leaf_size=leaf_size,
-                                         n_jobs=-1)
-```
+<script src="https://gist.github.com/nabeelfahmi12/570c295f71503dd56150eaccd205aab9.js"></script>
+
 ##### Example
-```python
- knn_parameters = {'n_neighbors': [50, 100, 200, 250, 300, 350],
-                              'weights': ['uniform', 'distance'],
-                              'algorithm': ['ball_tree', 'kd_tree'],
-                              'leaf_size': [20, 25, 30, 35, 40, 45, 50],
-                              }
-```
+
+<script src="https://gist.github.com/nabeelfahmi12/4aedbb464c4542af193ec71d80d3bed5.js"></script>
 
 ### Method Name: get_best_model
 ```python

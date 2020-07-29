@@ -117,3 +117,5 @@ plugins:
   - search:
       prebuild_index: false
 
+extra_css:
+  - css/main.css

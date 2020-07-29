@@ -2,76 +2,35 @@
 This class shall  be used for obtaining the data from the source for training.
 ### read_data_from_csv
 
-```python   
-   def read_data_from_csv(self, file_name):
-
-            self.csv = pd.read_csv(file_name, sep=',', header='infer', names=None, usecols=None)
-            return self.csv
-        
-```
+<script src="https://gist.github.com/nabeelfahmi12/c6fcd453d1eb0002485913863bcd88d2.js"></script>
 
 ### read_data_from_excel
-```python
-    def read_data_from_excel(self, file_name):
-           excel = pd.read_excel(file_name, sheet_name=0, header=0, names=None, index_col=None, usecols=None, )
-            return pd.DataFrame(excel)
-```
+
+<script src="https://gist.github.com/nabeelfahmi12/2ac478c42462a48a839fe8a35b9c89df.js"></script>
 
 ### read data from json
-``` python
-    def read_data_from_json(self, file_name):
-            json = pd.read_json(self, file_name)
-            return pd.DataFrame(json)
-```
+
+<script src="https://gist.github.com/nabeelfahmi12/0a9bebcb1c3c992ff9acb053f7e55526.js"></script>
 
 ### read_data_from_html
-    def read_data_from_html(self, file_name):
-            html = pd.read_html(self, file_name)
-            data = html[0]
-            return pd.DataFrame(data)
+
+<script src="https://gist.github.com/nabeelfahmi12/78600f5d18e6e050a871ff9e53ff118a.js"></script>
+
 ### connnect_to_sql_db
 
-```python
-    def Connect_to_sqldb(self):
-        connection = sqlalchemy.create_engine("mysql+pymysql://root:*****/*****")
-        return connection
-```
+<script src="https://gist.github.com/nabeelfahmi12/b6c284454b2d7efb330549620a1460cc.js"></script>
+
 ### read_data_from_sqldb
-```python
-    def read_data_from_sqldb(self,table_name):
-        con = Connect_to_sqldb()
-        sql_data = pd.read_sql_table(table_name,con)
-        return pd.DataFrame(sql_data)
-```
+
+<script src="https://gist.github.com/nabeelfahmi12/a2050a1fe427f16a0ec275c2a400b906.js"></script>
+
 ### read_data_from_mongdb
-```python
-    def read_data_from_mongdb(self,file_name):
-        clinet= pymongo.MongoClinet("mongodb://127.0.0.1:27017/")
-        mydb = client["file_name"]
-        return pd.DataFrame(mydb)
-```
+
+<script src="https://gist.github.com/nabeelfahmi12/582a33d67d9e8e669ac0beaebeb9d2eb.js"></script>
+
 ### get_data
-``` python
-    def get_data(self, file_type, file):
-            if file_type == 'CSV':
-                data = self.read_data_from_csv(file)
 
-            if file_type == 'xlsx':
-                data = self.read_data_from_excel(file)
-
-            if file_type == 'html':
-                data = self.read_data_from_html(file)
-
-            if file_type == 'json':
-                data = self.read_data_from_json(file)
-
-            return data
-        except Exception as e:
-            self.logger.log(self.log_file_name,
-                            'Exception occured in get_data method of the Data_Getter class. Exception message: ' + str(
-                                e))
-            raise Exception()
-```
+<script src="https://gist.github.com/nabeelfahmi12/71414d321f58c3269b95304635cb867b.js"></script>
 
 
 
