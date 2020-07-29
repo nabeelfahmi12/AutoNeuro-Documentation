@@ -31,7 +31,7 @@ nav:
             - Model Testing & Selection : ForDevelopers\Methodsforprediction.md
             - Deployment : ForDevelopers\Methodsfordeployment.md
             - Logging : ForDevelopers\Methodsforlogging.md
-            - List of APIs : 
+            - Methods : 
                 - Data Upload : ForDevelopers\Api\API_upload.md
                 - Data Preprocess : ForDevelopers\Api\API_preprocess.md
                 - Data Visualization : ForDevelopers\Api\visualization.md
