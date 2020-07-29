@@ -43,6 +43,8 @@
     
     
     
+      <link rel="stylesheet" href="../../../css/main.css">
+    
     
       
         
@@ -649,17 +651,17 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3-10" type="checkbox" id="nav-2-3-10" checked>
     
     <label class="md-nav__link" for="nav-2-3-10">
-      List of APIs
+      Methods
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
       </span>
     </label>
-    <nav class="md-nav" aria-label="List of APIs" data-md-level="3">
+    <nav class="md-nav" aria-label="Methods" data-md-level="3">
       <label class="md-nav__title" for="nav-2-3-10">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
         </span>
-        List of APIs
+        Methods
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -751,6 +753,13 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#class-classificationmodeltuner" class="md-nav__link">
+    class ClassificationModelTuner():
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#random_forest_classifier" class="md-nav__link">
@@ -1006,7 +1015,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#class-classificationmodeltuner" class="md-nav__link">
+  <a href="#class-classificationmodeltuner_1" class="md-nav__link">
     class ClassificationModelTuner():
   </a>
   
@@ -1360,6 +1369,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#class-classificationmodeltuner" class="md-nav__link">
+    class ClassificationModelTuner():
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#random_forest_classifier" class="md-nav__link">
     Random_forest_classifier
   </a>
@@ -1613,7 +1629,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#class-classificationmodeltuner" class="md-nav__link">
+  <a href="#class-classificationmodeltuner_1" class="md-nav__link">
     class ClassificationModelTuner():
   </a>
   
@@ -1763,52 +1779,33 @@
                 
                 <h1 id="classification-model">Classification Model<a class="headerlink" href="#classification-model" title="Permanent link">&para;</a></h1>
 <p><b> By subclassing the Model class: in that case, you should define your layers in <strong>init</strong> and you should implement the model's forward pass in classifier.</b></p>
-<div class="highlight"><pre><span></span><code><span class="c1">## class ClassificationModelTuner():</span>
+<script src="https://gist.github.com/nabeelfahmi12/9793ef83fafe54c7fa724b398cee1a47.js"></script>
 
-<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">file_object</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;logs/classificationModelsLogs.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;a+&#39;</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">logger_object</span> <span class="o">=</span> <span class="n">AppLogger</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">file_operation</span> <span class="o">=</span> <span class="n">FileOperation</span><span class="p">()</span>
-</code></pre></div>
-
+<h2 id="class-classificationmodeltuner">class ClassificationModelTuner():<a class="headerlink" href="#class-classificationmodeltuner" title="Permanent link">&para;</a></h2>
+<p>def <strong>init</strong>(self):
+        self.file_object = open('logs/classificationModelsLogs.txt', 'a+')
+        self.logger_object = AppLogger()
+        self.file_operation = FileOperation()</p>
 <h2 id="random_forest_classifier">Random_forest_classifier<a class="headerlink" href="#random_forest_classifier" title="Permanent link">&para;</a></h2>
 <p><b> Description: This method will be used to build RandomForestClassifier model</p>
 <p>Input Description: It takes x_train and y_train data for training the model.</p>
 <p>Output:  It return Optimized RandomForestClassifier model.</p>
 <p>A random forest is a meta estimator that fits a number of decision tree classifiers on various sub-samples of the dataset and uses averaging to improve the predictive accuracy and control over-fitting. The sub-sample size is controlled with the max_samples parameter if bootstrap=True (default), otherwise the whole dataset is used to build each tree. </b></p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_tuned_random_forest_classifier</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">):</span>
-</code></pre></div>
+<script src="https://gist.github.com/nabeelfahmi12/03a22721b583fa4f483376672dcb144e.js"></script>
 
-<div class="highlight"><pre><span></span><code><span class="bp">self</span><span class="o">.</span><span class="n">rf_parameters</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="s1">&#39;max_depth&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="kc">None</span><span class="p">],</span>
-                <span class="s1">&#39;n_estimators&#39;</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">50</span><span class="p">),</span>
-                <span class="s1">&#39;criterion&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;gini&#39;</span><span class="p">,</span> <span class="s1">&#39;entropy&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;bootstrap&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>
-                <span class="s1">&#39;min_samples_split&#39;</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
-                <span class="s1">&#39;max_features&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="s1">&#39;log2&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;min_samples_leaf&#39;</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span>
-</code></pre></div>
+<script src="https://gist.github.com/nabeelfahmi12/e16df4febc5c9b474f24a0aa73e00bf5.js"></script>
 
 <h5 id="fitting-the-model-randomforestclassifier">Fitting the Model ( RandomForestClassifier)<a class="headerlink" href="#fitting-the-model-randomforestclassifier" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-</code></pre></div>
+<script src="https://gist.github.com/nabeelfahmi12/7f194a0dc068c2bb6d08d46fb6e3a89b.js"></script>
 
 <h3 id="method-name-get_tuned_xgboost_classifier">Method Name: get_tuned_xgboost_classifier<a class="headerlink" href="#method-name-get_tuned_xgboost_classifier" title="Permanent link">&para;</a></h3>
-<p><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_tuned_xgboost_classifier</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">):</span>
-</code></pre></div>
-Description: This method will be used to build XGBoost Classifier model</p>
+<script src="https://gist.github.com/nabeelfahmi12/40e76d3f06a8423ccc268b497320b02d.js"></script>
+
+<p>Description: This method will be used to build XGBoost Classifier model</p>
 <p>Input Description: It takes x_train and y_train data for training the model.</p>
 <p>Output:  It return Optimized XGBoost model.</p>
 <h4 id="booster-parameters">Booster Parameters<a class="headerlink" href="#booster-parameters" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code><span class="bp">self</span><span class="o">.</span><span class="n">xg_parameters</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;n_estimators&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">],</span>
-                                  <span class="s2">&quot;learning_rate&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.10</span><span class="p">,</span> <span class="mf">0.15</span><span class="p">,</span> <span class="mf">0.20</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.30</span><span class="p">],</span>
-                                  <span class="s2">&quot;max_depth&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">20</span><span class="p">],</span>
-                                  <span class="s2">&quot;min_child_weight&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span>
-                                  <span class="s2">&quot;gamma&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">],</span>
-                                  <span class="s2">&quot;colsample_bytree&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">]</span>
-                                  <span class="p">}</span>
-</code></pre></div>
+<script src="https://gist.github.com/nabeelfahmi12/e771d96c037b4466c75505795172a943.js"></script>
 
 <h5 id="fitting-the-model-x_train-y_train-xgboost_classifier">Fitting the Model  [x_train, y_train( xgboost_classifier)]<a class="headerlink" href="#fitting-the-model-x_train-y_train-xgboost_classifier" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="bp">self</span><span class="o">.</span><span class="n">xgboost_model</span> <span class="o">=</span> <span class="n">XGBClassifier</span><span class="p">(</span><span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
@@ -1816,8 +1813,7 @@ Description: This method will be used to build XGBoost Classifier model</p>
 </code></pre></div>
 
 <h3 id="method-name-get_tuned_knn_classifier">Method Name: get_tuned_knn_classifier<a class="headerlink" href="#method-name-get_tuned_knn_classifier" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_tuned_knn_classifier</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">):</span>
-</code></pre></div>
+<script src="https://gist.github.com/nabeelfahmi12/a516c8d028fd28b85ed9b274c693ad8a.js"></script>
 
 <p>Description: This method will be used to build KNearestNeighbour Classifier model</p>
 <p>Input Description: It takes x_train and y_train data for training the model.</p>
@@ -1827,26 +1823,10 @@ Description: This method will be used to build XGBoost Classifier model</p>
 <p>General Parameters: Guide the overall functioning</p>
 <p>Booster Parameters: Guide the individual booster (tree/regression) at each step</p>
 <p>Learning Task Parameters: Guide the optimization performed</p>
-<div class="highlight"><pre><span></span><code><span class="n">rmdsearch</span> <span class="o">=</span> <span class="n">RandomizedSearchCV</span><span class="p">(</span><span class="n">KNeighborsClassifier</span><span class="p">(),</span> <span class="n">knn_parameters</span><span class="p">,</span> <span class="n">n_iter</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">22</span><span class="p">,</span>
-                                           <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
-            <span class="n">rmdsearch</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-            <span class="n">hyperparameters</span> <span class="o">=</span> <span class="n">rmdsearch</span><span class="o">.</span><span class="n">best_params_</span>
-            <span class="n">n_neighbors</span><span class="p">,</span> <span class="n">weights</span><span class="p">,</span> <span class="n">algorithm</span><span class="p">,</span> <span class="n">leaf_size</span> <span class="o">=</span> <span class="n">hyperparameters</span><span class="p">[</span><span class="s1">&#39;n_neighbors&#39;</span><span class="p">],</span> <span class="n">hyperparameters</span><span class="p">[</span><span class="s1">&#39;weights&#39;</span><span class="p">],</span> \
-                                                         <span class="n">hyperparameters</span><span class="p">[</span><span class="s1">&#39;algorithm&#39;</span><span class="p">],</span> <span class="n">hyperparameters</span><span class="p">[</span><span class="s1">&#39;leaf_size&#39;</span><span class="p">]</span>
-            <span class="n">model</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="n">n_neighbors</span><span class="p">,</span>
-                                         <span class="n">weights</span><span class="o">=</span><span class="n">weights</span><span class="p">,</span>
-                                         <span class="n">algorithm</span><span class="o">=</span><span class="n">algorithm</span><span class="p">,</span>
-                                         <span class="n">leaf_size</span><span class="o">=</span><span class="n">leaf_size</span><span class="p">,</span>
-                                         <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
-</code></pre></div>
+<script src="https://gist.github.com/nabeelfahmi12/570c295f71503dd56150eaccd205aab9.js"></script>
 
 <h5 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code> <span class="n">knn_parameters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;n_neighbors&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">250</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">350</span><span class="p">],</span>
-                              <span class="s1">&#39;weights&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;uniform&#39;</span><span class="p">,</span> <span class="s1">&#39;distance&#39;</span><span class="p">],</span>
-                              <span class="s1">&#39;algorithm&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;ball_tree&#39;</span><span class="p">,</span> <span class="s1">&#39;kd_tree&#39;</span><span class="p">],</span>
-                              <span class="s1">&#39;leaf_size&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">50</span><span class="p">],</span>
-                              <span class="p">}</span>
-</code></pre></div>
+<script src="https://gist.github.com/nabeelfahmi12/4aedbb464c4542af193ec71d80d3bed5.js"></script>
 
 <h3 id="method-name-get_best_model">Method Name: get_best_model<a class="headerlink" href="#method-name-get_best_model" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code> <span class="k">def</span> <span class="nf">get_best_model</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
@@ -1986,7 +1966,7 @@ Description: This method will be used to build XGBoost Classifier model</p>
 <p>Description: Find out the Model which has the best AUC score.</p>
 <p>Output: The best model name and the model object
 python</p>
-<h2 id="class-classificationmodeltuner">class ClassificationModelTuner():<a class="headerlink" href="#class-classificationmodeltuner" title="Permanent link">&para;</a></h2>
+<h2 id="class-classificationmodeltuner_1">class ClassificationModelTuner():<a class="headerlink" href="#class-classificationmodeltuner_1" title="Permanent link">&para;</a></h2>
 <p>def <strong>init</strong>(self):
         self.file_object = open('logs/classificationModelsLogs.txt', 'a+')
         self.logger_object = AppLogger()

@@ -43,6 +43,8 @@
     
     
     
+      <link rel="stylesheet" href="../../../css/main.css">
+    
     
       
         
@@ -649,17 +651,17 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3-10" type="checkbox" id="nav-2-3-10" checked>
     
     <label class="md-nav__link" for="nav-2-3-10">
-      List of APIs
+      Methods
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
       </span>
     </label>
-    <nav class="md-nav" aria-label="List of APIs" data-md-level="3">
+    <nav class="md-nav" aria-label="Methods" data-md-level="3">
       <label class="md-nav__title" for="nav-2-3-10">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
         </span>
-        List of APIs
+        Methods
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -1126,73 +1128,28 @@
                 <h2 id="datagetter">DataGetter<a class="headerlink" href="#datagetter" title="Permanent link">&para;</a></h2>
 <p>This class shall  be used for obtaining the data from the source for training.</p>
 <h3 id="read_data_from_csv">read_data_from_csv<a class="headerlink" href="#read_data_from_csv" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>   <span class="k">def</span> <span class="nf">read_data_from_csv</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_name</span><span class="p">):</span>
-
-            <span class="bp">self</span><span class="o">.</span><span class="n">csv</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="s1">&#39;infer&#39;</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">usecols</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">csv</span>
-</code></pre></div>
+<script src="https://gist.github.com/nabeelfahmi12/c6fcd453d1eb0002485913863bcd88d2.js"></script>
 
 <h3 id="read_data_from_excel">read_data_from_excel<a class="headerlink" href="#read_data_from_excel" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>    <span class="k">def</span> <span class="nf">read_data_from_excel</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_name</span><span class="p">):</span>
-           <span class="n">excel</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">usecols</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="p">)</span>
-            <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">excel</span><span class="p">)</span>
-</code></pre></div>
+<script src="https://gist.github.com/nabeelfahmi12/2ac478c42462a48a839fe8a35b9c89df.js"></script>
 
 <h3 id="read-data-from-json">read data from json<a class="headerlink" href="#read-data-from-json" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>    <span class="k">def</span> <span class="nf">read_data_from_json</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_name</span><span class="p">):</span>
-            <span class="n">json</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_name</span><span class="p">)</span>
-            <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">json</span><span class="p">)</span>
-</code></pre></div>
+<script src="https://gist.github.com/nabeelfahmi12/0a9bebcb1c3c992ff9acb053f7e55526.js"></script>
 
 <h3 id="read_data_from_html">read_data_from_html<a class="headerlink" href="#read_data_from_html" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="err">def read_data_from_html(self, file_name):</span>
-<span class="err">        html = pd.read_html(self, file_name)</span>
-<span class="err">        data = html[0]</span>
-<span class="err">        return pd.DataFrame(data)</span>
-</code></pre></div>
-
+<script src="https://gist.github.com/nabeelfahmi12/78600f5d18e6e050a871ff9e53ff118a.js"></script>
 
 <h3 id="connnect_to_sql_db">connnect_to_sql_db<a class="headerlink" href="#connnect_to_sql_db" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>    <span class="k">def</span> <span class="nf">Connect_to_sqldb</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">connection</span> <span class="o">=</span> <span class="n">sqlalchemy</span><span class="o">.</span><span class="n">create_engine</span><span class="p">(</span><span class="s2">&quot;mysql+pymysql://root:*****/*****&quot;</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">connection</span>
-</code></pre></div>
+<script src="https://gist.github.com/nabeelfahmi12/b6c284454b2d7efb330549620a1460cc.js"></script>
 
 <h3 id="read_data_from_sqldb">read_data_from_sqldb<a class="headerlink" href="#read_data_from_sqldb" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>    <span class="k">def</span> <span class="nf">read_data_from_sqldb</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">table_name</span><span class="p">):</span>
-        <span class="n">con</span> <span class="o">=</span> <span class="n">Connect_to_sqldb</span><span class="p">()</span>
-        <span class="n">sql_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_table</span><span class="p">(</span><span class="n">table_name</span><span class="p">,</span><span class="n">con</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">sql_data</span><span class="p">)</span>
-</code></pre></div>
+<script src="https://gist.github.com/nabeelfahmi12/a2050a1fe427f16a0ec275c2a400b906.js"></script>
 
 <h3 id="read_data_from_mongdb">read_data_from_mongdb<a class="headerlink" href="#read_data_from_mongdb" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>    <span class="k">def</span> <span class="nf">read_data_from_mongdb</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">file_name</span><span class="p">):</span>
-        <span class="n">clinet</span><span class="o">=</span> <span class="n">pymongo</span><span class="o">.</span><span class="n">MongoClinet</span><span class="p">(</span><span class="s2">&quot;mongodb://127.0.0.1:27017/&quot;</span><span class="p">)</span>
-        <span class="n">mydb</span> <span class="o">=</span> <span class="n">client</span><span class="p">[</span><span class="s2">&quot;file_name&quot;</span><span class="p">]</span>
-        <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">mydb</span><span class="p">)</span>
-</code></pre></div>
+<script src="https://gist.github.com/nabeelfahmi12/582a33d67d9e8e669ac0beaebeb9d2eb.js"></script>
 
 <h3 id="get_data">get_data<a class="headerlink" href="#get_data" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>    <span class="k">def</span> <span class="nf">get_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_type</span><span class="p">,</span> <span class="n">file</span><span class="p">):</span>
-            <span class="k">if</span> <span class="n">file_type</span> <span class="o">==</span> <span class="s1">&#39;CSV&#39;</span><span class="p">:</span>
-                <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">read_data_from_csv</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
-
-            <span class="k">if</span> <span class="n">file_type</span> <span class="o">==</span> <span class="s1">&#39;xlsx&#39;</span><span class="p">:</span>
-                <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">read_data_from_excel</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
-
-            <span class="k">if</span> <span class="n">file_type</span> <span class="o">==</span> <span class="s1">&#39;html&#39;</span><span class="p">:</span>
-                <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">read_data_from_html</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
-
-            <span class="k">if</span> <span class="n">file_type</span> <span class="o">==</span> <span class="s1">&#39;json&#39;</span><span class="p">:</span>
-                <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">read_data_from_json</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
-
-            <span class="k">return</span> <span class="n">data</span>
-        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">log_file_name</span><span class="p">,</span>
-                            <span class="s1">&#39;Exception occured in get_data method of the Data_Getter class. Exception message: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span>
-                                <span class="n">e</span><span class="p">))</span>
-            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">()</span>
-</code></pre></div>
+<script src="https://gist.github.com/nabeelfahmi12/71414d321f58c3269b95304635cb867b.js"></script>
                 
               
               

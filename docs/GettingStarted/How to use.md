@@ -1,6 +1,7 @@
 # How to Get AutoNeuro?
 
 ## Installation
+
 <script src="https://gist.github.com/nabeelfahmi12/5f1f53e0ac857b316c210b21adfccac7.js"></script>
 
 ## Hardware Requirements
