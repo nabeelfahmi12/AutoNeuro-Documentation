@@ -31,7 +31,7 @@ nav:
             - Model Testing & Selection : ForDevelopers\Methodsforprediction.md
             - Deployment : ForDevelopers\Methodsfordeployment.md
             - Logging : ForDevelopers\Methodsforlogging.md
-            - Methods : 
+            - List of APIs :
                 - Data Upload : ForDevelopers\Api\API_upload.md
                 - Data Preprocess : ForDevelopers\Api\API_preprocess.md
                 - Data Visualization : ForDevelopers\Api\visualization.md
@@ -54,7 +54,7 @@ nav:
 theme:
     name: material
     palette:
-        primary: Red
+        primary: grey
         accent: black
 
     logo: img/Ineuro.svg
@@ -68,6 +68,7 @@ theme:
 
 
 extra:
+  manifest: 'manifest.webmanifest'
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Jhansi-27/Sample_Auto
@@ -119,3 +120,6 @@ plugins:
 
 extra_css:
   - css/main.css
+
+extra_javascript:
+  - js/scripts.js
