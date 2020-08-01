@@ -1,4 +1,4 @@
-![Flow chart](../img/stats_flowchart.jpg)
+![Flow chart](../img/statistical-test-flowchart.png)
 
 ## Technical solution 
 ![Technical solution design](../img/TSD-2.png)
