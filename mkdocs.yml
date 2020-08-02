@@ -31,7 +31,7 @@ nav:
             - Model Testing & Selection : ForDevelopers\Methodsforprediction.md
             - Deployment : ForDevelopers\Methodsfordeployment.md
             - Logging : ForDevelopers\Methodsforlogging.md
-            - List of APIs :
+            - Methods :
                 - Data Upload : ForDevelopers\Api\API_upload.md
                 - Data Preprocess : ForDevelopers\Api\API_preprocess.md
                 - Data Visualization : ForDevelopers\Api\visualization.md
@@ -53,8 +53,9 @@ nav:
 
 theme:
     name: material
+    custom_dir: 'docs/theme'
     palette:
-        primary: grey
+        primary: Red
         accent: black
 
     logo: img/Ineuro.svg
@@ -62,13 +63,12 @@ theme:
     features:
       - tabs
     font:
-       text: "https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap"
+       text: "https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@600&family=Poppins:wght@600&family=Raleway:wght@600&family=Sora:wght@700&display=swap"
        code: "https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap"
 
 
 
 extra:
-  manifest: 'manifest.webmanifest'
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Jhansi-27/Sample_Auto
@@ -90,13 +90,15 @@ markdown_extensions:
   - footnotes
   - meta
   - codehilite:
-      guess_lang: true
+      guess_lang: False
+      use_pygments: True
+      noclasses: True
+      pygments_style: monokai
   - toc:
       permalink: true
   - pymdownx.magiclink:
         repo_url_shorthand: true
         user: Nabeel
-        repo: mkdocs-material
   - pymdownx.superfences
   - pymdownx.tabbed
   - pymdownx.details
@@ -106,7 +108,8 @@ markdown_extensions:
       options:
         custom_icons:
           - overrides/.icons
-
+  - pymdownx.highlight:
+      use_pygments: true
 
 
 
@@ -120,6 +123,4 @@ plugins:
 
 extra_css:
   - css/main.css
-
-extra_javascript:
-  - js/scripts.js
+  - stylesheets/codehilite.css

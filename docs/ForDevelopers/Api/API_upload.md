@@ -1,36 +1,74 @@
 ## DataGetter
-This class shall  be used for obtaining the data from the source for training.
-### read_data_from_csv
 
-<script src="https://gist.github.com/nabeelfahmi12/c6fcd453d1eb0002485913863bcd88d2.js"></script>
+**This class shall  be used for obtaining the data from the source for training.**
 
-### read_data_from_excel
+### Read data from csv
 
-<script src="https://gist.github.com/nabeelfahmi12/2ac478c42462a48a839fe8a35b9c89df.js"></script>
+```python
+def read_data_from_csv(self, file_name):
+  self.csv = pd.read_csv(file_name, sep=',', header='infer', names=None, usecols=None)
+  return self.csv
+```
 
-### read data from json
+### Read data from Excel
+```python
+def read_data_from_excel(self, file_name):
+     excel = pd.read_excel(file_name, sheet_name=0, header=0, names=None, index_col=None, usecols=None, )
+      return pd.DataFrame(excel)
+```
 
-<script src="https://gist.github.com/nabeelfahmi12/0a9bebcb1c3c992ff9acb053f7e55526.js"></script>
+### Read data from Json
+```python
+def read_data_from_json(self, file_name):
+        json = pd.read_json(self, file_name)
+        return pd.DataFrame(json)
+```
 
-### read_data_from_html
+### Read data from Html
+```python
+def read_data_from_html(self, file_name):
+        html = pd.read_html(self, file_name)
+        data = html[0]
+        return pd.DataFrame(data)
+```
 
-<script src="https://gist.github.com/nabeelfahmi12/78600f5d18e6e050a871ff9e53ff118a.js"></script>
+### Connect to SqlDb
+```python
+def Connect_to_sqldb(self):
+    connection = sqlalchemy.create_engine("mysql+pymysql://root:*****/*****")
+    return connection
+```
 
-### connnect_to_sql_db
+### Read data from Mongdb
+```python
+def read_data_from_mongdb(self,file_name):
+    clinet= pymongo.MongoClinet("mongodb://127.0.0.1:27017/")
+    mydb = client["file_name"]
+    return pd.DataFrame(mydb)
+```
 
-<script src="https://gist.github.com/nabeelfahmi12/b6c284454b2d7efb330549620a1460cc.js"></script>
+### Get Data
 
-### read_data_from_sqldb
+```python
+def get_data(self, file_type, file):
+        if file_type == 'CSV':
+            data = self.read_data_from_csv(file)
 
-<script src="https://gist.github.com/nabeelfahmi12/a2050a1fe427f16a0ec275c2a400b906.js"></script>
+        if file_type == 'xlsx':
+            data = self.read_data_from_excel(file)
 
-### read_data_from_mongdb
+        if file_type == 'html':
+            data = self.read_data_from_html(file)
 
-<script src="https://gist.github.com/nabeelfahmi12/582a33d67d9e8e669ac0beaebeb9d2eb.js"></script>
+        if file_type == 'json':
+            data = self.read_data_from_json(file)
 
-### get_data
-
-<script src="https://gist.github.com/nabeelfahmi12/71414d321f58c3269b95304635cb867b.js"></script>
-
+        return data
+    except Exception as e:
+        self.logger.log(self.log_file_name,
+                        'Exception occured in get_data method of the Data_Getter class. Exception message: ' + str(
+                            e))
+        raise Exception()
+```
 
 

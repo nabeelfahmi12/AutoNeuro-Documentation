@@ -1,4 +1,4 @@
-# Data profiling
+# **_Data profiling_**
 
 **Data profiling** is the process of reviewing source data, understanding structure, content and interrelationships, and identifying potential for data projects.   
 

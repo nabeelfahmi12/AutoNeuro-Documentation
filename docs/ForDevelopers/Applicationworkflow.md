@@ -1,4 +1,4 @@
-# Application Workflow
+# _**Application Workflow**_
 ![Application Workflow](../img/auto.png)
 
 

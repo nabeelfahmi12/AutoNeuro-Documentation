@@ -1,44 +1,58 @@
 
 # Classification Model
 
-<b> By subclassing the Model class: in that case, you should define your layers in __init__ and you should implement the model's forward pass in classifier.</b>
+**By subclassing the Model class: in that case, you should define your layers in __init__ and you should implement the model's forward pass in classifier.**
 
-<script src="https://gist.github.com/nabeelfahmi12/9793ef83fafe54c7fa724b398cee1a47.js"></script>
 
-## class ClassificationModelTuner():
 
+## Class ClassificationModelTuner():
+
+```python
 def __init__(self):
         self.file_object = open('logs/classificationModelsLogs.txt', 'a+')
         self.logger_object = AppLogger()
         self.file_operation = FileOperation()
+
+```
 
 
 ## Random_forest_classifier
 
-<b> Description: This method will be used to build RandomForestClassifier model
+**Description: This method will be used to build RandomForestClassifier model**
 
 Input Description: It takes x_train and y_train data for training the model.
 
 Output:  It return Optimized RandomForestClassifier model.
 
-A random forest is a meta estimator that fits a number of decision tree classifiers on various sub-samples of the dataset and uses averaging to improve the predictive accuracy and control over-fitting. The sub-sample size is controlled with the max_samples parameter if bootstrap=True (default), otherwise the whole dataset is used to build each tree. </b>
+A random forest is a meta estimator that fits a number of decision tree classifiers on various sub-samples of the dataset and uses averaging to improve the predictive accuracy and control over-fitting. The sub-sample size is controlled with the max_samples parameter if bootstrap=True (default), otherwise the whole dataset is used to build each tree.
 
-<script src="https://gist.github.com/nabeelfahmi12/03a22721b583fa4f483376672dcb144e.js"></script>
-
-
-
-<script src="https://gist.github.com/nabeelfahmi12/e16df4febc5c9b474f24a0aa73e00bf5.js"></script>
+```python
+def get_tuned_random_forest_classifier(self, x_train, y_train):
+    self.rf_parameters = {
+                'max_depth': [5, 10, 15, 20, 25, None],
+                'n_estimators': range(10, 500, 50),
+                'criterion': ['gini', 'entropy'],
+                'bootstrap': [True, False],
+                'min_samples_split': range(2, 10, 1),
+                'max_features': ['auto', 'log2'],
+                'min_samples_leaf': range(1, 10),
+                }
+```
 
 ##### Fitting the Model ( RandomForestClassifier)
 
-<script src="https://gist.github.com/nabeelfahmi12/7f194a0dc068c2bb6d08d46fb6e3a89b.js"></script>
-
+```python
+self.model = RandomForestClassifier(n_jobs=-1)
+            self.model.fit(x_train, y_train)
+```
 
 ###  Method Name: get_tuned_xgboost_classifier
 
-<script src="https://gist.github.com/nabeelfahmi12/40e76d3f06a8423ccc268b497320b02d.js"></script>
+```python
+def get_tuned_xgboost_classifier(self, x_train, y_train):
+```
 
-Description: This method will be used to build XGBoost Classifier model
+**Description: This method will be used to build XGBoost Classifier model**
 
 Input Description: It takes x_train and y_train data for training the model.
 
@@ -46,8 +60,15 @@ Output:  It return Optimized XGBoost model.
 
 ####  Booster Parameters
 
-<script src="https://gist.github.com/nabeelfahmi12/e771d96c037b4466c75505795172a943.js"></script>
-
+```python
+self.xg_parameters = {"n_estimators": [10, 50, 100, 200],
+                                  "learning_rate": [0.05, 0.10, 0.15, 0.20, 0.25, 0.30],
+                                  "max_depth": [3, 4, 5, 6, 8, 10, 12, 15, 20],
+                                  "min_child_weight": [1, 3, 5, 7],
+                                  "gamma": [0.0, 0.1, 0.2, 0.3, 0.4, 0.5],
+                                  "colsample_bytree": [0.3, 0.4, 0.5, 0.7]
+                                  }
+```
 ##### Fitting the Model  [x_train, y_train( xgboost_classifier)]
 
 ```python
@@ -55,11 +76,15 @@ self.xgboost_model = XGBClassifier(n_jobs=-1)
 self.xgboost_model.fit(x_train, y_train)
 ```
 
+
+
 ### Method Name: get_tuned_knn_classifier
 
-<script src="https://gist.github.com/nabeelfahmi12/a516c8d028fd28b85ed9b274c693ad8a.js"></script>
+```python
+def get_tuned_knn_classifier(self, x_train, y_train):
+```
 
-Description: This method will be used to build KNearestNeighbour Classifier model
+**Description: This method will be used to build KNearestNeighbour Classifier model**
 
 Input Description: It takes x_train and y_train data for training the model.
 
@@ -68,7 +93,7 @@ Output:  It return Optimized KNearestNeighbourClassifier model.
 
 #### Patameters
 
-The overall parameters have been divided into 3 categories by XGBoost authors:
+**The overall parameters have been divided into 3 categories by XGBoost authors:**
 
 General Parameters: Guide the overall functioning
 
@@ -76,22 +101,41 @@ Booster Parameters: Guide the individual booster (tree/regression) at each step
 
 Learning Task Parameters: Guide the optimization performed
 
-<script src="https://gist.github.com/nabeelfahmi12/570c295f71503dd56150eaccd205aab9.js"></script>
+```python
+rmdsearch = RandomizedSearchCV(KNeighborsClassifier(), knn_parameters, n_iter=10, cv=10, random_state=22,
+                                           n_jobs=-1)
+            rmdsearch.fit(x_train, y_train)
+            hyperparameters = rmdsearch.best_params_
+            n_neighbors, weights, algorithm, leaf_size = hyperparameters['n_neighbors'], hyperparameters['weights'], \
+                                                         hyperparameters['algorithm'], hyperparameters['leaf_size']
+            model = KNeighborsClassifier(n_neighbors=n_neighbors,
+                                         weights=weights,
+                                         algorithm=algorithm,
+                                         leaf_size=leaf_size,
+                                         n_jobs=-1)
+```
 
 ##### Example
 
-<script src="https://gist.github.com/nabeelfahmi12/4aedbb464c4542af193ec71d80d3bed5.js"></script>
-
-### Method Name: get_best_model
 ```python
- def get_best_model(self, x, y):
+ knn_parameters = {'n_neighbors': [50, 100, 200, 250, 300, 350],
+                              'weights': ['uniform', 'distance'],
+                              'algorithm': ['ball_tree', 'kd_tree'],
+                              'leaf_size': [20, 25, 30, 35, 40, 45, 50],
+                              }
 ```
 
-Description: Find out the Model which has the best AUC score.
+### Method Name: get_best_model
+
+```python
+  def get_best_model(self, x, y):
+```
+
+**Description: Find out the Model which has the best AUC score.**
 
 Output: The best model name and the model object
 
-#### create best model for Random Forest
+#### Create best model for Random Forest
 
 prediction using the Random Forest Algorithm
 
@@ -116,7 +160,7 @@ self.prediction_xgboost = self.xgboost.predict(test_x)
 def generate_model_report(self, model_object, train_x, train_y, test_x, test_y, num_classes):
 ```
 
-Description: Find out the Model which has the best AUC score.
+**Description: Find out the Model which has the best AUC score.**
 
 Output: The best model name and the model object
 ```python
@@ -134,7 +178,7 @@ def __init__(self):
 def get_tuned_random_forest_classifier(self, x_train, y_train):
 ```
 
-Description: This method will be used to build RandomForestClassifier model
+**Description: This method will be used to build RandomForestClassifier model**
 
 Input Description: It takes x_train and y_train data for training the model.
 
@@ -165,7 +209,7 @@ self.model = RandomForestClassifier(n_jobs=-1)
 ```python
 def get_tuned_xgboost_classifier(self, x_train, y_train):
 ```
-Description: This method will be used to build XGBoost Classifier model
+**Description: This method will be used to build XGBoost Classifier model**
 
 Input Description: It takes x_train and y_train data for training the model.
 
@@ -195,7 +239,7 @@ self.xgboost_model.fit(x_train, y_train)
 def get_tuned_knn_classifier(self, x_train, y_train):
 ```
 
-Description: This method will be used to build KNearestNeighbour Classifier model
+**Description: This method will be used to build KNearestNeighbour Classifier model**
 
 Input Description: It takes x_train and y_train data for training the model.
 
@@ -204,7 +248,7 @@ Output:  It return Optimized KNearestNeighbourClassifier model.
 
 #### Patameters
 
-The overall parameters have been divided into 3 categories by XGBoost authors:
+**The overall parameters have been divided into 3 categories by XGBoost authors:**
 
 General Parameters: Guide the overall functioning
 
@@ -239,7 +283,7 @@ rmdsearch = RandomizedSearchCV(KNeighborsClassifier(), knn_parameters, n_iter=10
  def get_best_model(self, x, y):
 ```
 
-Description: Find out the Model which has the best AUC score.
+**Description: Find out the Model which has the best AUC score.**
 
 Output: The best model name and the model object
 
@@ -253,7 +297,7 @@ self.prediction_random_forest = self.random_forest.predict(
     test_x)
 ```
 
-####  create best model for XGBoost
+####  Create best model for XGBoost
 
 Predictions using the XGBoost Model
 
@@ -268,12 +312,13 @@ self.prediction_xgboost = self.xgboost.predict(test_x)
 def generate_model_report(self, model_object, train_x, train_y, test_x, test_y, num_classes):
 ```
 
-Description: Find out the Model which has the best AUC score.
+**Description: Find out the Model which has the best AUC score.**
 
 Output: The best model name and the model object
 python
-## class ClassificationModelTuner():
+## Class ClassificationModelTuner():
 
+```python
 def __init__(self):
         self.file_object = open('logs/classificationModelsLogs.txt', 'a+')
         self.logger_object = AppLogger()
@@ -285,7 +330,8 @@ def __init__(self):
 ```python
 def get_tuned_random_forest_classifier(self, x_train, y_train):
 ```
-Description: This method will be used to build RandomForestClassifier model
+
+**Description: This method will be used to build RandomForestClassifier model**
 
 Input Description: It takes x_train and y_train data for training the model.
 
@@ -306,6 +352,7 @@ self.rf_parameters = {
                 
 ```
 ##### Fitting the Model ( RandomForestClassifier)
+
 ```python
 self.model = RandomForestClassifier(n_jobs=-1)
             self.model.fit(x_train, y_train)
@@ -316,7 +363,8 @@ self.model = RandomForestClassifier(n_jobs=-1)
 ```python
 def get_tuned_xgboost_classifier(self, x_train, y_train):
 ```
-Description: This method will be used to build XGBoost Classifier model
+
+**Description: This method will be used to build XGBoost Classifier model**
 
 Input Description: It takes x_train and y_train data for training the model.
 
@@ -346,7 +394,7 @@ self.xgboost_model.fit(x_train, y_train)
 def get_tuned_knn_classifier(self, x_train, y_train):
 ```
 
-Description: This method will be used to build KNearestNeighbour Classifier model
+**Description: This method will be used to build KNearestNeighbour Classifier model**
 
 Input Description: It takes x_train and y_train data for training the model.
 
@@ -355,7 +403,7 @@ Output:  It return Optimized KNearestNeighbourClassifier model.
 
 #### Patameters
 
-The overall parameters have been divided into 3 categories by XGBoost authors:
+**The overall parameters have been divided into 3 categories by XGBoost authors:**
 
 General Parameters: Guide the overall functioning
 
@@ -377,6 +425,7 @@ rmdsearch = RandomizedSearchCV(KNeighborsClassifier(), knn_parameters, n_iter=10
                                          n_jobs=-1)
 ```
 ##### Example
+
 ```python
  knn_parameters = {'n_neighbors': [50, 100, 200, 250, 300, 350],
                               'weights': ['uniform', 'distance'],
@@ -385,7 +434,7 @@ rmdsearch = RandomizedSearchCV(KNeighborsClassifier(), knn_parameters, n_iter=10
                               }
 ```
 
-### Method Name: get_best_model
+### Method Name: Get best Model
 ```python
  def get_best_model(self, x, y):
 ```
@@ -394,9 +443,9 @@ Description: Find out the Model which has the best AUC score.
 
 Output: The best model name and the model object
 
-#### create best model for Random Forest
+#### Create best model for Random Forest
 
-prediction using the Random Forest Algorithm
+Prediction using the Random Forest Algorithm
 
 ```python
 self.random_forest = self.get_tuned_random_forest_classifier(train_x, train_y)
@@ -404,7 +453,7 @@ self.prediction_random_forest = self.random_forest.predict(
     test_x)
 ```
 
-####  create best model for XGBoost
+####  Create best model for XGBoost
 
 Predictions using the XGBoost Model
 
@@ -413,7 +462,7 @@ train_x, test_x, train_y, test_y = train_test_split(x, y)
 self.xgboost = self.get_tuned_xgboost_classifier(train_x, train_y)
 self.prediction_xgboost = self.xgboost.predict(test_x)
 ```
-### Method Name: generate_model_report
+### Method Name: generate model report
 
 ```python
 def generate_model_report(self, model_object, train_x, train_y, test_x, test_y, num_classes):

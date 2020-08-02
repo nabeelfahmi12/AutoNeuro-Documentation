@@ -1,9 +1,14 @@
-# How to Get AutoNeuro?
+# **_How to Get AutoNeuro_**?
 
 ## Installation
 
-<script src="https://gist.github.com/nabeelfahmi12/5f1f53e0ac857b316c210b21adfccac7.js"></script>
+```python
+# Requires the latest pip
+pip install --upgrade pip
 
+# Current stable release for CPU and GPU
+pip install autoneuro
+```
 ## Hardware Requirements
 
 #### Model training

@@ -12,7 +12,7 @@ from sklearn.neighbors import KNeighborsRegressor
 import logger
 ```
 
-#### By subclassing the Model class: in that case, you should define your layers in __init__ and you should implement the model's forward pass in regressor.
+**By subclassing the Model class: in that case, you should define your layers in __init__ and you should implement the model's forward pass in regressor.**
 
 # class RegressionModelTuner():
 
@@ -31,7 +31,7 @@ def __init__(self):
 def get_tuned_knn_model(self, x_train, y_train):
 ```
 
-Description : This method will be used to get the hypertuned KNN Model
+**Description : This method will be used to get the hypertuned KNN Model**
 
 x_train : Feature Columns of Training DataSet
 
@@ -43,7 +43,7 @@ output : A hyper parameter tuned model object
 Let's set up a parameter grid that will be explored during the search. Note that you can use fewer parameters and fewer options for each parameter. Same goes for more parameter and more options if you want to be very thorough. Also, you can plug in any other ML method instead of XGBoost and search for its optimal parameters.
 
 ```python
-        knn_parameters = {'n_neighbors': [50, 100, 200, 250, 300, 350],
+knn_parameters = {'n_neighbors': [50, 100, 200, 250, 300, 350],
                               'weights': ['uniform', 'distance'],
                               'algorithm': ['ball_tree', 'kd_tree'],
                               'leaf_size': [20, 25, 30, 35, 40, 45, 50],
@@ -52,7 +52,7 @@ Let's set up a parameter grid that will be explored during the search. Note that
 
 ## Method Name: get_tuned_random_forest_classifier
 
-Description: This method will be used to build RandomForestRegressor model
+**Description: This method will be used to build RandomForestRegressor model**
 
 Input Description:
 
@@ -60,8 +60,8 @@ x_train : Feature Columns of Training DataSet
 
 y_train : Target Column of Training DataSet
 
-##### Let's try hyperparameter tuning on the all features data
-##### This first section is setting up the grid and importing the necessary modules and fitting X_train and y_train
+**Let's try hyperparameter tuning on the all features data**
+**This first section is setting up the grid and importing the necessary modules and fitting X_train and y_train**
 
 ```python
         self.model = RandomForestRegressor(n_estimators=n_estimators,
@@ -80,7 +80,7 @@ self.logger_object.log(self.file_object,
 ```
 ## Method Name: get_tuned_xgboost_model
 
-Description: This method will be used to build XGBoost Regressor model
+**Description: This method will be used to build XGBoost Regressor model**
 
 Input Description:
 
