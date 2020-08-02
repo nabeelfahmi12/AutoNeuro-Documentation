@@ -1,14 +1,7 @@
-# **_How to Get AutoNeuro_**?
+# **_Let’s get started:_**
 
-## Installation
+In this section we will install AutoNeuro in our system.We can install AutoNeuro through many ways.
 
-```python
-# Requires the latest pip
-pip install --upgrade pip
-
-# Current stable release for CPU and GPU
-pip install autoneuro
-```
 ## Hardware Requirements
 
 #### Model training
@@ -20,4 +13,19 @@ pip install autoneuro
         - 4 GB RAM
         - 2 GB of Hard Disk Space
         - Intel Core i7 Processor
+
+
+
+
+## Installation
+
+Open Command Prompt and type pip install AutoNeuro. This will install latest stable version of AutoNeuro in your system.
+
+```python
+# Requires the latest pip
+pip install --upgrade pip
+
+# Current stable release for CPU and GPU
+pip install autoneuro
+```
 
