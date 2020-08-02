@@ -5,11 +5,12 @@
 */
 
 .md-typeset code {
-  background-color: #424242;
+  background-color: black;
   color: #F5F5F5;
   margin: 0;
   padding: 0.07353em 0.29412em;
   box-shadow: none;
+  border-color: darkred;
 }
 
 /*
@@ -23,14 +24,15 @@ line number
 */
 .linenos {
   color: #F5F5F5 !important;
-  background-color: #313131 !important;
+  background-color: black !important;
 }
 
 /*
 code block background
 */
 .codehilite {
-  background-color: #424242 !important;
+  background-color: black !important;
+  border-color: darkred !important;
 }
 
 /*
@@ -112,3 +114,8 @@ actual syntax highlighting
 
 .codehilite .md-clipboard:before { color: rgba(255, 255, 255, 0.07) } /* Clipboard button (no hover) */
 .codehilite:hover .md-clipboard:before { color: rgba(255, 255, 255, 0.54) } /* Clipboard button (hovered) */
+
+
+.md-main h1 {
+  color: black !important;
+}
