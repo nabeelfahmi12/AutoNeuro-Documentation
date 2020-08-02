@@ -10,14 +10,14 @@ and background color
 */
 .md-main {
   color: #212121 !important;
-  background-color:  #F5F5F5!important;
+  background-color: #F5F5F5 !important;
 }
 
 /*
 Main headlines
 */
 .md-main h1 {
-  color: white !important;
+  color: Red !important;
 }
 
 /*
