@@ -30,22 +30,22 @@
       
         
         
-        <meta name="theme-color" content="#757575">
+        <meta name="theme-color" content="#ef5350">
       
     
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap:300,400,400i,700%7Chttps://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap&display=fallback">
-        <style>body,input{font-family:"https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap",SFMono-Regular,Consolas,Menlo,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@600&family=Poppins:wght@600&family=Raleway:wght@600&family=Sora:wght@700&display=swap:300,400,400i,700%7Chttps://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap&display=fallback">
+        <style>body,input{font-family:"https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@600&family=Poppins:wght@600&family=Raleway:wght@600&family=Sora:wght@700&display=swap",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap",SFMono-Regular,Consolas,Menlo,monospace}</style>
       
     
     
-      <link rel="manifest" href="../../../manifest.webmanifest" crossorigin="use-credentials">
-    
     
       <link rel="stylesheet" href="../../../css/main.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/codehilite.css">
     
     
       
@@ -55,13 +55,21 @@
       
     
     
+<meta name="theme-color" content="#212121">
+
+<link rel='icon' href='/assets/images/favicon.ico'>
+
+<meta name='apple-mobile-web-app-capable' content='yes'>
+<meta name='mobile-web-app-capable' content='yes'>
+<link rel="manifest" href="/manifest.json">
+
   </head>
   
   
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="grey" data-md-color-accent="black">
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="red" data-md-color-accent="black">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -653,17 +661,17 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3-10" type="checkbox" id="nav-2-3-10" checked>
     
     <label class="md-nav__link" for="nav-2-3-10">
-      List of APIs
+      Methods
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
       </span>
     </label>
-    <nav class="md-nav" aria-label="List of APIs" data-md-level="3">
+    <nav class="md-nav" aria-label="Methods" data-md-level="3">
       <label class="md-nav__title" for="nav-2-3-10">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
         </span>
-        List of APIs
+        Methods
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -748,19 +756,6 @@
   <a href="#setup" class="md-nav__link">
     Setup
   </a>
-  
-    <nav class="md-nav" aria-label="Setup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#by-subclassing-the-model-class-in-that-case-you-should-define-your-layers-in-init-and-you-should-implement-the-models-forward-pass-in-regressor" class="md-nav__link">
-    By subclassing the Model class: in that case, you should define your layers in init and you should implement the model's forward pass in regressor.
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1002,19 +997,6 @@
     Setup
   </a>
   
-    <nav class="md-nav" aria-label="Setup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#by-subclassing-the-model-class-in-that-case-you-should-define-your-layers-in-init-and-you-should-implement-the-models-forward-pass-in-regressor" class="md-nav__link">
-    By subclassing the Model class: in that case, you should define your layers in init and you should implement the model's forward pass in regressor.
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
     </ul>
@@ -1044,7 +1026,7 @@
 <span class="kn">import</span> <span class="nn">logger</span>
 </code></pre></div>
 
-<h4 id="by-subclassing-the-model-class-in-that-case-you-should-define-your-layers-in-init-and-you-should-implement-the-models-forward-pass-in-regressor">By subclassing the Model class: in that case, you should define your layers in <strong>init</strong> and you should implement the model's forward pass in regressor.<a class="headerlink" href="#by-subclassing-the-model-class-in-that-case-you-should-define-your-layers-in-init-and-you-should-implement-the-models-forward-pass-in-regressor" title="Permanent link">&para;</a></h4>
+<p><strong>By subclassing the Model class: in that case, you should define your layers in <strong>init</strong> and you should implement the model's forward pass in regressor.</strong></p>
 <h1 id="class-regressionmodeltuner">class RegressionModelTuner():<a class="headerlink" href="#class-regressionmodeltuner" title="Permanent link">&para;</a></h1>
 <p>This class shall be used to get the best suited Regression model</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -1056,13 +1038,13 @@
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_tuned_knn_model</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">):</span>
 </code></pre></div>
 
-<p>Description : This method will be used to get the hypertuned KNN Model</p>
+<p><strong>Description : This method will be used to get the hypertuned KNN Model</strong></p>
 <p>x_train : Feature Columns of Training DataSet</p>
 <p>y_train : Target Column of Training DataSet</p>
 <p>output : A hyper parameter tuned model object</p>
 <h4 id="parameters">parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h4>
 <p>Let's set up a parameter grid that will be explored during the search. Note that you can use fewer parameters and fewer options for each parameter. Same goes for more parameter and more options if you want to be very thorough. Also, you can plug in any other ML method instead of XGBoost and search for its optimal parameters.</p>
-<div class="highlight"><pre><span></span><code>        <span class="n">knn_parameters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;n_neighbors&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">250</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">350</span><span class="p">],</span>
+<div class="highlight"><pre><span></span><code><span class="n">knn_parameters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;n_neighbors&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">250</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">350</span><span class="p">],</span>
                               <span class="s1">&#39;weights&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;uniform&#39;</span><span class="p">,</span> <span class="s1">&#39;distance&#39;</span><span class="p">],</span>
                               <span class="s1">&#39;algorithm&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;ball_tree&#39;</span><span class="p">,</span> <span class="s1">&#39;kd_tree&#39;</span><span class="p">],</span>
                               <span class="s1">&#39;leaf_size&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">50</span><span class="p">],</span>
@@ -1070,12 +1052,12 @@
 </code></pre></div>
 
 <h2 id="method-name-get_tuned_random_forest_classifier">Method Name: get_tuned_random_forest_classifier<a class="headerlink" href="#method-name-get_tuned_random_forest_classifier" title="Permanent link">&para;</a></h2>
-<p>Description: This method will be used to build RandomForestRegressor model</p>
+<p><strong>Description: This method will be used to build RandomForestRegressor model</strong></p>
 <p>Input Description:</p>
 <p>x_train : Feature Columns of Training DataSet</p>
 <p>y_train : Target Column of Training DataSet</p>
-<h5 id="lets-try-hyperparameter-tuning-on-the-all-features-data">Let's try hyperparameter tuning on the all features data<a class="headerlink" href="#lets-try-hyperparameter-tuning-on-the-all-features-data" title="Permanent link">&para;</a></h5>
-<h5 id="this-first-section-is-setting-up-the-grid-and-importing-the-necessary-modules-and-fitting-x_train-and-y_train">This first section is setting up the grid and importing the necessary modules and fitting X_train and y_train<a class="headerlink" href="#this-first-section-is-setting-up-the-grid-and-importing-the-necessary-modules-and-fitting-x_train-and-y_train" title="Permanent link">&para;</a></h5>
+<p><strong>Let's try hyperparameter tuning on the all features data</strong>
+<strong>This first section is setting up the grid and importing the necessary modules and fitting X_train and y_train</strong></p>
 <div class="highlight"><pre><span></span><code>        <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">RandomForestRegressor</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="n">n_estimators</span><span class="p">,</span>
                                                <span class="n">max_depth</span><span class="o">=</span><span class="n">max_depth</span><span class="p">,</span>
                                                <span class="n">criterion</span><span class="o">=</span><span class="n">criterion</span><span class="p">,</span>
@@ -1092,7 +1074,7 @@
 </code></pre></div>
 
 <h2 id="method-name-get_tuned_xgboost_model">Method Name: get_tuned_xgboost_model<a class="headerlink" href="#method-name-get_tuned_xgboost_model" title="Permanent link">&para;</a></h2>
-<p>Description: This method will be used to build XGBoost Regressor model</p>
+<p><strong>Description: This method will be used to build XGBoost Regressor model</strong></p>
 <p>Input Description:</p>
 <p>x_train : Feature Columns of Training DataSet</p>
 <p>y_train : Target Column of Training DataSet</p>
@@ -1269,8 +1251,6 @@
           }, typeof search !== "undefined" && search)
         })
       </script>
-      
-        <script src="../../../js/scripts.js"></script>
       
     
   </body>

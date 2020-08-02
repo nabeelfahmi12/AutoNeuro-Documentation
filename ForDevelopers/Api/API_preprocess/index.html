@@ -30,22 +30,22 @@
       
         
         
-        <meta name="theme-color" content="#757575">
+        <meta name="theme-color" content="#ef5350">
       
     
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap:300,400,400i,700%7Chttps://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap&display=fallback">
-        <style>body,input{font-family:"https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap",SFMono-Regular,Consolas,Menlo,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@600&family=Poppins:wght@600&family=Raleway:wght@600&family=Sora:wght@700&display=swap:300,400,400i,700%7Chttps://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap&display=fallback">
+        <style>body,input{font-family:"https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@600&family=Poppins:wght@600&family=Raleway:wght@600&family=Sora:wght@700&display=swap",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap",SFMono-Regular,Consolas,Menlo,monospace}</style>
       
     
     
-      <link rel="manifest" href="../../../manifest.webmanifest" crossorigin="use-credentials">
-    
     
       <link rel="stylesheet" href="../../../css/main.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/codehilite.css">
     
     
       
@@ -55,13 +55,21 @@
       
     
     
+<meta name="theme-color" content="#212121">
+
+<link rel='icon' href='/assets/images/favicon.ico'>
+
+<meta name='apple-mobile-web-app-capable' content='yes'>
+<meta name='mobile-web-app-capable' content='yes'>
+<link rel="manifest" href="/manifest.json">
+
   </head>
   
   
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="grey" data-md-color-accent="black">
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="red" data-md-color-accent="black">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -653,17 +661,17 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3-10" type="checkbox" id="nav-2-3-10" checked>
     
     <label class="md-nav__link" for="nav-2-3-10">
-      List of APIs
+      Methods
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
       </span>
     </label>
-    <nav class="md-nav" aria-label="List of APIs" data-md-level="3">
+    <nav class="md-nav" aria-label="Methods" data-md-level="3">
       <label class="md-nav__title" for="nav-2-3-10">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
         </span>
-        List of APIs
+        Methods
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -1184,25 +1192,103 @@
                   <h1>Data Preprocess</h1>
                 
                 <h2 id="preprocessor">Preprocessor():<a class="headerlink" href="#preprocessor" title="Permanent link">&para;</a></h2>
-<p>This class shall be used to include all Data Pre-processing techniques to be fed to the Machine Learning Models</p>
+<p><strong>This class shall be used to include all Data Pre-processing techniques to be fed to the Machine Learning Models</strong></p>
 <h3 id="get_data_profile">get_data_profile<a class="headerlink" href="#get_data_profile" title="Permanent link">&para;</a></h3>
-<script src="https://gist.github.com/nabeelfahmi12/17ccd79ce9fb88485003cb3ad149dd40.js"></script>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_data_profile</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">data_profile</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">missing_values</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">missing_val_pct</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">data_profile</span><span class="p">[</span><span class="s1">&#39;rows&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">data_profile</span><span class="p">[</span><span class="s1">&#39;columns&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">missing_vals</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">missing_values</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">missing_val_pct</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">))</span> <span class="o">*</span> <span class="mi">100</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">data_profile</span><span class="p">[</span><span class="s1">&#39;missing_values&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">missing_values</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">data_profile</span><span class="p">[</span><span class="s1">&#39;missing_vals_pct&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">missing_val_pct</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">data_profile</span><span class="p">[</span><span class="s1">&#39;categorical_columns&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">exclude</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;int64&quot;</span><span class="p">,</span> <span class="s2">&quot;float&quot;</span><span class="p">]))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">data_profile</span><span class="p">[</span><span class="s1">&#39;num_categorical_columns&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data_profile</span><span class="p">[</span><span class="s1">&#39;categorical_columns&#39;</span><span class="p">])</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">data_profile</span><span class="p">[</span><span class="s1">&#39;numerical_columns&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">exclude</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;object&quot;</span><span class="p">]))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">data_profile</span><span class="p">[</span><span class="s1">&#39;num_numerical_columns&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data_profile</span><span class="p">[</span><span class="s1">&#39;numerical_columns&#39;</span><span class="p">])</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">data_profile</span><span class="p">[</span><span class="s1">&#39;num_duplicate_rows&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">describe</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span><span class="o">.</span><span class="n">T</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">standard_deviation</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">describe</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">describe</span><span class="p">[</span><span class="s1">&#39;std&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">standard_deviation</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">standard_deviation</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">data_profile</span><span class="p">[</span><span class="s1">&#39;num_col_with_std_zero&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">standard_deviation</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">standard_deviation</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">data_profile</span><span class="p">[</span><span class="s1">&#39;cols_with_std_zero&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">standard_deviation</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">size</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1024</span> <span class="o">*</span> <span class="mi">1024</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">data_profile</span><span class="p">[</span><span class="s1">&#39;datasize&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot; MB&quot;</span>
+
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data_profile</span>
+</code></pre></div>
 
 <h3 id="separatete-label-features">separatete Label features<a class="headerlink" href="#separatete-label-features" title="Permanent link">&para;</a></h3>
-<p>This is used to seperate the target and feature as X and Y</p>
-<script src="https://gist.github.com/nabeelfahmi12/dcbab22bf7a9a8e9f50b05307003f924.js"></script>
+<p><strong>This is used to separate the target and feature as X and Y</strong></p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">separate_label_feature</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">label_column_name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">X</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">labels</span><span class="o">=</span><span class="n">label_column_name</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># drop the columns specified and separate the feature columns</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">label_column_name</span><span class="p">]</span>  <span class="c1"># Filter the Label columns</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">X</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">Y</span>
+</code></pre></div>
 
 <h3 id="remove_columns">remove_columns<a class="headerlink" href="#remove_columns" title="Permanent link">&para;</a></h3>
-<p>This method removes the given columns from a pandas dataframe.</p>
-<script src="https://gist.github.com/nabeelfahmi12/23e9e1e6304f58607ff730dacc7d789c.js"></script>
+<p><strong>This method removes the given columns from a pandas dataframe.</strong></p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">remove_columns</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">columns</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">useful_data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">labels</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># drop the labels specified in the columns</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">useful_data</span>
+</code></pre></div>
 
 <h3 id="impute_missing_values">impute_missing_values<a class="headerlink" href="#impute_missing_values" title="Permanent link">&para;</a></h3>
-<p>This method will be used to impute missing values in the dataframe</p>
-<script src="https://gist.github.com/nabeelfahmi12/a6be5d74a76a1c743f8fd6962a37579e.js"></script>
+<p><strong>This method will be used to impute missing values in the dataframe</strong></p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">impute_missing_values</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">mv_flag</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">target</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">strategy</span><span class="o">=</span><span class="s1">&#39;mode&#39;</span><span class="p">,</span> <span class="n">impute_val</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span><span class="n">missing_vals</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="n">dataframe</span> <span class="o">=</span> <span class="n">data</span>
+
+        <span class="k">if</span> <span class="n">mv_flag</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+            <span class="c1"># Converting missing_vals to Nan Values</span>
+            <span class="k">if</span> <span class="n">missing_vals</span><span class="p">:</span>
+                <span class="n">dataframe</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">missing_vals</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="c1">#  Checking for Missing Values in Dependent Variable</span>
+            <span class="k">if</span> <span class="n">dataframe</span><span class="p">[</span><span class="n">target</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">any</span><span class="p">():</span>
+                <span class="n">dataframe</span> <span class="o">=</span> <span class="n">dataframe</span><span class="p">[</span><span class="n">dataframe</span><span class="p">[</span><span class="n">target</span><span class="p">]</span><span class="o">.</span><span class="n">notna</span><span class="p">()]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>  <span class="c1"># Selecting the Dataframe With No missing values in Dependent column</span>
+            <span class="c1"># Checking for Missing Values in Independent Variables</span>
+            <span class="n">Missing_data_columns</span> <span class="o">=</span> <span class="n">dataframe</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span>
+                <span class="n">dataframe</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">any</span><span class="p">()]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>  <span class="c1"># Finding Columns with the missing data from dataframe</span>
+            <span class="k">if</span> <span class="n">strategy</span> <span class="o">==</span> <span class="s1">&#39;fixed&#39;</span><span class="p">:</span>  <span class="c1"># checking if strategy == fixed</span>
+                <span class="n">dataframe</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">impute_val</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># Filling the Nan values with the imputed value from user</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">columns</span> <span class="ow">in</span> <span class="n">Missing_data_columns</span><span class="p">:</span>  <span class="c1"># Iterating over the columns having Nan Values</span>
+                    <span class="k">if</span> <span class="n">dataframe</span><span class="p">[</span><span class="n">columns</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span> <span class="o">==</span> <span class="s1">&#39;object&#39;</span><span class="p">:</span>  <span class="c1"># Checking for the categorical data</span>
+                        <span class="n">mode</span> <span class="o">=</span> <span class="n">dataframe</span><span class="p">[</span><span class="n">columns</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+                        <span class="n">dataframe</span><span class="p">[</span><span class="n">columns</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># Imputing Nan values with mode of the column</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="k">if</span> <span class="n">strategy</span> <span class="o">==</span> <span class="s1">&#39;median&#39;</span><span class="p">:</span>  <span class="c1"># checking if the strategy == median</span>
+                            <span class="n">median</span> <span class="o">=</span> <span class="n">dataframe</span><span class="p">[</span><span class="n">columns</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+                            <span class="n">dataframe</span><span class="p">[</span><span class="n">columns</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">median</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># Imputing Nan values with median of the column</span>
+                        <span class="k">else</span><span class="p">:</span>  <span class="c1"># The only strategy remains is mean</span>
+                            <span class="n">mean</span> <span class="o">=</span> <span class="n">dataframe</span><span class="p">[</span><span class="n">columns</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+                            <span class="n">dataframe</span><span class="p">[</span><span class="n">columns</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">mean</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># Imputing Nan values with mean of the column</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger_object</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">file_object</span><span class="p">,</span> <span class="s2">&quot;my_flag found False&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">dataframe</span>
+</code></pre></div>
 
 <h3 id="type_conversion">type_conversion<a class="headerlink" href="#type_conversion" title="Permanent link">&para;</a></h3>
-<p>This method will be used to convert column datatype from numerical to categorical or vice-versa, if possible.</p>
-<script src="https://gist.github.com/nabeelfahmi12/e3c453e783d01b947f1e28e2d74a4e75.js"></script>
+<p><strong>This method will be used to convert column datatype from numerical to categorical or vice-versa, if possible.</strong></p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">type_conversion</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="p">,</span> <span class="n">cat_to_num</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">num_to_cat</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">cat_to_num</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">cat_to_num</span><span class="p">:</span>
+                    <span class="n">dataset</span><span class="p">[</span><span class="n">column</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">dataset</span><span class="p">[</span><span class="n">column</span><span class="p">])</span>
+
+            <span class="k">if</span> <span class="n">num_to_cat</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">num_to_cat</span><span class="p">:</span>
+                    <span class="n">dataset</span><span class="p">[</span><span class="n">column</span><span class="p">]</span> <span class="o">=</span> <span class="n">dataset</span><span class="p">[</span><span class="n">column</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;object&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">dataset</span>
+</code></pre></div>
 
 <h3 id="remove_imbalance">remove_imbalance<a class="headerlink" href="#remove_imbalance" title="Permanent link">&para;</a></h3>
 <ul>
@@ -1211,42 +1297,139 @@
                      threshold: the threshold of mismatch between the target values to perform balancing.</li>
 <li>Output: A balanced dataframe.</li>
 </ul>
-<script src="https://gist.github.com/nabeelfahmi12/3bb4e1188d98ba57918f09c7b2738877.js"></script>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">remove_imbalance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mf">10.0</span><span class="p">,</span> <span class="n">oversample</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">smote</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+      <span class="n">X</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+      <span class="n">y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">target</span><span class="p">]</span>
+
+      <span class="bp">self</span><span class="o">.</span><span class="n">logger_object</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">file_object</span><span class="p">,</span>
+                             <span class="s1">&#39;Class Imbalance Process Starts in the remove_imbalance method of the DataPreprocessor class&#39;</span><span class="p">)</span>
+
+      <span class="n">no_of_classes</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">target</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span>
+
+      <span class="k">if</span> <span class="n">no_of_classes</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+
+          <span class="n">thresh_satisfied</span> <span class="o">=</span> <span class="p">((</span><span class="n">data</span><span class="p">[</span><span class="n">target</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">target</span><span class="p">]))</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span><span class="o">.</span><span class="n">any</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">threshold</span><span class="p">)</span>
+          <span class="k">if</span> <span class="n">thresh_satisfied</span><span class="p">:</span>
+              <span class="k">if</span> <span class="n">smote</span><span class="p">:</span>
+                  <span class="n">smote</span> <span class="o">=</span> <span class="n">SMOTE</span><span class="p">()</span>
+                  <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">smote</span><span class="o">.</span><span class="n">fit_resample</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+              <span class="k">elif</span> <span class="n">oversample</span><span class="p">:</span>
+                  <span class="n">ROS</span> <span class="o">=</span> <span class="n">RandomOverSampler</span><span class="p">(</span><span class="n">sampling_strategy</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+                  <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">ROS</span><span class="o">.</span><span class="n">fit_sample</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+              <span class="k">else</span><span class="p">:</span>
+                  <span class="n">ROS</span> <span class="o">=</span> <span class="n">RandomUnderSampler</span><span class="p">(</span><span class="n">sampling_strategy</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+                  <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">ROS</span><span class="o">.</span><span class="n">fit_sample</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+      <span class="k">else</span><span class="p">:</span>
+
+          <span class="n">high</span> <span class="o">=</span> <span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">target</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">target</span><span class="p">]))</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span><span class="o">.</span><span class="n">ravel</span><span class="p">()</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+          <span class="n">low</span> <span class="o">=</span> <span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">target</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">target</span><span class="p">]))</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span><span class="o">.</span><span class="n">ravel</span><span class="p">()</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+
+          <span class="n">thresh_satisfied</span> <span class="o">=</span> <span class="p">(</span><span class="n">high</span> <span class="o">-</span> <span class="n">low</span> <span class="o">&gt;</span> <span class="mf">100.0</span> <span class="o">-</span> <span class="n">threshold</span><span class="p">)</span>
+
+          <span class="k">if</span> <span class="n">thresh_satisfied</span><span class="p">:</span>
+              <span class="k">if</span> <span class="n">smote</span><span class="p">:</span>
+                  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">no_of_classes</span> <span class="o">-</span> <span class="mi">2</span><span class="p">):</span>
+                      <span class="n">smote</span> <span class="o">=</span> <span class="n">SMOTE</span><span class="p">()</span>
+                      <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">smote</span><span class="o">.</span><span class="n">fit_resample</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+              <span class="k">elif</span> <span class="n">oversample</span><span class="p">:</span>
+                  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">no_of_classes</span> <span class="o">-</span> <span class="mi">2</span><span class="p">):</span>
+                      <span class="n">ROS</span> <span class="o">=</span> <span class="n">RandomOverSampler</span><span class="p">(</span><span class="n">sampling_strategy</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+                      <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">ROS</span><span class="o">.</span><span class="n">fit_sample</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+              <span class="k">else</span><span class="p">:</span>
+                  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">no_of_classes</span> <span class="o">-</span> <span class="mi">2</span><span class="p">):</span>
+                      <span class="n">ROS</span> <span class="o">=</span> <span class="n">RandomUnderSampler</span><span class="p">(</span><span class="n">sampling_strategy</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+                      <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">ROS</span><span class="o">.</span><span class="n">fit_sample</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+      <span class="n">y</span><span class="o">.</span><span class="n">to_frame</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">target</span><span class="p">)</span>
+      <span class="n">dfBalanced</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+      <span class="k">return</span> <span class="n">dfBalanced</span>
+</code></pre></div>
 
 <h3 id="remove_columns_with_minimal_variance">remove_columns_with_minimal_variance<a class="headerlink" href="#remove_columns_with_minimal_variance" title="Permanent link">&para;</a></h3>
-<p>This method drops any numerical column with standard deviation below specified threshold
+<p><strong>This method drops any numerical column with standard deviation below specified threshold</strong>
 Input : data: input DataFrame in which we need to check std deviations
       : threshold : the threshold for std deviation below which we need to drop the columns
 Output: A DataFrame with numerical columns with low std dev dropped.</p>
-<script src="https://gist.github.com/nabeelfahmi12/9579af5801359e2b723f37e3e8318d42.js"></script>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">remove_columns_with_minimal_variance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">threshold</span><span class="p">):</span>
+        <span class="n">sel</span> <span class="o">=</span> <span class="n">VarianceThreshold</span><span class="p">(</span><span class="n">threshold</span><span class="o">=</span><span class="p">(</span><span class="n">threshold</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">threshold</span><span class="p">)))</span>
+        <span class="n">columnlist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s1">&#39;number&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+        <span class="n">sel_var</span> <span class="o">=</span> <span class="n">sel</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">columnlist</span><span class="p">])</span>
+        <span class="n">new_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">sel</span><span class="o">.</span><span class="n">get_support</span><span class="p">(</span><span class="n">indices</span><span class="o">=</span><span class="kc">True</span><span class="p">)]]</span>
+        <span class="k">return</span> <span class="n">new_data</span>  <span class="c1"># return the read data to the calling method</span>
+</code></pre></div>
 
 <h3 id="standardize_data">standardize_data<a class="headerlink" href="#standardize_data" title="Permanent link">&para;</a></h3>
-<p>This method will be used to standardize al the numeric variables. Where mean = 0, std dev = 1.
+<p><strong>This method will be used to standardize al the numeric variables. Where mean = 0, std dev = 1.</strong>
 * Input : the input dataframe with numeric columns.
 * Output: Standardized data where mean of each column will be 0 and standard deviation will be 1.</p>
-<script src="https://gist.github.com/nabeelfahmi12/1955b227fb2bca574d353d6c27dfcf10.js"></script>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">standardize_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataframe</span><span class="p">):</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">dataframe</span>
+        <span class="n">stdscalar</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
+        <span class="n">scaled_data</span> <span class="o">=</span> <span class="n">stdscalar</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="n">scaled_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Dataframe</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">scaled_data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">scaled_data</span>
+</code></pre></div>
 
 <h3 id="normalize_data">normalize_data<a class="headerlink" href="#normalize_data" title="Permanent link">&para;</a></h3>
-<p>This method will be used to normalize all the numeric variables. Where min value = 0 and max value = 1.
+<p><strong>This method will be used to normalize all the numeric variables. Where min value = 0 and max value = 1.</strong>
 * Input : the input dataframe with numeric columns.
 * Output: Normalized data where minimum value of each column will be 0 and maximum value of each column will be 1.</p>
-<script src="https://gist.github.com/nabeelfahmi12/b950c9b5c1cec69daf2a7eb9f940c867.js"></script>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">normalize_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataframe</span><span class="p">):</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">dataframe</span>
+        <span class="n">normalizer</span> <span class="o">=</span> <span class="n">MinMaxScaler</span><span class="p">()</span>
+        <span class="n">normalized_data</span> <span class="o">=</span> <span class="n">normalizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="n">normalized_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Dataframe</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">normalized_data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">normalized_data</span>
+</code></pre></div>
 
 <h3 id="pca">pca<a class="headerlink" href="#pca" title="Permanent link">&para;</a></h3>
-<p>This method reduces the dimension from scaled Data which enables quick for large data files.
+<p><strong>This method reduces the dimension from scaled Data which enables quick for large data files.</strong>
 * input      : Data which is Scaled, var_explained = 0.90(default value)
 * Output     : It returns the scaled and reduced dimensions.</p>
-<script src="https://gist.github.com/nabeelfahmi12/98e54cdffb58cbea6af47c0de1673474.js"></script>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">pca</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">var_explained</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">var_explained</span> <span class="o">=</span> <span class="n">var_explained</span>
+       <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>  <span class="c1"># find out the no columns in the data</span>
+        <span class="n">mat_pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="n">n</span><span class="p">)</span>
+        <span class="n">mat_pca</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>  <span class="c1"># applying PCA model</span>
+
+        <span class="c1">##calculate variance ratios</span>
+        <span class="n">variance</span> <span class="o">=</span> <span class="n">mat_pca</span><span class="o">.</span><span class="n">explained_variance_ratio_</span>
+        <span class="n">cum_var</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cumsum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">mat_pca</span><span class="o">.</span><span class="n">explained_variance_ratio_</span><span class="p">,</span> <span class="n">decimals</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span>
+</code></pre></div>
 
 <h3 id="calc_num_components">calc_num_components<a class="headerlink" href="#calc_num_components" title="Permanent link">&para;</a></h3>
-<p>This function is used for calculating number of principal components to use:</p>
-<script src="https://gist.github.com/nabeelfahmi12/58b1dd32eb313fa46f4c03e89ced899d.js"></script>
+<p><strong>This function is used for calculating number of principal components to use:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">calc_num_components</span><span class="p">(</span><span class="n">cum_var</span><span class="p">,</span> <span class="n">var_explained</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">cum_var</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">var_explained</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+
+      <span class="c1"># call the function to calulate num_components:</span>
+      <span class="n">n_components</span> <span class="o">=</span> <span class="n">calc_num_components</span><span class="p">(</span><span class="n">cum_var</span><span class="p">,</span> <span class="n">var_explained</span><span class="p">)</span>
+      <span class="c1"># create the PCA instance</span>
+      <span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="n">n_components</span><span class="p">)</span>
+      <span class="n">principal_components</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+      <span class="c1"># Convert into dataframe</span>
+      <span class="n">pca_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">principal_components</span><span class="p">,</span>
+                              <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;PC&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n_components</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)])</span>
+      <span class="k">return</span> <span class="n">pca_data</span>
+</code></pre></div>
 
 <h3 id="preprocess">preprocess<a class="headerlink" href="#preprocess" title="Permanent link">&para;</a></h3>
-<p>This function is used to preprocess the data by calling the apis listed above
+<p><strong>This function is used to preprocess the data by calling the apis listed above</strong>
 * input: dataset, target columns, unwanted columns
 * output: preprocessed target and feature dataset</p>
-<script src="https://gist.github.com/nabeelfahmi12/01eaaf56da722cb8ebc66811694fd319.js"></script>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">preprocess</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="p">,</span> <span class="n">target_column</span><span class="p">,</span><span class="n">unwanted_cols</span><span class="p">):</span>
+    <span class="n">dataset</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">remove_columns</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Unnamed: 0&#39;</span><span class="p">])</span>
+    <span class="n">dataset</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">impute_missing_values</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">dataset</span><span class="p">,</span> <span class="n">mv_flag</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">target</span><span class="o">=</span><span class="n">target_column</span><span class="p">)</span>
+    <span class="c1"># dataset = self.remove_columns(dataset, unwanted_cols)</span>
+    <span class="n">dataset</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">remove_imbalance</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">target_column</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mf">10.0</span><span class="p">,</span> <span class="n">oversample</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">smote</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">dataset</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">separate_label_feature</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">target_column</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">remove_columns_with_minimal_variance</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">dataset</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">y</span>
+</code></pre></div>
                 
               
               
@@ -1383,8 +1566,6 @@ Output: A DataFrame with numerical columns with low std dev dropped.</p>
           }, typeof search !== "undefined" && search)
         })
       </script>
-      
-        <script src="../../../js/scripts.js"></script>
       
     
   </body>

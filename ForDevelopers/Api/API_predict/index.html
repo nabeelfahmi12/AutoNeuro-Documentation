@@ -30,22 +30,22 @@
       
         
         
-        <meta name="theme-color" content="#757575">
+        <meta name="theme-color" content="#ef5350">
       
     
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap:300,400,400i,700%7Chttps://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap&display=fallback">
-        <style>body,input{font-family:"https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap",SFMono-Regular,Consolas,Menlo,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@600&family=Poppins:wght@600&family=Raleway:wght@600&family=Sora:wght@700&display=swap:300,400,400i,700%7Chttps://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap&display=fallback">
+        <style>body,input{font-family:"https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@600&family=Poppins:wght@600&family=Raleway:wght@600&family=Sora:wght@700&display=swap",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap",SFMono-Regular,Consolas,Menlo,monospace}</style>
       
     
     
-      <link rel="manifest" href="../../../manifest.webmanifest" crossorigin="use-credentials">
-    
     
       <link rel="stylesheet" href="../../../css/main.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/codehilite.css">
     
     
       
@@ -55,13 +55,21 @@
       
     
     
+<meta name="theme-color" content="#212121">
+
+<link rel='icon' href='/assets/images/favicon.ico'>
+
+<meta name='apple-mobile-web-app-capable' content='yes'>
+<meta name='mobile-web-app-capable' content='yes'>
+<link rel="manifest" href="/manifest.json">
+
   </head>
   
   
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="grey" data-md-color-accent="black">
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="red" data-md-color-accent="black">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -653,17 +661,17 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3-10" type="checkbox" id="nav-2-3-10" checked>
     
     <label class="md-nav__link" for="nav-2-3-10">
-      List of APIs
+      Methods
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
       </span>
     </label>
-    <nav class="md-nav" aria-label="List of APIs" data-md-level="3">
+    <nav class="md-nav" aria-label="Methods" data-md-level="3">
       <label class="md-nav__title" for="nav-2-3-10">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
         </span>
-        List of APIs
+        Methods
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -797,15 +805,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#balance_imbalance_check" class="md-nav__link">
-    balance_imbalance_check
+  <a href="#balance-imbalance-check" class="md-nav__link">
+    Balance imbalance check
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#correlation_heatmap" class="md-nav__link">
-    correlation_heatmap
+  <a href="#correlation-heatmap" class="md-nav__link">
+    Correlation Heatmap
   </a>
   
 </li>
@@ -1007,15 +1015,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#balance_imbalance_check" class="md-nav__link">
-    balance_imbalance_check
+  <a href="#balance-imbalance-check" class="md-nav__link">
+    Balance imbalance check
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#correlation_heatmap" class="md-nav__link">
-    correlation_heatmap
+  <a href="#correlation-heatmap" class="md-nav__link">
+    Correlation Heatmap
   </a>
   
 </li>
@@ -1044,19 +1052,38 @@
                   <h1>Predict</h1>
                 
                 <h2 id="data-visualization">Data Visualization:<a class="headerlink" href="#data-visualization" title="Permanent link">&para;</a></h2>
-<p>This class shall be used to include all Data Visualization techniques to be feed to the Machine Learning Models</p>
-<h3 id="balance_imbalance_check">balance_imbalance_check<a class="headerlink" href="#balance_imbalance_check" title="Permanent link">&para;</a></h3>
-<p>This method will be used to plot the balance/imbalance datasets using barplot/countplot
-Input: data: the input dataframe with target column.
-     target: target column name.
-Output: plot of target variable value count.</p>
-<script src="https://gist.github.com/nabeelfahmi12/8a9a518e472eb5f7e0adc682f5c6fd0d.js"></script>
+<p><strong>This class shall be used to include all Data Visualization techniques to be feed to the Machine Learning Models</strong></p>
+<h3 id="balance-imbalance-check">Balance imbalance check<a class="headerlink" href="#balance-imbalance-check" title="Permanent link">&para;</a></h3>
+<p><strong>This method will be used to plot the balance/imbalance datasets using barplot/countplot</strong></p>
+<p>Input: data: the input dataframe with target column.</p>
+<p>Target: target column name.</p>
+<p>Output: plot of target variable value count.</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">balance_imbalance_check</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataframe</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+        <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;is_promoted&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;is_promoted&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">dataframe</span><span class="p">,</span>
+                    <span class="n">estimator</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;ispromoted&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;percentage&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Balance Imbalance Count&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;static/graphs/imbalance.png&quot;</span><span class="p">)</span>  
+</code></pre></div>
 
-<h3 id="correlation_heatmap">correlation_heatmap<a class="headerlink" href="#correlation_heatmap" title="Permanent link">&para;</a></h3>
-<p>This method will be used to generate interactive heatmap plot to show the pairwise correlation of input variables
-Input Description: data: the input dataframe with target column.
-Output: returns json file with correlation information that can be used by plotly to generate interactive plots.</p>
-<script src="https://gist.github.com/nabeelfahmi12/566612b48957392cb022b011666560cc.js"></script>
+<h3 id="correlation-heatmap">Correlation Heatmap<a class="headerlink" href="#correlation-heatmap" title="Permanent link">&para;</a></h3>
+<p><strong>This method will be used to generate interactive heatmap plot to show the pairwise correlation of input variables</strong></p>
+<p>Input Description: data: the input dataframe with target column.</p>
+<p>Output: returns json file with correlation information that can be used by plotly to generate interactive plots.</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">correlation_heatmap</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataframe</span><span class="p">):</span>
+          <span class="n">data</span> <span class="o">=</span> <span class="n">dataframe</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">number</span><span class="p">])</span>
+
+          <span class="n">plotdata</span> <span class="o">=</span> <span class="p">[</span><span class="n">go</span><span class="o">.</span><span class="n">Heatmap</span><span class="p">(</span>
+              <span class="n">z</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">corr</span><span class="p">(),</span>
+              <span class="n">x</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="p">),</span>
+              <span class="n">y</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+              <span class="p">,</span><span class="n">dx</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">dy</span><span class="o">=</span><span class="mi">1</span>
+              <span class="p">)]</span>
+          <span class="n">graphJSON</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">plotdata</span><span class="p">,</span> <span class="bp">cls</span><span class="o">=</span><span class="n">plotly</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">PlotlyJSONEncoder</span><span class="p">)</span>
+
+          <span class="k">return</span> <span class="n">graphJSON</span>
+</code></pre></div>
                 
               
               
@@ -1193,8 +1220,6 @@ Output: returns json file with correlation information that can be used by plotl
           }, typeof search !== "undefined" && search)
         })
       </script>
-      
-        <script src="../../../js/scripts.js"></script>
       
     
   </body>
