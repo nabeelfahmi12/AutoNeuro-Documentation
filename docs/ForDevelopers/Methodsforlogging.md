@@ -22,7 +22,7 @@ Input Parameter Description|   file_object: the file where the logs will be writ
 log_message: |the message to be logged
 ouptput|   A log file with messages
 
-
+```python
     from datetime import datetime
     class App_Logger:
     def __init__(self):
@@ -35,6 +35,7 @@ ouptput|   A log file with messages
         file_object.write(
         str(self.date) + "/" + str(self.current_time) + "\t\t" + log_message +"\n")
 
+```
 
 ## Exceptions Scenarios Module Wise
 

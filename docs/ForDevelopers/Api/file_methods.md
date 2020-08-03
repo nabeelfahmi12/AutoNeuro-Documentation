@@ -32,8 +32,8 @@ def save_model(self, model, filename):
 Output: The Model file
 
  On Failure: Raise Exception
-  ```python     
-def find_correct_model_file(self, cluster_number):
-```     
 
+```python
+def find_correct_model_file(self, cluster_number):
+```
 

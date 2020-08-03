@@ -64,15 +64,15 @@ y_train : Target Column of Training DataSet
 **This first section is setting up the grid and importing the necessary modules and fitting X_train and y_train**
 
 ```python
-        self.model = RandomForestRegressor(n_estimators=n_estimators,
-                                               max_depth=max_depth,
-                                               criterion=criterion,
-                                               min_samples_leaf=min_samples_leaf,
-                                               max_features=max_features,
-                                               min_samples_split=min_samples_split,
-                                               bootstrap=bootstrap,
-                                               random_state=25,
-                                               n_jobs=-1)
+self.model = RandomForestRegressor(n_estimators=n_estimators,
+                                       max_depth=max_depth,
+                                       criterion=criterion,
+                                       min_samples_leaf=min_samples_leaf,
+                                       max_features=max_features,
+                                       min_samples_split=min_samples_split,
+                                       bootstrap=bootstrap,
+                                       random_state=25,
+                                       n_jobs=-1)
 
 self.model = RandomForestRegressor(n_jobs=-1)
 self.model.fit(x_train, y_train)
@@ -99,34 +99,34 @@ self.xg_parameters = {"n_estimators": [10, 50, 100, 200],
                                   "colsample_bytree": [0.3, 0.4, 0.5, 0.7]
                                   }
 
-            self.rmdsearch = RandomizedSearchCV(xgb.XGBRegressor(objective='reg:squarederror'),param_distributions=self.xg_parameters, n_iter=10, cv=10, n_jobs=-1)
-            self.rmdsearch.fit(x_train, y_train)
-            hyperparameters = self.rmdsearch.best_params_
-            n_estimators, min_child_weight, max_depth, learning_rate, gamma, colsample_bytree = hyperparameters[
-                                                                                                    'n_estimators'], \
-                                                                                                hyperparameters[
-                                                                                                    'min_child_weight'], \
-                                                                                                hyperparameters[
-                                                                                                    'max_depth'], \
-                                                                                                hyperparameters[
-                                                                                                    'learning_rate'], \
-                                                                                                hyperparameters[
-                                                                                                    'gamma'], \
-                                                                                                hyperparameters[
-                                                                                                    'colsample_bytree']
-            self.xgboost_model = xgb.XGBRegressor(n_estimators=n_estimators,
-                                               learning_rate=learning_rate,
-                                               gamma=gamma,
-                                               min_child_weight=min_child_weight,
-                                               max_depth=max_depth,
-                                               colsample_bytree=colsample_bytree)
+self.rmdsearch = RandomizedSearchCV(xgb.XGBRegressor(objective='reg:squarederror'),param_distributions=self.xg_parameters, n_iter=10, cv=10, n_jobs=-1)
+self.rmdsearch.fit(x_train, y_train)
+hyperparameters = self.rmdsearch.best_params_n_estimators,
+                min_child_weight, max_depth, learning_rate,
+                gamma, colsample_bytree = hyperparameters['n_estimators'], \
+                                                        hyperparameters[
+                                                            'min_child_weight'], \
+                                                        hyperparameters[
+                                                            'max_depth'], \
+                                                        hyperparameters[
+                                                            'learning_rate'], \
+                                                        hyperparameters[
+                                                            'gamma'], \
+                                                        hyperparameters[
+                                                            'colsample_bytree']
+self.xgboost_model = xgb.XGBRegressor(n_estimators=n_estimators,
+                                   learning_rate=learning_rate,
+                                   gamma=gamma,
+                                   min_child_weight=min_child_weight,
+                                   max_depth=max_depth,
+                                   colsample_bytree=colsample_bytree)
 ```
 
 ### Fitting X_train and y_train
 
 ```python
-                 self.xgboost_model = xgb.XGBRegressor(objective='reg:squarederror',n_jobs=-1)
-                self.xgboost_model.fit(x_train, y_train)
-                self.logger_object.log(self.file_object,"Xgboost Model Training Started.")
+    self.xgboost_model = xgb.XGBRegressor(objective='reg:squarederror',n_jobs=-1)
+    self.xgboost_model.fit(x_train, y_train)
+    self.logger_object.log(self.file_object,"Xgboost Model Training Started.")
 ```                               
                                    

@@ -44,10 +44,10 @@ sns.barplot(x = 'is_promoted', y = 'is_promoted' ,data=df, hue  = 'is_promoted',
 
 
 ```python
-    data = dataframe.select_dtypes(include=[np.number])
-    plt.figure(figsize=(20, 10))
-    sns.set_palette("PuBuGn_d")
-    plot = sns.heatmap(data.corr(), annot=True, cmap='RdYlGn')
-    plot.figure.savefig("static/graphs/correlation.png")
+data = dataframe.select_dtypes(include=[np.number])
+plt.figure(figsize=(20, 10))
+sns.set_palette("PuBuGn_d")
+plot = sns.heatmap(data.corr(), annot=True, cmap='RdYlGn')
+plot.figure.savefig("static/graphs/correlation.png")
 ```
 
