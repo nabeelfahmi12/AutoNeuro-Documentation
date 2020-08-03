@@ -1055,19 +1055,18 @@
 </tr>
 </tbody>
 </table>
-<div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><code>from datetime import datetime
-class App_Logger:
-def __init__(self):
-pass
+<div class="highlight"><pre><span></span><code>    <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+    <span class="k">class</span> <span class="nc">App_Logger</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">pass</span>
 
-def log(self, file_object, log_message):“””This method will be used for logging all the information to the file.”””
-self.now = datetime.now()
-self.date = self.now.date()
-self.current_time = self.now.strftime(&quot;%H:%M:%S&quot;)
-    file_object.write(
-    str(self.date) + &quot;/&quot; + str(self.current_time) + &quot;\t\t&quot; + log_message +&quot;\n&quot;)
+    <span class="k">def</span> <span class="nf">log</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_object</span><span class="p">,</span> <span class="n">log_message</span><span class="p">):</span><span class="err">“””</span><span class="n">This</span> <span class="n">method</span> <span class="n">will</span> <span class="n">be</span> <span class="n">used</span> <span class="k">for</span> <span class="n">logging</span> <span class="nb">all</span> <span class="n">the</span> <span class="n">information</span> <span class="n">to</span> <span class="n">the</span> <span class="n">file</span><span class="o">.</span><span class="err">”””</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">now</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">date</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">now</span><span class="o">.</span><span class="n">date</span><span class="p">()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">current_time</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%H:%M:%S&quot;</span><span class="p">)</span>
+        <span class="n">file_object</span><span class="o">.</span><span class="n">write</span><span class="p">(</span>
+        <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">date</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;/&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">current_time</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\t\t</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="n">log_message</span> <span class="o">+</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 </code></pre></div>
-
 
 <h2 id="exceptions-scenarios-module-wise">Exceptions Scenarios Module Wise<a class="headerlink" href="#exceptions-scenarios-module-wise" title="Permanent link">&para;</a></h2>
 <table>
