@@ -1,4 +1,4 @@
-# Contributing to AutoNeuro
+# **_Contributing to AutoNeuro_**
 
 ## Bug Reporting
 Your code doesn't work ?? 

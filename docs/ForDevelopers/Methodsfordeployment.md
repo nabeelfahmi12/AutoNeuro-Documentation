@@ -1,4 +1,3 @@
-
 ## Deployment Strategy
 
 Take the cloud name as input

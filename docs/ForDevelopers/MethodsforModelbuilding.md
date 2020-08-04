@@ -1,5 +1,4 @@
-
-## Model Selection
+# **_Model Selection_**
 Model selection is the process of selecting one final machine learning model from among a collection of candidate machine learning models for a training dataset.
 
 It is a process that can be applied both across different types of models (e.g. logistic regression, SVM, KNN, etc.) and across models of the same type configured with different model hyperparameters (e.g. different kernels in an SVM).
