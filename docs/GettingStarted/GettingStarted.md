@@ -2,7 +2,7 @@
 
 ## Welcome to AutoNeuro
 
-AutoNeuro is an automated machine learning application built using python 3.7. It allows users to build production ready ML models with ease and efficiency. The project was started in 2020 as an internship project build in iNeuron.ai. It is an end to end automated machine learning solution where the user will only give dataset in recognizable formats and select the type of the problem and the result will be the best performing hyper tuned machine learning model. The descriptive and graphical analysis of the data is also displayed. The user will also get privileges to choose the deployment option. (eg: AWS, GCP).
+AutoNeuro is an automated machine learning application built using python 3.7. It allows users to build production ready ML models with ease and efficiency. It is an end to end automated machine learning solution where the user will only give dataset in recognizable formats and select the type of the problem and the result will be the best performing hyper tuned machine learning model. The descriptive and graphical analysis of the data is also displayed. The user will also get privileges to choose the deployment option. (eg: AWS, GCP).
 
 ##  Features 
 
