@@ -10,8 +10,6 @@ AutoNeuro is an automated machine learning application built using python 3.7. I
 
 •	Machine learning Modelling techniques using both classification and Regression
 
-•	Extensive APIs to integrate AutoNeuro into your own tools and scripts
-
 •	Evaluations of the models  for easy comparison and reuse
 
 •	Automated model building based on the type of problem.
