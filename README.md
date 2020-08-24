@@ -71,7 +71,7 @@ https://nabeelfahmi12.github.io/AutoNeuro-Documentation/Contributingtoautoneuro/
 * FAQ: 
 ### Communication
 * Mailing list:
-* Twitter: 
+* Twitter: https://twitter.com/Sudhans74624324
 * Stack Overflow: 
 * Website: https://nabeelfahmi12.github.io/AutoNeuro-Documentation/
 
