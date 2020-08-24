@@ -66,20 +66,17 @@ complies with our guidelines: https://nabeelfahmi12.github.io/AutoNeuro-Document
 https://nabeelfahmi12.github.io/AutoNeuro-Documentation/Contributingtoautoneuro/Contributingtoautoneuro/
 
 ### Documentation
-* HTML documentation (stable release): https://scikit-learn.org
-* HTML documentation (development version): https://scikit-learn.org/dev/
-* FAQ: https://scikit-learn.org/stable/faq.html
-
+* HTML documentation (stable release):
+* HTML documentation (development version):
+* FAQ: 
 ### Communication
-* Mailing list: https://mail.python.org/mailman/listinfo/scikit-learn
-* IRC channel: #scikit-learn at webchat.freenode.net
-* Gitter: https://gitter.im/scikit-learn/scikit-learn
-* Twitter: https://twitter.com/scikit_learn
-* Stack Overflow: https://stackoverflow.com/questions/tagged/scikit-learn
-* Website: https://scikit-learn.org
+* Mailing list:
+* Twitter: 
+* Stack Overflow: 
+* Website: https://nabeelfahmi12.github.io/AutoNeuro-Documentation/
 
 ## Citation
-If you use scikit-learn in a scientific publication, we would appreciate citations: 
+If you use autoneuro in a scientific publication, we would appreciate citations: 
 
 ## License
 [AutoNeuro License](https://nabeelfahmi12.github.io/AutoNeuroDocumentation/License)
