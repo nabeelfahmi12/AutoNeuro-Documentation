@@ -1,6 +1,6 @@
 # **_Uploading Data_**
 
-The process for Uploading Data Are as follows:
+The process for uploading data is as follows:
 
 ## Getting HomeScreen for AutoNeuro
 
@@ -13,21 +13,21 @@ If you have successfully installed AutoNeuro then:
 - Go to application\app.py and run
 - Open your web browser and go to localhost:5000
 
-![Welcome AutoNeuro](../img/img1.png)
+![Welcome AutoNeuro](../img/1.png)
 
 On Successful execution of steps you will see this screen.
 
-##Adding Data Set for Training
+##Adding a Data Set for Training
 
 To add training dataset:
 
 - Click on Choose a data sources drop down:
 
-![Add Data](../img/img2.png)
+![Add Data](../img/2.png)
 
 - Select the type of the file you are uploading. You can upload CSV, Excel, HTML or Text files.
-- Click on Choose file and select your training dataset file. Once you select the dataset it will be validated and on successful validation you would be able to upload data for training. 
+- Click on **Choose file** and select your training dataset file. Once you select the dataset it will be validated and on successful validation you would be able to upload data for training. 
 
-![Validation Successful](../img/img3.png)
+![Validation Successful](../img/3.png)
 
-- On clicking upload your data will be uploaded and you will be land to the following page.
+- On clicking upload your data will be uploaded and you will be redirected   to the following page.
