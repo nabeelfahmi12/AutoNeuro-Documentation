@@ -1,5 +1,5 @@
 [![Python](https://img.shields.io/pypi/pyversions/tensorflow.svg?style=plastic)](https://pypi.org/project/pneuro)
-[![PyPI](https://badge.fury.io/py/tensorflow.svg)](https://pypi.org/project/pneuro)
+[![PyPI version](https://badge.fury.io/py/pneuro.svg)](https://badge.fury.io/py/pneuro)
 
 <h1> <center>AutoNeuro</center></h1>
 
