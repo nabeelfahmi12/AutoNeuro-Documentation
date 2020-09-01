@@ -1,4 +1,5 @@
-[![Python](https://img.shields.io/pypi/pyversions/tensorflow.svg?style=plastic)](https://badge.fury.io/py/tensorflow) [![PyPI](https://badge.fury.io/py/tensorflow.svg)](https://pypi.org/project/pneuro/)
+[![Python](https://img.shields.io/pypi/pyversions/tensorflow.svg?style=plastic)](https://pypi.org/project/pneuro)
+[![PyPI](https://badge.fury.io/py/tensorflow.svg)](https://pypi.org/project/pneuro)
 
 <h1> <center>AutoNeuro</center></h1>
 
@@ -24,7 +25,7 @@ AutoNeuro requires:
 ## User Installation
 If you already have a working installation of numpy and Pandas, the easiest way to install autoNeuro is using ```Pip```
 ```
-pip install AutoNeuro
+pip install pneuro
 ```
 or ``` conda ```
 ```
