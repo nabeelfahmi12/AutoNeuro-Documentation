@@ -17,7 +17,7 @@ website: https://nabeelfahmi12.github.io/AutoNeuro-Documentation/
 ### Dependencies
 
 AutoNeuro requires:
-* Python 3.7
+* Python 3 , 3.7
 * Numpy
 * Pandas
 <br>
@@ -27,10 +27,7 @@ If you already have a working installation of numpy and Pandas, the easiest way 
 ```
 pip install pneuro
 ```
-or ``` conda ```
-```
-conda install -c conda-forge AutoNeuro
-```
+
 The documentation includes more detailed [installation instructions](https://nabeelfahmi12.github.io/AutoNeuro-Documentation/GettingStarted/How%20to%20use/)
 
 ## Change log
