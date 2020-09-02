@@ -9,7 +9,7 @@
 
 AutoNeuro is an automated machine learning application built using python 3.7. It allows users to build production ready ML models with ease and efficiency.See the [About us](https://nabeelfahmi12.github.io/AutoNeuro-Documentation/GettingStarted/GettingStarted/) page for more information.
 
-website: https://nabeelfahmi12.github.io/AutoNeuro-Documentation/
+website: https://autoneuro.ml/
 
 
 ## Installation
@@ -31,13 +31,13 @@ or ``` conda ```
 ```
 conda install -c conda-forge AutoNeuro
 ```
-The documentation includes more detailed [installation instructions](https://nabeelfahmi12.github.io/AutoNeuro-Documentation/GettingStarted/How%20to%20use/)
+The documentation includes more detailed [installation instructions](https://autoneuro.ml/GettingStarted/How%20to%20use/)
 
 ## Change log
 See the [change log]() for a history of notable changes to AutoNeuro.
 
 ## Development
-We welcome new contributors of all experience levels. The [Development Guide](https://nabeelfahmi12.github.io/AutoNeuro-Documentation/ForDevelopers/MethodsforModelbuilding/) has detaled information about contributing code, documentation, tests, and more. 
+We welcome new contributors of all experience levels. The [Development Guide](https://autoneuro.ml/ForDevelopers/MethodsforModelbuilding/) has detaled information about contributing code, documentation, tests, and more. 
 We have included some basic information in README.
 
 ### Important links
@@ -52,7 +52,7 @@ git clone https://github.com/nabeelfahmi12/AutoNeuro-Documentaion.git
 ```
 ### Contributing
 To learn more about making a contribution to scikit-learn, please see our
-[Contributing guide](https://nabeelfahmi12.github.io/AutoNeuroDocumentation/Contributingtoautoneuro/Contributingtoautoneuro/)
+[Contributing guide](https://autoneuro.ml/Contributingtoautoneuro/Contributingtoautoneuro/)
 
 ### Testing
 After installation, you can launch the test suite from outside the source directory (you will need to have pytest >= 5.0.1 installed):
@@ -61,10 +61,10 @@ pytest AutoNeuro
 ```
 ### Submitting a Pull Request
 Before opening a Pull Request, have a look at the full Contributing page to make sure your code 
-complies with our guidelines: https://nabeelfahmi12.github.io/AutoNeuro-Documentation/Contributingtoautoneuro/Contributingtoautoneuro/
+complies with our guidelines: https://autoneuro.ml/Contributingtoautoneuro/Contributingtoautoneuro/
 
 ## Help and Support
-https://nabeelfahmi12.github.io/AutoNeuro-Documentation/Contributingtoautoneuro/Contributingtoautoneuro/
+https://autoneuro.ml/Contributingtoautoneuro/Contributingtoautoneuro/
 
 ### Documentation
 * HTML documentation (stable release):
@@ -74,7 +74,7 @@ https://nabeelfahmi12.github.io/AutoNeuro-Documentation/Contributingtoautoneuro/
 * Mailing list:
 * Twitter: https://twitter.com/Sudhans74624324
 * Stack Overflow: 
-* Website: https://nabeelfahmi12.github.io/AutoNeuro-Documentation/
+* Website: https://ineuron.ai
 
 ## Citation
 If you use autoneuro in a scientific publication, we would appreciate citations: 
