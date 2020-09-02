@@ -10165,3 +10165,26 @@ header.masthead h1 {
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
 }
+
+footer {
+    background-color: #ecf5ff;
+    padding: 40px 0px;
+        padding-top: 40px;
+    background-color: #363e75;
+    color: #fff;
+    padding-top: 0;
+    font-family: "Segoe UI", sans-serif;
+
+}
+footer .color-line.color-secondary-darker {
+    margin-bottom: 40px;
+}
+.color-line {
+    position: relative;
+    background-color: #3d7abd;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+.color-line, .color-line > * {
+    z-index: 200;
+    height: 4px;
+}
