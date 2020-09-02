@@ -1,5 +1,5 @@
 site_name: AutoNeuro
-repo_url: https://github.com/viratsagar/Autoneuro
+repo_url: https://github.com/viratsagar/Autoneuro "target="_blank
 site_url: https://Autoneuro.ml/
 edit_uri: ""
 site_description: 'Documentation for AutoNeuro, the automated Machine Learning Application.'
@@ -46,9 +46,9 @@ nav:
         - License : License.md
             
     - Pypi :
-       - Pypi : "https://pypi.org/project/pneuro/"
+       - Pypi : https://pypi.org/project/pneuro/ "target="_blank
     - About us :
-      - About us : "https://ineuron.ai/"
+      - About us : https://ineuron.ai/ "target="_blank
 
 
 theme:
