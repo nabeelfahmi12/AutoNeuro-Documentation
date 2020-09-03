@@ -1,5 +1,5 @@
 site_name: AutoNeuro
-repo_url: https://github.com/viratsagar/Autoneuro "target="_blank
+repo_url: https://github.com/viratsagar/Autoneuro.git "target="_blank
 site_url: https://Autoneuro.ml/
 edit_uri: ""
 site_description: 'Documentation for AutoNeuro, the automated Machine Learning Application.'
@@ -62,7 +62,7 @@ theme:
     favicon: img/Ineuro.svg
     features:
       - tabs
-      - instant
+
     font:
        text: "https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@600&family=Poppins:wght@600&family=Raleway:wght@600&family=Sora:wght@700&display=swap"
        code: "https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap"
@@ -102,12 +102,6 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed
   - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-      options:
-        custom_icons:
-          - img/icons
   - pymdownx.highlight:
       use_pygments: true
 
