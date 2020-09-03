@@ -1,8 +1,8 @@
 ## **_Data Ingestion and File Conversion_**
 
 
-**Data ingestion** is the transportation of data from assorted sources to a storage medium where it can be accessed, used, and analyzed by an organization.
-
+**Data ingestion** is the transportation of data from assorted sources to a storage medium where it can be accessed, used, and and analyzed by the application.
+    
 ![tsd](../img/image003.png)
 
 The destination is typically a data warehouse, data mart, database, or a document store. 
@@ -14,80 +14,18 @@ Data Connector Utils | File Conversion Utils |
 [Statistical File]()|HTML
 [Tableau Server or Tableau Online]()|Excel files
 [Actian Matrix]()|openDocument Spreadsheets
-[Actian Vectorwise]()|Binary Excel (.xlsb) files
-[Alibaba AnalyticDB for MySQL]()|Clipboard
-[Alibaba Data Lake Analytics]()|Pickling
-[Alibaba MaxCompute]()|msgpack
-[Amazon Athena]()|HDF5 (PyTables)
-[Amazon Aurora for MySQL]()|Feather
-[Amazon EMR Hadoop Hive]()|Parquet
-[Amazon Redshift]()|ORC
-[Anaplan]()|Google BigQuery
-[Apache Drill]()|Stata format
-[Aster Database]()|SAS formats
-[Azure SQL Synapse Analytics]()|SPSS formats
-[Box]()|Other file formats
-[Cloudera Hadoop]()|Performance considerations
-[Databricks]()|
-[Denodo]()|
-[Dropbo]()|
-[Esri ArcGIS Server]()|
-[Exasol]()|
-[Firebird 3]()|
-[Google Ads]()|
-[Google Analytics]()|
-[Google BigQuery]()|
-[Google Cloud SQL]()|
 [Google Drive]()|
-[Google Sheets]()|
-[Hortonworks Hadoop Hive]()|
-[IBM BigInsights]()|
-[IBM DB2]()|
-[IBM PDA (Netezza)]()|
-[Impala]()|
-[Intuit QuickBooks Online]()|
-[Kognitio]()|
-[Kyvos]()|
-[LinkedIn Sales Navigator]()|
-[MapR Hadoop Hive]()|
-[MariaDB]()|
-[arketo]()|
-[MarkLogic]()|
-[MemSQL]()|
-[Microsoft Analysis Services]()|
-[Microsoft PowerPivot]()|
 [Microsoft SQL Server]()|
-[MonetDB]()|
 [MongoDB BI Connector]()|
 [MySQL]()|
-[OData]()|
-[OneDrive]()|
-[Oracle]()|
-[Oracle Eloqua]()|
-[Oracle Essbase]()|
-[Pivotal Greenplum]()|
 [PostgreSQL]()|
-[Presto]()|
-[Progress OpenEdge]()|
-[Qubole Presto]()|
-[Salesforce]()|
-[Splunk]()|
-[SAP HANA]()|
-[SAP NetWeaver Business Warehouse]()|
-[SAP Sybase ASE]()|
-[SAP Sybase IQ]()|
-[ServiceNow ITSM]()|
-[SharePoint Lists]()|
-[Snowflake]()|
 [Spark SQL]()|
-[Connector Plugin]()|
-[Web Data Connector]()|
 [Other Databases (JDBC)]()|
 [Other Databases (ODBC)]()|
 
 
 ## Upload Data
-### Read from csv
+### Read from CSV
 Method Name    |read_data_from_csv|   |
 ------------ | ------------- | -----|
 | | Method Description |This method will be used to read data from a csv file or a flat file
@@ -96,7 +34,7 @@ Method Name    |read_data_from_csv|   |
  | |ouptput    |A pandas Dataframe 
  | |On Exception|  Write the exception in the log file. Raise an exception with the appropriate error message 
 
-### Read from json
+### Read from JSON
 Method Name  |   read_data_from_json|  |
 ------------ | ------------- | -----|
 | |Method Description  |This method will be used to read data from a json file.
@@ -105,7 +43,7 @@ Method Name  |   read_data_from_json|  |
 | |ouptput|    A pandas Dataframe
 | |On Exception| Write the exception in the log file. Raise an exception with the appropriate error message
 
-### Read from html
+### Read from HTML
 Method Name    |read_data_from_html | |
 ------------ | ------------- | -----|
 | |Method Description  |This method will be used to read data from an HTML web page Input parameter  names    self,url
@@ -113,7 +51,7 @@ Method Name    |read_data_from_html | |
 | |ouptput |A pandas Dataframe
 | |On Exception    |Write the exception in the log file. Raise an exception with the appropriate error message
 
-### Read from Excel
+### Read from EXCEL
 Method Name    |read_data_from_excel  | |
 ------------ | ------------- | ---|
 | |Method Description| This method will be used to read data from an MS Excel File
@@ -123,7 +61,7 @@ Method Name    |read_data_from_excel  | |
 | |On Exception    |Write the exception in the log file. Raise an exception with the appropriate error message
 
 
-### Connecting to sqldb
+### Connecting to SQLDB
 Method Name    |Connect_to_sqldb  | |
 ------------ | ------------- | -----|
 | |Method Description| This method will be used to connect to a SQL Databases
@@ -133,7 +71,7 @@ Method Name    |Connect_to_sqldb  | |
 | |    On Exception   |Write the exception in the log file. Raise an exception with the appropriate error message
 
 
-### Read from sqldb
+### Read from SQLDB
 Method Name    |read_data_from_sqldb| |
 ------------ | ------------- | -----|
 | |Method Description  |This method will be used to read data from SQL Databases
@@ -142,7 +80,7 @@ Method Name    |read_data_from_sqldb| |
 | |ouptput |A Pandas Dataframe
 | |    On Exception   |Write the exception in the log file. Raise an exception with the appropriate error message 
 
-### Read from mongodb
+### Read from MONGODB
 Method Name    |read_data_from_mongdb  | |
 ------------ | ------------- | -----|
 | |Method Description| This method will be used to read data from Mongo DB

@@ -1,10 +1,11 @@
 # **_Data profiling_**
 
-**Data profiling** is the process of reviewing source data, understanding structure, content and interrelationships, and identifying potential for data projects.   
+**Data profiling** is the process of reviewing source data, understanding structure, content and interrelationships.   
 
 ![Data Profiling](../img/data_profiling.png)
 
 Method Definition
+
 ## Data Profiler
 
 Class Name |DataProfiler||

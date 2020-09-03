@@ -23,9 +23,9 @@ nav:
             - Workflow: ForDevelopers\Applicationworkflow.md
             - Data upload : ForDevelopers\Methodsfordataupload.md
             - Data profiling : ForDevelopers\Methodsfordataprofiler.md
-            - Data Visualization :
-                - Data Visualization(Statistical Analysis) : ForDevelopers\MethodsforstatbasedEDA.md
-                - Data Visualization(Graphical Analysis): ForDevelopers\MethodsforgraphbasedEDA.md
+            - Data Analysis :
+                - Statistical Analysis : ForDevelopers\MethodsforstatbasedEDA.md
+                - Graphical Analysis : ForDevelopers\MethodsforgraphbasedEDA.md
             - Data preprocessing : ForDevelopers\Methodsforpreprocessing.md
             - Model building : ForDevelopers\MethodsforModelbuilding.md
             - Model Testing & Selection : ForDevelopers\Methodsforprediction.md
