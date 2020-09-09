@@ -23,7 +23,7 @@ AutoNeuro is an automated machine learning application built using python 3.7. I
 ![workflow](../img/AutoNeuro.png)
 
 <div class="video-wrapper">
-  <iframe width="1280" height="720" src="https://www.youtube.com/embed/000aP84lPy8" frameborder="0" allowfullscreen></iframe>
+  <iframe width="1280" height="720" src="https://www.youtube.com/embed/xqR0sbAf18U?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com" frameborder="0" allowfullscreen></iframe>
 </div>
 
 
