@@ -48,21 +48,14 @@ The adjusted R-squared is a modified version of R-squared that has been adjusted
 ## Classification:
 Classification is an important and popular machine learning tool that assigns items in a data set to different categories. Classification is used to predict risk over time, in fraud detection, text categorization, and more. Classification functions begin with a data set where the different categories are known. For example, suppose you want to classify students based on how likely they are to get into graduate school. In addition to factors like admission score exams and grades, you could also track work experience.
 
-### Logistic Regression
-[Logistic regression](generated/sklearn.linear_model.LogisticRegression.html
-) is a statistical model that in its basic form uses a logistic function to model a binary dependent variable, although many more complex extensions exist. In regression analysis, logistic regression (or logit regression) is estimating the parameters of a logistic model (a form of binary regression).
-
-### Decision Tree
-A [decision tree](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj5o5S7qurqAhUBOisKHaYzAEMQFjAIegQICBAB&url=http%3A%2F%2Fscikit-learn.org%2Fstable%2Fmodules%2Ftree.html&usg=AOvVaw0lSaFzDc1nnQhPpTXeI-LR) is a flowchart-like structure in which each internal node represents a “test” on an attribute (e.g. whether a coin flip comes up heads or tails), each branch represents the outcome of the test, and each leaf node represents a class label (decision taken after computing all attributes)
 
 ### Random Forest
 [Random forests](https://en.wikipedia.org/wiki/Random_forest) or random decision forests are an ensemble learning method for classification, regression and other tasks that operate by constructing a multitude of decision trees at training time and outputting the class that is the mode of the classes (classification) or mean prediction (regression) of the individual trees.[1][2] Random decision forests correct for decision trees' habit of overfitting to their training set.[
 
+
 ### XG Boost
 [XGBoost](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiO5decq-rqAhVQSX0KHVi-As0QFjABegQIBRAB&url=https%3A%2F%2Fmachinelearningmastery.com%2Fdevelop-first-xgboost-model-python-scikit-learn%2F&usg=AOvVaw2efWvsLKN9bDxF0whZ38c5) is an implementation of gradient boosted decision trees designed for speed and performance that is dominative competitive machine learning.
 
-### Support Vector Classifier
-In machine learning, [support-vector machines](https://en.wikipedia.org/wiki/Support_vector_machine) (SVMs, also support-vector networks[1]) are supervised learning models with associated learning algorithms that analyze data used for classification and regression analysis. The Support Vector Machine (SVM) algorithm is a popular machine learning tool that offers solutions for both classification and regression problems.
 
 ### KNN Classifier
 K-nearest neighbors (KNN) algorithm is a type of supervised ML algorithm which can be used for both classification as well as regression predictive problems. However, it is mainly used for classification predictive problems in industry. The following two properties would define KNN well −
@@ -89,10 +82,6 @@ Step 3 − For each point in the test data do the following −
 
 3.4 − Now, it will assign a class to the test point based on most frequent class of these rows.
 
-### Naïve Baye’s
-[Naïve Bayes classifiers](https://scikit-learn.org/stable/modules/naive_bayes.html) are a family of simple "probabilistic classifiers" based on applying Bayes' theorem with strong (naïve) independence assumptions between the features. They are among the simplest Bayesian network models. But they could be coupled with Kernel density estimation and achieve higher accuracy levels.
-
-Naïve Bayes classifiers are highly scalable, requiring a number of parameters linear in the number of variables (features/predictors) in a learning problem. Maximum-likelihood training can be done by evaluating a closed-form expression, which takes linear time, rather than by expensive iterative approximation as used for many other types of classifiers.
 
 ## Model selection criteria:
 
