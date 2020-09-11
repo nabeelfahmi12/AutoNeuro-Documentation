@@ -21,13 +21,38 @@ On Successful execution of steps you will see this screen.
 
 To add training dataset:
 
-- Click on Choose a data sources drop down:
+- Click on **Choose a data source** drop down:
 
 ![Add Data](../img/2.png)
 
-- Select the type of the file you are uploading. You can upload CSV, Excel, HTML or Text files.
+- Select the type of the file you are uploading using **Choose a data soure** dropdown
+  You can upload CSV, Excel, HTML ,JSON or Text files
+- Select the databse type using **Choose a database type** dropdown
+- Enter file delimiter in the space provided
 - Click on **Choose file** and select your training dataset file. Once you select the dataset it will be validated and on successful validation you would be able to upload data for training. 
+
+- On clicking **Upload** button,  your data will be uploaded and you will be redirected  to the data profile.
+
+##Data Profile
+
+Here you will be able to view detailed analysis of your training data.
+
+* First 10 records
+* No of rows and columns
+* duplicate rows
+* data size
+* missing value information
+* categorical & numerical columns
+* columns with zero standard deviation
 
 ![Validation Successful](../img/3.png)
 
-- On clicking upload your data will be uploaded and you will be redirected   to the following page.
+![Data Table](../img/4.png)
+
+
+![Data Profile](../img/5.png)
+
+
+
+
+
