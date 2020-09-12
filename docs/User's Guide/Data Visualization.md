@@ -15,7 +15,6 @@ You will see various charts and graphs to understand your data well.
 ## OLS Summary & VIF statistics
 ![Visualization](../img/8.png)
 
-AutoNeuro will train the models with different hyper parameters and generate report for the best model. 
-If the data is trained successfully then you will be able to see reports.
+
 
 
