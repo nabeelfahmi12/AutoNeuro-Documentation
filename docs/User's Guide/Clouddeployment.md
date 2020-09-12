@@ -1,8 +1,11 @@
 # **_Deploying Model to Cloud_**
 
-- Once you are satisfied with the model Select the cloud Service in which you want to deploy model. We offer deployment in Azure, GCP, AWS.
+- Select the cloud Service using **"Choose a cloud platform"** in which you want to deploy model. 
 
-- Select the Cloud Service in which you want to deploy and Click Proceed to Cloud.
+- We offer deployment in Azure, GCP, AWS.
+
+- Once the cloud platform is selected click **"Proceed to Cloud"**
+
 
 ![Deploy](../img/12.png)
 
