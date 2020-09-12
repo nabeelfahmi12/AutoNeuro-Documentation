@@ -2,11 +2,11 @@
 
 ## Logging
 
-- AutoNeuro Logs each and every step it performs. If it fails for some reason then you can read the logs and resolve it. 
+- AutoNeuro logs each and every step it performs. If it fails for some reason then you can read the logs and resolve it. 
 - We have seven log files which stores at which step the error occured.- 
 - In the respective Log files you will find the datetime stamp and descritption.
-- Description will tell us inside which class and what function currently we are.
-- Description will show where the error has occured and you can resolve it.
+- Description will tell us the location of the exception
+- Description will also include the cause to help in resolution
 ## Log files
 
 ### dataLoadLogs
