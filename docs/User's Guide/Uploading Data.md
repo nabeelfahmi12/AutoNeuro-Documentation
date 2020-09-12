@@ -51,8 +51,3 @@ Here you will be able to view detailed analysis of your training data.
 
 
 ![Data Profile](../img/5.png)
-
-
-
-
-
