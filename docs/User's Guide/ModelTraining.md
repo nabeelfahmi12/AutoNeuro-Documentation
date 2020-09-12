@@ -1,24 +1,39 @@
 # **_Model Training_**
 
-
-
-![Data Table](../img/4.png)
-
-- On this page you will be able to view detailed analysis of your training data. You will get information regarding missing values, columns with zero std deviation and if there is any duplicate column.
-
-![Data Profile](../img/5.png)
-
-- If you have reached this page then you have successfully loaded the data for training. Now it’s time to train the data.
+AutoNeuro will train the models with different hyper parameters and generate report for the best model. 
+If the data is trained successfully then you will be able to see reports.
 
 ##Training the data
 
-- After successfully uploading the data go to “Choose a Problem Type” drop down and select the type of your Problem. You can select from Regression and Classification. AutoNeuro will automatically perform feature engineering and train your data with the highest optimization.
+- select problem type from **Choose a problem type** dropdown (Regression/Classification)
+
+- select unwanted columns to be dropped from **Drop Unwanted Columns** dropdown (all the columns from your dataset will be listed here)
+
+- select the target Column (dependent column which you want to predict) from **Select Target Column** dropdown.(all the columns from your dataset will be listed here)
+
+- enter the **Symbol to be replaced** to replace the null values in the dataset.
+
+- enter the **Threshold for null values** (ffor the columns with null values)
+
 
 ![Select Problem](../img/6.png)
 
-- After selecting problem type, if you want to drop any unwanted columns then you can select that from the “Drop Unwanted Columns”. After dropping, the final step is to select the Target Column (dependent column which you want to predict) and click “Submit”.
+Once the model is trained , the reports will be displayed as given below:
 
-![Select target column](../img/7.png)
+##Reports
 
+###XGBoost Model
+ 
+![xgboost1](../img/xgboost_report1.png)
 
-![Select target column](../img/9.png)
+![xgboost2](../img/xgboost_report2.png)
+
+###Random Forest Model
+
+![rfboost1](../img/rf_report1.png)
+
+![rfboost2](../img/rf_report2.png)
+
+###Column Usage
+
+![column_usage](../img/column_usage_report.png)
