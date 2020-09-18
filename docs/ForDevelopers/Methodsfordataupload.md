@@ -1,30 +1,26 @@
-## **_Data Ingestion and File Conversion_**
+## **_Data Ingestion_**
 
 
 **Data ingestion** is the transportation of data from assorted sources to a storage medium where it can be accessed, used, and and analyzed by the application.
     
 ![tsd](../img/image003.png)
 
-The destination is typically a data warehouse, data mart, database, or a document store. 
+ 
 
-Data Connector Utils | File Conversion Utils |
------------- | ------------- | 
-[Microsoft Access](https://help.tableau.com/current/pro/desktop/en-us/examples_access.htm) | CSV & text files, PDF
-[Spatial File]()| JSON
-[Statistical File]()|HTML
-[Tableau Server or Tableau Online]()|Excel files
-[Actian Matrix]()|openDocument Spreadsheets
-[Google Drive]()|
-[Microsoft SQL Server]()|
-[MongoDB BI Connector]()|
-[MySQL]()|
-[PostgreSQL]()|
-[Spark SQL]()|
-[Other Databases (JDBC)]()|
-[Other Databases (ODBC)]()|
+upload file formats allowed    |   
+------------------------ |
+csv files|
+Excel file(xlsx) |
+HTML|
+JSON|
+txt files|
+MongoDB |
+MySql |
 
 
-## Upload Data
+## Methods to upload Data
+
+
 ### Read from CSV
 Method Name    |read_data_from_csv|   |
 ------------ | ------------- | -----|
@@ -33,6 +29,24 @@ Method Name    |read_data_from_csv|   |
  | |Input Parameter Description|   file_name: name of the file to be read header: Row number(s) to be used as column names names : array-like, optional List of column names to use. If file contains no header row, then you should explicitly pass ``header=None``. Use_cols:  To load a subset of columns Separator: Delimiter to use 
  | |ouptput    |A pandas Dataframe 
  | |On Exception|  Write the exception in the log file. Raise an exception with the appropriate error message 
+
+### Read from Excel
+Method Name    |read_data_from_excel  | |
+------------ | ------------- | ---|
+| |Method Description| This method will be used to read data from an MS Excel File
+| |Input parameter  names| self,file_name,sheet_name, header,names, use_cols, separator
+| |    Input Parameter Description    |file_name: name of the file to be read sheet_name: Lists of strings/integers are used to request multiple sheets. Specify None to get all sheets. header: Row number(s) to be used as column names names : array-like, optional List of column names to use. If file contains no header row, then you should explicitly pass ``header=None``. Use_cols:  To load a subset of columns Separator: Delimiter to use
+| | ouptput    |A pandas Dataframe
+| |On Exception    |Write the exception in the log file. Raise an exception with the appropriate error message
+
+### Read from HTML
+Method Name    |read_data_from_html | |
+------------ | ------------- | -----|
+| |Method Description  |This method will be used to read data from an HTML web page Input parameter  names    self,url
+| |Input Parameter Description|    url: URL of the HTML page to be read. 
+| |ouptput |A pandas Dataframe
+| |On Exception    |Write the exception in the log file. Raise an exception with the appropriate error message
+
 
 ### Read from JSON
 Method Name  |   read_data_from_json|  |
@@ -43,22 +57,15 @@ Method Name  |   read_data_from_json|  |
 | |ouptput|    A pandas Dataframe
 | |On Exception| Write the exception in the log file. Raise an exception with the appropriate error message
 
-### Read from HTML
-Method Name    |read_data_from_html | |
------------- | ------------- | -----|
-| |Method Description  |This method will be used to read data from an HTML web page Input parameter  names    self,url
-| |Input Parameter Description|    url: URL of the HTML page to be read. 
-| |ouptput |A pandas Dataframe
-| |On Exception    |Write the exception in the log file. Raise an exception with the appropriate error message
 
-### Read from EXCEL
-Method Name    |read_data_from_excel  | |
------------- | ------------- | ---|
-| |Method Description| This method will be used to read data from an MS Excel File
-| |Input parameter  names| self,file_name,sheet_name, header,names, use_cols, separator
-| |    Input Parameter Description    |file_name: name of the file to be read sheet_name: Lists of strings/integers are used to request multiple sheets. Specify None to get all sheets. header: Row number(s) to be used as column names names : array-like, optional List of column names to use. If file contains no header row, then you should explicitly pass ``header=None``. Use_cols:  To load a subset of columns Separator: Delimiter to use
-| | ouptput    |A pandas Dataframe
-| |On Exception    |Write the exception in the log file. Raise an exception with the appropriate error message
+### Read from text
+Method Name    |read_data_from_text|   |
+------------ | ------------- | -----|
+| | Method Description |This method will be used to read data from a text file.
+ | |Input parameter  names |self,file_name, delimiter
+ | |Input Parameter Description|   file_name: name of the file to be read header: Row number(s) to be used as column names names : array-like, optional List of column names to use. If file contains no header row, then you should explicitly pass ``header=None``. Use_cols:  To load a subset of columns Separator: Delimiter to use 
+ | |ouptput    |A pandas Dataframe 
+ | |On Exception|  Write the exception in the log file. Raise an exception with the appropriate error message 
 
 
 ### Connecting to SQLDB

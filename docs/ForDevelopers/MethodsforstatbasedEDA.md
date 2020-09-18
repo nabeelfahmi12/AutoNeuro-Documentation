@@ -6,11 +6,33 @@
 ## OLS
  Ordinary least squares
 The OLS method corresponds to minimizing the sum of square differences between the observed and predicted values.
+
+### OLS_summary
+Method Name    |OLS_summary|   |
+------------ | ------------- | -----|
+| | Method Description |This method will be used to display the OLS summary of the given model.
+ | |Input parameter  names |self,dataframe,target
+ | |Input Parameter Description|    dataframe: the input dataframe with numeric columns. 
+ | |                           |    target : target column 
+ | |ouptput    |OLS summary of the model 
+ | |On Exception|  Write the exception in the log file. Raise an exception with the appropriate error message 
+
 ## VIF
 
 The variance inflation factor (VIF) is the quotient of the variance in a model with multiple terms by the variance of a model with one term alone. It quantifies the severity of multicollinearity in an ordinary least squares regression analysis.
-Correlation:
+
+**Correlation**:
 Correlation is a statistical technique that can show whether and how strongly pairs of variables are related
+
+### calculate_vif
+Method Name    |calculate_vif|   |
+------------ | ------------- | -----|
+| | Method Description |This method will be used to calculate the vif scores for the cleaned data.
+ | |Input parameter  names |self,dataframe 
+ | |Input Parameter Description|    data: the input dataframe with numeric columns. 
+ | |ouptput    |VIF values for each of the columns. 
+ | |On Exception|  Write the exception in the log file. Raise an exception with the appropriate error message 
+
 
 ## Silhouette Coefficient
 Silhouette Coefficient or silhouette score is a metric used to calculate the goodness of a clustering technique. Its value ranges from -1 to 1.

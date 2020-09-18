@@ -2,55 +2,52 @@
 
 ![Technical Design](../img/TSD-4.png)
 
-## Transformations
+## Preprocessing 
 
-### Imputing missing values
+### **replace_sym_null**
 
-* Method Name: impute_missing_values
-* Description: This method will be used to impute missing values in the dataframe
+This method will be used to replace the null values with the symbol if entered
 
+### **identify_thresh_cols**
+This method will be used to identify the columns with threshold of null values more than the thershold value entered.
 
-### Categorical to numerical
-* Method Name: type_conversion
-* Description: This method will be used to convert column datatype from numerical to categorical or vice-versa, if possible.
+###  **remove_columns**
+The unwanted columns selected by the user and selected by identify_thresh_cols will be removed.
 
+###  **impute_missing_values**
+This method will be used to impute missing values in the dataframe. 
 
+ * ‘median’ : default for continuous variables, replaces missing value(s) with median of the concerned column
+ * ‘mean’ : replace missing values with the mean of the concerned column
+ * ‘mode’ : default for categorical variables
+ * ‘fixed’ : replaces all missing values with a fixed ‘explicitly specified’ value
 
-### Imbalanced data set handling
-* Method Name: remove_imbalance
-* Description: This method will be used to handle unbalanced datasets(rare classes) through oversampling/ undersampling techniques
+###  **handle_outliers_IQR**
+This method replaces outliers in numerical variables with their median
 
+### **label_encoding**
+This method will be used to convert column datatype from categorical  to numerical. 
 
-### Handling columns with std deviation zero or below a threshold
-* Method Name: standardize_data
-* Description: This method will be used to standardize al the numeric variables. Where mean = 0, std dev = 1.
+### **OLS_summary**
+This method will be used to display the OLS summary of the given regression model.
 
+### **feature_selection**
+This method will return the selected features from the Dataset based on feature importance Calculated by ExtraTreeRegressor and ExtraTreeClassifier with SelectfromModel Method.
 
-### Normalisation
-* Method Name: normalize_data
-* Description: This method will be used to normalize all the numeric variables. Where min value = 0 and max value = 1.
-        
-### PCA
-* Method Name: pca
-* Description: This method reduces the dimension from scaled Data which enables quick for large data files.
+### **check_correlation**
+This method will be used find correlation of the dataframe
 
+### **calculate_vif**
+This method will be used to calculate the vif scores for the cleaned data and outputs the correlation of each column.
 
-## Data Preprocessor
+### **remove_imbalance**
+This method will be used to handle unbalanced datasets(rare classes) through oversampling/ undersampling techniques
 
-Class Name |DataPreprocessor| |
-----|-------|--------|    
-|Method Name    |impute_missing_values ||
-| |Method Description  |This method will be used to read data from a csv file or a flat file. 
-| |Input parameter  names| self,file_name, header,names, use_cols, separator.
-| |Input Parameter Description	|file_name: name of the file to be read. 
-| | |header: Row number(s) to be used as column names
-| | |names : array-like, optional
-   | | |List of column names to use. If file contains no header row, then you should explicitly pass ``header=None``.
-| | |Use_cols:  To load a subset of columns
-| | |Separator: Delimiter to use
-| |Output| A pandas Dataframe
-| |On Exception|   Write the exception in the log file. Raise an exception with the appropriate error message
+### **separate_label_feature**
+This method separates the features and a Label Coulmns. It returns two separate Dataframes, one containing features and the other containing Labels .
 
+### **standardize_data**
+This method will be used to standardize al the numeric variables. Where mean = 0, std dev = 1.
 
 ## Exceptions Scenarios Module Wise
 
