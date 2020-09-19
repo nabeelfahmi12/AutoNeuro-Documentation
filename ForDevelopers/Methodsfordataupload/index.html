@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#data-ingestion-and-file-conversion" class="md-skip">
+        <a href="#data-ingestion" class="md-skip">
           Skip to content
         </a>
       
@@ -536,18 +536,18 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#data-ingestion-and-file-conversion" class="md-nav__link">
-    Data Ingestion and File Conversion
+  <a href="#data-ingestion" class="md-nav__link">
+    Data Ingestion
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#upload-data" class="md-nav__link">
-    Upload Data
+  <a href="#methods-to-upload-data" class="md-nav__link">
+    Methods to upload Data
   </a>
   
-    <nav class="md-nav" aria-label="Upload Data">
+    <nav class="md-nav" aria-label="Methods to upload Data">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -558,8 +558,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#read-from-json" class="md-nav__link">
-    Read from JSON
+  <a href="#read-from-excel" class="md-nav__link">
+    Read from Excel
   </a>
   
 </li>
@@ -572,8 +572,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#read-from-excel" class="md-nav__link">
-    Read from EXCEL
+  <a href="#read-from-json" class="md-nav__link">
+    Read from JSON
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#read-from-text" class="md-nav__link">
+    Read from text
   </a>
   
 </li>
@@ -1042,18 +1049,18 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#data-ingestion-and-file-conversion" class="md-nav__link">
-    Data Ingestion and File Conversion
+  <a href="#data-ingestion" class="md-nav__link">
+    Data Ingestion
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#upload-data" class="md-nav__link">
-    Upload Data
+  <a href="#methods-to-upload-data" class="md-nav__link">
+    Methods to upload Data
   </a>
   
-    <nav class="md-nav" aria-label="Upload Data">
+    <nav class="md-nav" aria-label="Methods to upload Data">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1064,8 +1071,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#read-from-json" class="md-nav__link">
-    Read from JSON
+  <a href="#read-from-excel" class="md-nav__link">
+    Read from Excel
   </a>
   
 </li>
@@ -1078,8 +1085,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#read-from-excel" class="md-nav__link">
-    Read from EXCEL
+  <a href="#read-from-json" class="md-nav__link">
+    Read from JSON
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#read-from-text" class="md-nav__link">
+    Read from text
   </a>
   
 </li>
@@ -1135,73 +1149,40 @@
                 
                   <h1>Data upload</h1>
                 
-                <h2 id="data-ingestion-and-file-conversion"><strong><em>Data Ingestion and File Conversion</em></strong><a class="headerlink" href="#data-ingestion-and-file-conversion" title="Permanent link">&para;</a></h2>
+                <h2 id="data-ingestion"><strong><em>Data Ingestion</em></strong><a class="headerlink" href="#data-ingestion" title="Permanent link">&para;</a></h2>
 <p><strong>Data ingestion</strong> is the transportation of data from assorted sources to a storage medium where it can be accessed, used, and and analyzed by the application.</p>
 <p><img alt="tsd" src="../../img/image003.png" /></p>
-<p>The destination is typically a data warehouse, data mart, database, or a document store. </p>
 <table>
 <thead>
 <tr>
-<th>Data Connector Utils</th>
-<th>File Conversion Utils</th>
+<th>upload file formats allowed</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="https://help.tableau.com/current/pro/desktop/en-us/examples_access.htm">Microsoft Access</a></td>
-<td>CSV &amp; text files, PDF</td>
+<td>csv files</td>
 </tr>
 <tr>
-<td><a href="">Spatial File</a></td>
-<td>JSON</td>
+<td>Excel file(xlsx)</td>
 </tr>
 <tr>
-<td><a href="">Statistical File</a></td>
 <td>HTML</td>
 </tr>
 <tr>
-<td><a href="">Tableau Server or Tableau Online</a></td>
-<td>Excel files</td>
+<td>JSON</td>
 </tr>
 <tr>
-<td><a href="">Actian Matrix</a></td>
-<td>openDocument Spreadsheets</td>
+<td>txt files</td>
 </tr>
 <tr>
-<td><a href="">Google Drive</a></td>
-<td></td>
+<td>MongoDB</td>
 </tr>
 <tr>
-<td><a href="">Microsoft SQL Server</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="">MongoDB BI Connector</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="">MySQL</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="">PostgreSQL</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="">Spark SQL</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="">Other Databases (JDBC)</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="">Other Databases (ODBC)</a></td>
-<td></td>
+<td>MySql</td>
 </tr>
 </tbody>
 </table>
-<h2 id="upload-data">Upload Data<a class="headerlink" href="#upload-data" title="Permanent link">&para;</a></h2>
+<h2 id="methods-to-upload-data">Methods to upload Data<a class="headerlink" href="#methods-to-upload-data" title="Permanent link">&para;</a></h2>
 <h3 id="read-from-csv">Read from CSV<a class="headerlink" href="#read-from-csv" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
@@ -1226,6 +1207,75 @@
 <td></td>
 <td>Input Parameter Description</td>
 <td>file_name: name of the file to be read header: Row number(s) to be used as column names names : array-like, optional List of column names to use. If file contains no header row, then you should explicitly pass <code>header=None</code>. Use_cols:  To load a subset of columns Separator: Delimiter to use</td>
+</tr>
+<tr>
+<td></td>
+<td>ouptput</td>
+<td>A pandas Dataframe</td>
+</tr>
+<tr>
+<td></td>
+<td>On Exception</td>
+<td>Write the exception in the log file. Raise an exception with the appropriate error message</td>
+</tr>
+</tbody>
+</table>
+<h3 id="read-from-excel">Read from Excel<a class="headerlink" href="#read-from-excel" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Method Name</th>
+<th>read_data_from_excel</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Method Description</td>
+<td>This method will be used to read data from an MS Excel File</td>
+</tr>
+<tr>
+<td></td>
+<td>Input parameter  names</td>
+<td>self,file_name,sheet_name, header,names, use_cols, separator</td>
+</tr>
+<tr>
+<td></td>
+<td>Input Parameter Description</td>
+<td>file_name: name of the file to be read sheet_name: Lists of strings/integers are used to request multiple sheets. Specify None to get all sheets. header: Row number(s) to be used as column names names : array-like, optional List of column names to use. If file contains no header row, then you should explicitly pass <code>header=None</code>. Use_cols:  To load a subset of columns Separator: Delimiter to use</td>
+</tr>
+<tr>
+<td></td>
+<td>ouptput</td>
+<td>A pandas Dataframe</td>
+</tr>
+<tr>
+<td></td>
+<td>On Exception</td>
+<td>Write the exception in the log file. Raise an exception with the appropriate error message</td>
+</tr>
+</tbody>
+</table>
+<h3 id="read-from-html">Read from HTML<a class="headerlink" href="#read-from-html" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Method Name</th>
+<th>read_data_from_html</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Method Description</td>
+<td>This method will be used to read data from an HTML web page Input parameter  names    self,url</td>
+</tr>
+<tr>
+<td></td>
+<td>Input Parameter Description</td>
+<td>url: URL of the HTML page to be read.</td>
 </tr>
 <tr>
 <td></td>
@@ -1276,12 +1326,12 @@
 </tr>
 </tbody>
 </table>
-<h3 id="read-from-html">Read from HTML<a class="headerlink" href="#read-from-html" title="Permanent link">&para;</a></h3>
+<h3 id="read-from-text">Read from text<a class="headerlink" href="#read-from-text" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
 <th>Method Name</th>
-<th>read_data_from_html</th>
+<th>read_data_from_text</th>
 <th></th>
 </tr>
 </thead>
@@ -1289,49 +1339,17 @@
 <tr>
 <td></td>
 <td>Method Description</td>
-<td>This method will be used to read data from an HTML web page Input parameter  names    self,url</td>
-</tr>
-<tr>
-<td></td>
-<td>Input Parameter Description</td>
-<td>url: URL of the HTML page to be read.</td>
-</tr>
-<tr>
-<td></td>
-<td>ouptput</td>
-<td>A pandas Dataframe</td>
-</tr>
-<tr>
-<td></td>
-<td>On Exception</td>
-<td>Write the exception in the log file. Raise an exception with the appropriate error message</td>
-</tr>
-</tbody>
-</table>
-<h3 id="read-from-excel">Read from EXCEL<a class="headerlink" href="#read-from-excel" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>Method Name</th>
-<th>read_data_from_excel</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td>Method Description</td>
-<td>This method will be used to read data from an MS Excel File</td>
+<td>This method will be used to read data from a text file.</td>
 </tr>
 <tr>
 <td></td>
 <td>Input parameter  names</td>
-<td>self,file_name,sheet_name, header,names, use_cols, separator</td>
+<td>self,file_name, delimiter</td>
 </tr>
 <tr>
 <td></td>
 <td>Input Parameter Description</td>
-<td>file_name: name of the file to be read sheet_name: Lists of strings/integers are used to request multiple sheets. Specify None to get all sheets. header: Row number(s) to be used as column names names : array-like, optional List of column names to use. If file contains no header row, then you should explicitly pass <code>header=None</code>. Use_cols:  To load a subset of columns Separator: Delimiter to use</td>
+<td>file_name: name of the file to be read header: Row number(s) to be used as column names names : array-like, optional List of column names to use. If file contains no header row, then you should explicitly pass <code>header=None</code>. Use_cols:  To load a subset of columns Separator: Delimiter to use</td>
 </tr>
 <tr>
 <td></td>

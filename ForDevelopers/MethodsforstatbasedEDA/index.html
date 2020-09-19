@@ -598,12 +598,38 @@
     OLS
   </a>
   
+    <nav class="md-nav" aria-label="OLS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ols_summary" class="md-nav__link">
+    OLS_summary
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#vif" class="md-nav__link">
     VIF
   </a>
+  
+    <nav class="md-nav" aria-label="VIF">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calculate_vif" class="md-nav__link">
+    calculate_vif
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1028,12 +1054,38 @@
     OLS
   </a>
   
+    <nav class="md-nav" aria-label="OLS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ols_summary" class="md-nav__link">
+    OLS_summary
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#vif" class="md-nav__link">
     VIF
   </a>
+  
+    <nav class="md-nav" aria-label="VIF">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calculate_vif" class="md-nav__link">
+    calculate_vif
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1088,10 +1140,89 @@
 <h2 id="ols">OLS<a class="headerlink" href="#ols" title="Permanent link">&para;</a></h2>
 <p>Ordinary least squares
 The OLS method corresponds to minimizing the sum of square differences between the observed and predicted values.</p>
+<h3 id="ols_summary">OLS_summary<a class="headerlink" href="#ols_summary" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Method Name</th>
+<th>OLS_summary</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Method Description</td>
+<td>This method will be used to display the OLS summary of the given model.</td>
+</tr>
+<tr>
+<td></td>
+<td>Input parameter  names</td>
+<td>self,dataframe,target</td>
+</tr>
+<tr>
+<td></td>
+<td>Input Parameter Description</td>
+<td>dataframe: the input dataframe with numeric columns.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>target : target column</td>
+</tr>
+<tr>
+<td></td>
+<td>ouptput</td>
+<td>OLS summary of the model</td>
+</tr>
+<tr>
+<td></td>
+<td>On Exception</td>
+<td>Write the exception in the log file. Raise an exception with the appropriate error message</td>
+</tr>
+</tbody>
+</table>
 <h2 id="vif">VIF<a class="headerlink" href="#vif" title="Permanent link">&para;</a></h2>
-<p>The variance inflation factor (VIF) is the quotient of the variance in a model with multiple terms by the variance of a model with one term alone. It quantifies the severity of multicollinearity in an ordinary least squares regression analysis.
-Correlation:
+<p>The variance inflation factor (VIF) is the quotient of the variance in a model with multiple terms by the variance of a model with one term alone. It quantifies the severity of multicollinearity in an ordinary least squares regression analysis.</p>
+<p><strong>Correlation</strong>:
 Correlation is a statistical technique that can show whether and how strongly pairs of variables are related</p>
+<h3 id="calculate_vif">calculate_vif<a class="headerlink" href="#calculate_vif" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Method Name</th>
+<th>calculate_vif</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Method Description</td>
+<td>This method will be used to calculate the vif scores for the cleaned data.</td>
+</tr>
+<tr>
+<td></td>
+<td>Input parameter  names</td>
+<td>self,dataframe</td>
+</tr>
+<tr>
+<td></td>
+<td>Input Parameter Description</td>
+<td>data: the input dataframe with numeric columns.</td>
+</tr>
+<tr>
+<td></td>
+<td>ouptput</td>
+<td>VIF values for each of the columns.</td>
+</tr>
+<tr>
+<td></td>
+<td>On Exception</td>
+<td>Write the exception in the log file. Raise an exception with the appropriate error message</td>
+</tr>
+</tbody>
+</table>
 <h2 id="silhouette-coefficient">Silhouette Coefficient<a class="headerlink" href="#silhouette-coefficient" title="Permanent link">&para;</a></h2>
 <p>Silhouette Coefficient or silhouette score is a metric used to calculate the goodness of a clustering technique. Its value ranges from -1 to 1.
 1: Means clusters are well apart from each other and clearly distinguished.

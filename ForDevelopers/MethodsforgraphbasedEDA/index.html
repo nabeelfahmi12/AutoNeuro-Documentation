@@ -612,69 +612,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#data-visualisation" class="md-nav__link">
-    Data Visualisation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exceptions-scenarios-module-wise" class="md-nav__link">
-    Exceptions Scenarios Module Wise
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#technical-solution" class="md-nav__link">
-    Technical solution
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ols" class="md-nav__link">
-    OLS
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vif" class="md-nav__link">
-    VIF
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#silhouette-coefficient" class="md-nav__link">
-    Silhouette Coefficient
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exceptions-scenarios" class="md-nav__link">
-    Exceptions Scenarios
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#seasonality" class="md-nav__link">
-    Seasonality:
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stationary-data" class="md-nav__link">
-    Stationary Data:
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1058,69 +995,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#data-visualisation" class="md-nav__link">
-    Data Visualisation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exceptions-scenarios-module-wise" class="md-nav__link">
-    Exceptions Scenarios Module Wise
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#technical-solution" class="md-nav__link">
-    Technical solution
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ols" class="md-nav__link">
-    OLS
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vif" class="md-nav__link">
-    VIF
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#silhouette-coefficient" class="md-nav__link">
-    Silhouette Coefficient
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exceptions-scenarios" class="md-nav__link">
-    Exceptions Scenarios
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#seasonality" class="md-nav__link">
-    Seasonality:
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stationary-data" class="md-nav__link">
-    Stationary Data:
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1143,42 +1017,34 @@
 <p><img alt="" src="../../img/TSD-3.png" /></p>
 <h2 id="correlation-heatmaps">Correlation Heatmaps<a class="headerlink" href="#correlation-heatmaps" title="Permanent link">&para;</a></h2>
 <p><img alt="Sample heatmap" src="../../img/heatmap.png" /></p>
-<h2 id="check-for-balanceimbalance">Check for balance/imbalance<a class="headerlink" href="#check-for-balanceimbalance" title="Permanent link">&para;</a></h2>
-<p><img alt="" src="../../img/balanced.jpg" /></p>
-<h2 id="data-visualisation">Data Visualisation<a class="headerlink" href="#data-visualisation" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Class Name</th>
-<th>DataVisualization</th>
+<th>Method Name</th>
+<th>correlation_heatmap</th>
 <th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Method Name</td>
-<td>read_data_from_csv</td>
-<td></td>
-</tr>
-<tr>
 <td></td>
 <td>Method Description</td>
-<td>This method will be used to read data from a csv file or a flat file</td>
+<td>This method will be used to generate interactive heatmap plot to show the pairwise correlation of input variables</td>
 </tr>
 <tr>
 <td></td>
 <td>Input parameter  names</td>
-<td>self,file_name, header,names, use_cols, separator</td>
+<td>self,dataframe</td>
 </tr>
 <tr>
 <td></td>
 <td>Input Parameter Description</td>
-<td>file_name: name of the file to be read header: Row number(s) to be used as column names names : array-like, optional List of column names to use. If file contains no header row, then you should explicitly pass <code>header=None</code>. Use_cols:  To load a subset of columns Separator: Delimiter to use</td>
+<td>data: the input dataframe with target column</td>
 </tr>
 <tr>
 <td></td>
-<td>output</td>
-<td>A pandas Dataframe</td>
+<td>ouptput</td>
+<td>son file with correlation information that can be used by plotly to generate interactive plots.</td>
 </tr>
 <tr>
 <td></td>
@@ -1187,63 +1053,50 @@
 </tr>
 </tbody>
 </table>
-<h2 id="exceptions-scenarios-module-wise">Exceptions Scenarios Module Wise<a class="headerlink" href="#exceptions-scenarios-module-wise" title="Permanent link">&para;</a></h2>
+<h2 id="check-for-balanceimbalance">Check for balance/imbalance<a class="headerlink" href="#check-for-balanceimbalance" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../../img/balanced.jpg" /></p>
+<p>balance_imbalance_check</p>
 <table>
 <thead>
 <tr>
-<th>Step</th>
-<th>Exception</th>
-<th>Mitigation</th>
+<th>Method Name</th>
+<th>balance_imbalance_check</th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Wrong input to the methods</td>
-<td>Handle Internally</td>
-<td>Code should never give a wrong input</td>
+<td></td>
+<td>Method Description</td>
+<td>This method will be used to plot the balance/imbalance datasets using barplot/countplot</td>
+</tr>
+<tr>
+<td></td>
+<td>Input parameter</td>
+<td>self, dataframe, target column</td>
+</tr>
+<tr>
+<td></td>
+<td>Input Parameter Description</td>
+<td>data: the input dataframe with target column.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>target: target column name.</td>
+</tr>
+<tr>
+<td></td>
+<td>ouptput</td>
+<td>plot of target variable value count.</td>
+</tr>
+<tr>
+<td></td>
+<td>On Exception</td>
+<td>Write the exception in the log file. Raise an exception with the appropriate error message</td>
 </tr>
 </tbody>
 </table>
-<h2 id="technical-solution">Technical solution<a class="headerlink" href="#technical-solution" title="Permanent link">&para;</a></h2>
-<p><img alt="Technical solution design" src="../../img/TSD-2.png" /></p>
-<h2 id="ols">OLS<a class="headerlink" href="#ols" title="Permanent link">&para;</a></h2>
-<p>Ordinary least squares
-The OLS method corresponds to minimizing the sum of square differences between the observed and predicted values.</p>
-<h2 id="vif">VIF<a class="headerlink" href="#vif" title="Permanent link">&para;</a></h2>
-<p>The variance inflation factor (VIF) is the quotient of the variance in a model with multiple terms by the variance of a model with one term alone. It quantifies the severity of multicollinearity in an ordinary least squares regression analysis.
-Correlation:
-Correlation is a statistical technique that can show whether and how strongly pairs of variables are related</p>
-<h2 id="silhouette-coefficient">Silhouette Coefficient<a class="headerlink" href="#silhouette-coefficient" title="Permanent link">&para;</a></h2>
-<p>Silhouette Coefficient or silhouette score is a metric used to calculate the goodness of a clustering technique. Its value ranges from -1 to 1.
-1: Means clusters are well apart from each other and clearly distinguished.
-0: Means clusters are indifferent, or we can say that the distance between clusters is not significant.
--1: Means clusters are assigned in the wrong way.</p>
-<h2 id="exceptions-scenarios">Exceptions Scenarios<a class="headerlink" href="#exceptions-scenarios" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Step</th>
-<th>Exception</th>
-<th>Mitigation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Column has mixed values(Integer &amp; number)</td>
-<td>Give proper error message</td>
-<td>Ask the user to correct the data.</td>
-</tr>
-<tr>
-<td>Not all values are numbers</td>
-<td>Handle Internally</td>
-<td>Convert categorical to numerical values</td>
-</tr>
-</tbody>
-</table>
-<h2 id="seasonality">Seasonality:<a class="headerlink" href="#seasonality" title="Permanent link">&para;</a></h2>
-<p>Seasonality is a characteristic of a time series in which the data experiences regular and predictable changes that recur every calendar year. Any predictable fluctuation or pattern that recurs or repeats over a one-year period is said to be seasonal.</p>
-<h2 id="stationary-data">Stationary Data:<a class="headerlink" href="#stationary-data" title="Permanent link">&para;</a></h2>
-<p>A common assumption in many time series techniques is that the data are stationary. A stationary process has the property that the mean, variance and autocorrelation structure do not change over time</p>
                 
               
               
